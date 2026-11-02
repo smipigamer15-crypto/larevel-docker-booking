@@ -1,0 +1,1980 @@
+body {
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    background: #f8fafc;
+    margin: 0;
+    padding: 40px 20px;
+    color: #1a1a1a;
+}
+
+.container {
+    max-width: 600px;
+    margin: 0 auto;
+    background: #ffffff;
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+}
+
+.header {
+    background: #2563EB;
+    padding: 40px 30px;
+    text-align: center;
+    color: #ffffff;
+}
+
+.header h1 {
+    margin: 0;
+    font-size: 24px;
+    font-weight: 700;
+    letter-spacing: 0.3px;
+}
+
+.header p {
+    margin: 8px 0 0;
+    opacity: 0.9;
+    font-size: 15px;
+}
+
+.content {
+    padding: 40px 30px;
+}
+
+.info-box {
+    background: #ffffff;
+    border: 1px solid #E5E7EB;
+    border-radius: 12px;
+    padding: 0;
+    margin-bottom: 24px;
+    overflow: hidden;
+}
+
+.info-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 14px 20px;
+    border-bottom: 1px solid #F3F4F6;
+    font-size: 14px;
+}
+
+.info-row:last-child {
+    border-bottom: none;
+}
+
+.info-label {
+    color: #6B7280;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.info-value {
+    color: #1a1a1a;
+    font-weight: 600;
+    text-align: right;
+}
+
+.info-value.price {
+    color: #2563EB;
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.notes-box {
+    background: #F8FAFC;
+    border-left: 4px solid #2563EB;
+    padding: 16px 20px;
+    border-radius: 8px;
+    font-size: 14px;
+    color: #4B5563;
+    margin-bottom: 28px;
+}
+
+.btn-wrapper {
+    text-align: center;
+    margin-top: 32px;
+}
+
+.btn {
+    display: inline-block;
+    background: #2563EB;
+    color: #ffffff !important;
+    text-decoration: none;
+    padding: 14px 36px;
+    border-radius: 50px;
+    font-weight: 600;
+    font-size: 15px;
+    box-shadow: 0 4px 12px rgba(37, 99, 235, 0.2);
+}
+
+.footer {
+    text-align: center;
+    padding: 24px 30px;
+    background: #F8FAFC;
+    color: #9CA3AF;
+    font-size: 12px;
+    border-top: 1px solid #E5E7EB;
+}
+
+body {
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    background: #f8fafc;
+    margin: 0;
+    padding: 40px 20px;
+    color: #1a1a1a;
+}
+
+.container {
+    max-width: 600px;
+    margin: 0 auto;
+    background: #ffffff;
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+}
+
+.header {
+    background: #2563EB;
+    padding: 40px 30px;
+    text-align: center;
+    color: #ffffff;
+}
+
+.header h1 {
+    margin: 0;
+    font-size: 24px;
+    font-weight: 700;
+    letter-spacing: 0.3px;
+}
+
+.header p {
+    margin: 8px 0 0;
+    opacity: 0.9;
+    font-size: 15px;
+}
+
+.content {
+    padding: 40px 30px;
+}
+
+.info-box {
+    background: #ffffff;
+    border: 1px solid #E5E7EB;
+    border-radius: 12px;
+    padding: 0;
+    margin-bottom: 24px;
+    overflow: hidden;
+}
+
+.info-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 14px 20px;
+    border-bottom: 1px solid #F3F4F6;
+    font-size: 14px;
+}
+
+.info-row:last-child {
+    border-bottom: none;
+}
+
+.info-label {
+    color: #6B7280;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.info-value {
+    color: #1a1a1a;
+    font-weight: 600;
+    text-align: right;
+}
+
+.info-value.package {
+    color: #2563EB;
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.notes-box {
+    background: #F8FAFC;
+    border-left: 4px solid #2563EB;
+    padding: 16px 20px;
+    border-radius: 8px;
+    font-size: 14px;
+    color: #4B5563;
+    margin-bottom: 28px;
+}
+
+.link-box {
+    background: #F8FAFC;
+    border: 1px dashed #CBD5E1;
+    border-radius: 8px;
+    padding: 16px 20px;
+    font-size: 13px;
+    margin-bottom: 28px;
+    word-break: break-all;
+}
+
+.link-box a {
+    color: #2563EB;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.btn-wrapper {
+    text-align: center;
+    margin-top: 32px;
+}
+
+.btn {
+    display: inline-block;
+    background: #2563EB;
+    color: #ffffff !important;
+    text-decoration: none;
+    padding: 14px 36px;
+    border-radius: 50px;
+    font-weight: 600;
+    font-size: 15px;
+    box-shadow: 0 4px 12px rgba(37, 99, 235, 0.2);
+}
+
+.footer {
+    text-align: center;
+    padding: 24px 30px;
+    background: #F8FAFC;
+    color: #9CA3AF;
+    font-size: 12px;
+    border-top: 1px solid #E5E7EB;
+}
+
+body {
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    background: #f8fafc;
+    margin: 0;
+    padding: 40px 20px;
+    color: #1a1a1a;
+}
+
+.container {
+    max-width: 600px;
+    margin: 0 auto;
+    background: #ffffff;
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+}
+
+.header {
+    background: #EF4444;
+    padding: 40px 30px;
+    text-align: center;
+    color: #ffffff;
+}
+
+.header h1 {
+    margin: 0;
+    font-size: 24px;
+    font-weight: 700;
+    letter-spacing: 0.3px;
+}
+
+.header p {
+    margin: 8px 0 0;
+    opacity: 0.9;
+    font-size: 15px;
+}
+
+.content {
+    padding: 40px 30px;
+}
+
+.greeting {
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom: 12px;
+    color: #1a1a1a;
+}
+
+.text {
+    color: #4B5563;
+    font-size: 15px;
+    line-height: 1.6;
+    margin-bottom: 24px;
+}
+
+.info-box {
+    background: #ffffff;
+    border: 1px solid #E5E7EB;
+    border-radius: 12px;
+    padding: 0;
+    margin-bottom: 24px;
+    overflow: hidden;
+}
+
+.info-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 14px 20px;
+    border-bottom: 1px solid #F3F4F6;
+    font-size: 14px;
+}
+
+.info-row:last-child {
+    border-bottom: none;
+}
+
+.info-label {
+    color: #6B7280;
+    font-weight: 500;
+}
+
+.info-value {
+    color: #1a1a1a;
+    font-weight: 600;
+    text-align: right;
+}
+
+.info-value.danger {
+    color: #EF4444;
+}
+
+.btn-wrapper {
+    text-align: center;
+    margin-top: 32px;
+}
+
+.btn {
+    display: inline-block;
+    background: #2563EB;
+    color: #ffffff !important;
+    text-decoration: none;
+    padding: 14px 36px;
+    border-radius: 50px;
+    font-weight: 600;
+    font-size: 15px;
+    box-shadow: 0 4px 12px rgba(37, 99, 235, 0.2);
+}
+
+.footer {
+    text-align: center;
+    padding: 24px 30px;
+    background: #F8FAFC;
+    color: #9CA3AF;
+    font-size: 12px;
+    border-top: 1px solid #E5E7EB;
+}
+
+body {
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    background: #f8fafc;
+    margin: 0;
+    padding: 40px 20px;
+    color: #1a1a1a;
+}
+
+.container {
+    max-width: 600px;
+    margin: 0 auto;
+    background: #ffffff;
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+}
+
+.header {
+    background: #10B981;
+    padding: 40px 30px;
+    text-align: center;
+    color: #ffffff;
+}
+
+.header h1 {
+    margin: 0;
+    font-size: 24px;
+    font-weight: 700;
+    letter-spacing: 0.3px;
+}
+
+.header p {
+    margin: 8px 0 0;
+    opacity: 0.9;
+    font-size: 15px;
+}
+
+.content {
+    padding: 40px 30px;
+}
+
+.greeting {
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom: 12px;
+    color: #1a1a1a;
+}
+
+.text {
+    color: #4B5563;
+    font-size: 15px;
+    line-height: 1.6;
+    margin-bottom: 24px;
+}
+
+.info-box {
+    background: #F8FAFC;
+    border: 1px solid #E5E7EB;
+    border-radius: 12px;
+    padding: 24px;
+    margin-bottom: 28px;
+    text-align: center;
+}
+
+.service-title {
+    font-size: 18px;
+    font-weight: 700;
+    color: #1a1a1a;
+    margin: 0 0 8px 0;
+}
+
+.service-meta {
+    color: #6B7280;
+    font-size: 14px;
+    margin: 0;
+}
+
+.btn-wrapper {
+    text-align: center;
+    margin-top: 32px;
+}
+
+.btn {
+    display: inline-block;
+    background: #2563EB;
+    color: #ffffff !important;
+    text-decoration: none;
+    padding: 14px 36px;
+    border-radius: 50px;
+    font-weight: 600;
+    font-size: 15px;
+    box-shadow: 0 4px 12px rgba(37, 99, 235, 0.2);
+}
+
+.footer {
+    text-align: center;
+    padding: 24px 30px;
+    background: #F8FAFC;
+    color: #9CA3AF;
+    font-size: 12px;
+    border-top: 1px solid #E5E7EB;
+}
+
+html[data-style-page="emails/admin-new-booking"] [data-view-style="emails-admin-new-booking-1"] {
+    color: #1a1a1a;
+    display: block;
+    margin-bottom: 4px;
+}
+
+html[data-style-page="emails/admin-security-notification"] [data-view-style="emails-admin-security-notification-1"] {
+    color: #1a1a1a;
+    display: block;
+    margin-bottom: 4px;
+}
+
+html[data-style-page="emails/admin-security-notification"] [data-view-style="emails-admin-security-notification-2"] {
+    color: #1a1a1a;
+}
+
+html[data-style-page="emails/booking-completed"] [data-view-style="emails-booking-completed-1"] {
+    margin-top: 32px;
+    font-size: 13px;
+    color: #9CA3AF;
+    text-align: center;
+}
+
+html[data-style-page="emails/booking-confirmation"] body {
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    background: #f8fafc;
+    margin: 0;
+    padding: 40px 20px;
+    color: #1a1a1a;
+}
+
+html[data-style-page="emails/booking-confirmation"] .container {
+    max-width: 600px;
+    margin: 0 auto;
+    background: #ffffff;
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+}
+
+html[data-style-page="emails/booking-confirmation"] .header {
+    background: #2563EB;
+    padding: 40px 30px;
+    text-align: center;
+    color: #ffffff;
+}
+
+html[data-style-page="emails/booking-confirmation"] .header h1 {
+    margin: 0;
+    font-size: 24px;
+    font-weight: 700;
+}
+
+html[data-style-page="emails/booking-confirmation"] .header p {
+    margin: 8px 0 0;
+    opacity: 0.9;
+    font-size: 15px;
+}
+
+html[data-style-page="emails/booking-confirmation"] .content {
+    padding: 40px 30px;
+}
+
+html[data-style-page="emails/booking-confirmation"] .greeting {
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom: 12px;
+    color: #1a1a1a;
+}
+
+html[data-style-page="emails/booking-confirmation"] .text {
+    color: #4B5563;
+    font-size: 15px;
+    line-height: 1.6;
+    margin-bottom: 24px;
+}
+
+html[data-style-page="emails/booking-confirmation"] .info-box {
+    background: #ffffff;
+    border: 1px solid #E5E7EB;
+    border-radius: 12px;
+    padding: 0;
+    margin-bottom: 24px;
+    overflow: hidden;
+}
+
+html[data-style-page="emails/booking-confirmation"] .info-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 14px 20px;
+    border-bottom: 1px solid #F3F4F6;
+    font-size: 14px;
+}
+
+html[data-style-page="emails/booking-confirmation"] .info-row:last-child {
+    border-bottom: none;
+}
+
+html[data-style-page="emails/booking-confirmation"] .info-label {
+    color: #6B7280;
+    font-weight: 500;
+}
+
+html[data-style-page="emails/booking-confirmation"] .info-value {
+    color: #1a1a1a;
+    font-weight: 600;
+    text-align: right;
+}
+
+html[data-style-page="emails/booking-confirmation"] .info-value.price {
+    color: #2563EB;
+    font-size: 16px;
+    font-weight: 700;
+}
+
+html[data-style-page="emails/booking-confirmation"] .btn-wrapper {
+    text-align: center;
+    margin-top: 32px;
+}
+
+html[data-style-page="emails/booking-confirmation"] .btn {
+    display: inline-block;
+    background: #2563EB;
+    color: #ffffff !important;
+    text-decoration: none;
+    padding: 14px 36px;
+    border-radius: 50px;
+    font-weight: 600;
+    font-size: 15px;
+    box-shadow: 0 4px 12px rgba(37, 99, 235, 0.2);
+}
+
+html[data-style-page="emails/booking-confirmation"] .footer {
+    text-align: center;
+    padding: 24px 30px;
+    background: #F8FAFC;
+    color: #9CA3AF;
+    font-size: 12px;
+    border-top: 1px solid #E5E7EB;
+}
+
+html[data-style-page="emails/booking-reminder"] body {
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    background: #f8fafc;
+    margin: 0;
+    padding: 40px 20px;
+    color: #1a1a1a;
+}
+
+html[data-style-page="emails/booking-reminder"] .container {
+    max-width: 600px;
+    margin: 0 auto;
+    background: #ffffff;
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+}
+
+html[data-style-page="emails/booking-reminder"] .header {
+    background: #F59E0B;
+    padding: 40px 30px;
+    text-align: center;
+    color: #ffffff;
+}
+
+html[data-style-page="emails/booking-reminder"] .header h1 {
+    margin: 0;
+    font-size: 24px;
+    font-weight: 700;
+}
+
+html[data-style-page="emails/booking-reminder"] .header p {
+    margin: 8px 0 0;
+    opacity: 0.9;
+    font-size: 15px;
+}
+
+html[data-style-page="emails/booking-reminder"] .content {
+    padding: 40px 30px;
+}
+
+html[data-style-page="emails/booking-reminder"] .greeting {
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom: 12px;
+    color: #1a1a1a;
+}
+
+html[data-style-page="emails/booking-reminder"] .text {
+    color: #4B5563;
+    font-size: 15px;
+    line-height: 1.6;
+    margin-bottom: 24px;
+}
+
+html[data-style-page="emails/booking-reminder"] .info-box {
+    background: #ffffff;
+    border: 1px solid #E5E7EB;
+    border-radius: 12px;
+    padding: 0;
+    margin-bottom: 24px;
+    overflow: hidden;
+}
+
+html[data-style-page="emails/booking-reminder"] .info-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 14px 20px;
+    border-bottom: 1px solid #F3F4F6;
+    font-size: 14px;
+}
+
+html[data-style-page="emails/booking-reminder"] .info-row:last-child {
+    border-bottom: none;
+}
+
+html[data-style-page="emails/booking-reminder"] .info-label {
+    color: #6B7280;
+    font-weight: 500;
+}
+
+html[data-style-page="emails/booking-reminder"] .info-value {
+    color: #1a1a1a;
+    font-weight: 600;
+    text-align: right;
+}
+
+html[data-style-page="emails/booking-reminder"] .info-value.time {
+    color: #F59E0B;
+    font-size: 16px;
+    font-weight: 700;
+}
+
+html[data-style-page="emails/booking-reminder"] .btn-wrapper {
+    text-align: center;
+    margin-top: 32px;
+}
+
+html[data-style-page="emails/booking-reminder"] .btn {
+    display: inline-block;
+    background: #2563EB;
+    color: #ffffff !important;
+    text-decoration: none;
+    padding: 14px 36px;
+    border-radius: 50px;
+    font-weight: 600;
+    font-size: 15px;
+    box-shadow: 0 4px 12px rgba(37, 99, 235, 0.2);
+}
+
+html[data-style-page="emails/booking-reminder"] .footer {
+    text-align: center;
+    padding: 24px 30px;
+    background: #F8FAFC;
+    color: #9CA3AF;
+    font-size: 12px;
+    border-top: 1px solid #E5E7EB;
+}
+
+html[data-style-page="emails/booking-subscription-activated"] body {
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    background: #f8fafc;
+    margin: 0;
+    padding: 40px 20px;
+    color: #1a1a1a;
+}
+
+html[data-style-page="emails/booking-subscription-activated"] .container {
+    max-width: 600px;
+    margin: 0 auto;
+    background: #ffffff;
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+}
+
+html[data-style-page="emails/booking-subscription-activated"] .header {
+    background: #10B981;
+    padding: 40px 30px;
+    text-align: center;
+    color: #ffffff;
+}
+
+html[data-style-page="emails/booking-subscription-activated"] .header h1 {
+    margin: 0;
+    font-size: 24px;
+    font-weight: 700;
+}
+
+html[data-style-page="emails/booking-subscription-activated"] .header p {
+    margin: 8px 0 0;
+    opacity: 0.9;
+    font-size: 15px;
+}
+
+html[data-style-page="emails/booking-subscription-activated"] .content {
+    padding: 40px 30px;
+}
+
+html[data-style-page="emails/booking-subscription-activated"] .greeting {
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom: 12px;
+    color: #1a1a1a;
+}
+
+html[data-style-page="emails/booking-subscription-activated"] .text {
+    color: #4B5563;
+    font-size: 15px;
+    line-height: 1.6;
+    margin-bottom: 24px;
+}
+
+html[data-style-page="emails/booking-subscription-activated"] .info-box {
+    background: #ffffff;
+    border: 1px solid #E5E7EB;
+    border-radius: 12px;
+    padding: 0;
+    margin-bottom: 24px;
+    overflow: hidden;
+}
+
+html[data-style-page="emails/booking-subscription-activated"] .info-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 14px 20px;
+    border-bottom: 1px solid #F3F4F6;
+    font-size: 14px;
+}
+
+html[data-style-page="emails/booking-subscription-activated"] .info-row:last-child {
+    border-bottom: none;
+}
+
+html[data-style-page="emails/booking-subscription-activated"] .info-label {
+    color: #6B7280;
+    font-weight: 500;
+}
+
+html[data-style-page="emails/booking-subscription-activated"] .info-value {
+    color: #1a1a1a;
+    font-weight: 600;
+    text-align: right;
+}
+
+html[data-style-page="emails/booking-subscription-activated"] .info-value.plan {
+    color: #2563EB;
+    font-size: 16px;
+    font-weight: 700;
+}
+
+html[data-style-page="emails/booking-subscription-activated"] .info-value.active {
+    color: #10B981;
+    font-weight: 700;
+}
+
+html[data-style-page="emails/booking-subscription-activated"] .btn-wrapper {
+    text-align: center;
+    margin-top: 32px;
+}
+
+html[data-style-page="emails/booking-subscription-activated"] .btn {
+    display: inline-block;
+    background: #2563EB;
+    color: #ffffff !important;
+    text-decoration: none;
+    padding: 14px 36px;
+    border-radius: 50px;
+    font-weight: 600;
+    font-size: 15px;
+    box-shadow: 0 4px 12px rgba(37, 99, 235, 0.2);
+}
+
+html[data-style-page="emails/booking-subscription-activated"] .footer {
+    text-align: center;
+    padding: 24px 30px;
+    background: #F8FAFC;
+    color: #9CA3AF;
+    font-size: 12px;
+    border-top: 1px solid #E5E7EB;
+}
+
+html[data-style-page="emails/booking-subscription-renewed"] body {
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    background: #f8fafc;
+    margin: 0;
+    padding: 40px 20px;
+    color: #1a1a1a;
+}
+
+html[data-style-page="emails/booking-subscription-renewed"] .container {
+    max-width: 600px;
+    margin: 0 auto;
+    background: #ffffff;
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+}
+
+html[data-style-page="emails/booking-subscription-renewed"] .header {
+    background: #10B981;
+    padding: 40px 30px;
+    text-align: center;
+    color: #ffffff;
+}
+
+html[data-style-page="emails/booking-subscription-renewed"] .header h1 {
+    margin: 0;
+    font-size: 24px;
+    font-weight: 700;
+}
+
+html[data-style-page="emails/booking-subscription-renewed"] .content {
+    padding: 40px 30px;
+    text-align: center;
+}
+
+html[data-style-page="emails/booking-subscription-renewed"] .greeting {
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom: 12px;
+    color: #1a1a1a;
+}
+
+html[data-style-page="emails/booking-subscription-renewed"] .text {
+    color: #4B5563;
+    font-size: 15px;
+    line-height: 1.6;
+    margin-bottom: 24px;
+}
+
+html[data-style-page="emails/booking-subscription-renewed"] .info-box {
+    background: #F8FAFC;
+    border: 1px solid #E5E7EB;
+    border-radius: 12px;
+    padding: 0;
+    margin-bottom: 24px;
+    text-align: left;
+}
+
+html[data-style-page="emails/booking-subscription-renewed"] .info-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 14px 20px;
+    border-bottom: 1px solid #F3F4F6;
+    font-size: 14px;
+}
+
+html[data-style-page="emails/booking-subscription-renewed"] .info-row:last-child {
+    border-bottom: none;
+}
+
+html[data-style-page="emails/booking-subscription-renewed"] .info-label {
+    color: #6B7280;
+    font-weight: 500;
+}
+
+html[data-style-page="emails/booking-subscription-renewed"] .info-value {
+    color: #1a1a1a;
+    font-weight: 600;
+    text-align: right;
+}
+
+html[data-style-page="emails/booking-subscription-renewed"] .info-value.price {
+    color: #10B981;
+    font-size: 16px;
+    font-weight: 700;
+}
+
+html[data-style-page="emails/booking-subscription-renewed"] .btn-wrapper {
+    margin-top: 32px;
+}
+
+html[data-style-page="emails/booking-subscription-renewed"] .btn {
+    display: inline-block;
+    background: #2563EB;
+    color: #ffffff !important;
+    text-decoration: none;
+    padding: 14px 36px;
+    border-radius: 50px;
+    font-weight: 600;
+    font-size: 15px;
+    box-shadow: 0 4px 12px rgba(37, 99, 235, 0.2);
+}
+
+html[data-style-page="emails/booking-subscription-renewed"] .footer {
+    text-align: center;
+    padding: 24px 30px;
+    background: #F8FAFC;
+    color: #9CA3AF;
+    font-size: 12px;
+    border-top: 1px solid #E5E7EB;
+}
+
+html[data-style-page="emails/booking-subscription-renewed"] [data-view-style="emails-booking-subscription-renewed-1"] {
+    color: #10B981;
+    font-weight: 700;
+}
+
+html[data-style-page="emails/review-request"] body {
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    background: #f8fafc;
+    margin: 0;
+    padding: 40px 20px;
+    color: #1a1a1a;
+}
+
+html[data-style-page="emails/review-request"] .container {
+    max-width: 600px;
+    margin: 0 auto;
+    background: #ffffff;
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+}
+
+html[data-style-page="emails/review-request"] .header {
+    background: #F59E0B;
+    padding: 40px 30px;
+    text-align: center;
+    color: #ffffff;
+}
+
+html[data-style-page="emails/review-request"] .header h1 {
+    margin: 0;
+    font-size: 24px;
+    font-weight: 700;
+}
+
+html[data-style-page="emails/review-request"] .header p {
+    margin: 8px 0 0;
+    opacity: 0.9;
+    font-size: 15px;
+}
+
+html[data-style-page="emails/review-request"] .content {
+    padding: 40px 30px;
+    text-align: center;
+}
+
+html[data-style-page="emails/review-request"] .greeting {
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom: 12px;
+    color: #1a1a1a;
+}
+
+html[data-style-page="emails/review-request"] .text {
+    color: #4B5563;
+    font-size: 15px;
+    line-height: 1.6;
+    margin-bottom: 24px;
+}
+
+html[data-style-page="emails/review-request"] .info-box {
+    background: #F8FAFC;
+    border: 1px solid #E5E7EB;
+    border-radius: 12px;
+    padding: 20px;
+    margin-bottom: 24px;
+}
+
+html[data-style-page="emails/review-request"] .service-title {
+    font-size: 18px;
+    font-weight: 700;
+    color: #1a1a1a;
+    margin: 0 0 6px 0;
+}
+
+html[data-style-page="emails/review-request"] .service-meta {
+    color: #6B7280;
+    font-size: 14px;
+    margin: 0;
+}
+
+html[data-style-page="emails/review-request"] .btn-wrapper {
+    text-align: center;
+    margin-top: 32px;
+}
+
+html[data-style-page="emails/review-request"] .btn {
+    display: inline-block;
+    background: #2563EB;
+    color: #ffffff !important;
+    text-decoration: none;
+    padding: 14px 36px;
+    border-radius: 50px;
+    font-weight: 600;
+    font-size: 15px;
+    box-shadow: 0 4px 12px rgba(37, 99, 235, 0.2);
+}
+
+html[data-style-page="emails/review-request"] .footer {
+    text-align: center;
+    padding: 24px 30px;
+    background: #F8FAFC;
+    color: #9CA3AF;
+    font-size: 12px;
+    border-top: 1px solid #E5E7EB;
+}
+
+html[data-style-page="emails/review-request"] [data-view-style="emails-review-request-1"] {
+    margin-top: 32px;
+    font-size: 13px;
+    color: #9CA3AF;
+}
+
+html[data-style-page="emails/security-activated"] body {
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    background: #f8fafc;
+    margin: 0;
+    padding: 40px 20px;
+    color: #1a1a1a;
+}
+
+html[data-style-page="emails/security-activated"] .container {
+    max-width: 600px;
+    margin: 0 auto;
+    background: #ffffff;
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+}
+
+html[data-style-page="emails/security-activated"] .header {
+    background: #10B981;
+    padding: 40px 30px;
+    text-align: center;
+    color: #ffffff;
+}
+
+html[data-style-page="emails/security-activated"] .header h1 {
+    margin: 0;
+    font-size: 24px;
+    font-weight: 700;
+}
+
+html[data-style-page="emails/security-activated"] .header p {
+    margin: 8px 0 0;
+    opacity: 0.9;
+    font-size: 15px;
+}
+
+html[data-style-page="emails/security-activated"] .content {
+    padding: 40px 30px;
+}
+
+html[data-style-page="emails/security-activated"] .greeting {
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom: 12px;
+    color: #1a1a1a;
+}
+
+html[data-style-page="emails/security-activated"] .text {
+    color: #4B5563;
+    font-size: 15px;
+    line-height: 1.6;
+    margin-bottom: 24px;
+}
+
+html[data-style-page="emails/security-activated"] .info-box {
+    background: #ffffff;
+    border: 1px solid #E5E7EB;
+    border-radius: 12px;
+    padding: 0;
+    margin-bottom: 24px;
+    overflow: hidden;
+}
+
+html[data-style-page="emails/security-activated"] .info-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 14px 20px;
+    border-bottom: 1px solid #F3F4F6;
+    font-size: 14px;
+}
+
+html[data-style-page="emails/security-activated"] .info-row:last-child {
+    border-bottom: none;
+}
+
+html[data-style-page="emails/security-activated"] .info-label {
+    color: #6B7280;
+    font-weight: 500;
+}
+
+html[data-style-page="emails/security-activated"] .info-value {
+    color: #1a1a1a;
+    font-weight: 600;
+    text-align: right;
+}
+
+html[data-style-page="emails/security-activated"] .info-value.package {
+    color: #2563EB;
+    font-size: 16px;
+    font-weight: 700;
+}
+
+html[data-style-page="emails/security-activated"] .info-value.active {
+    color: #10B981;
+    font-weight: 700;
+}
+
+html[data-style-page="emails/security-activated"] .features-box {
+    background: #F8FAFC;
+    border-radius: 12px;
+    padding: 20px;
+    margin-bottom: 24px;
+}
+
+html[data-style-page="emails/security-activated"] .features-box h3 {
+    font-size: 15px;
+    margin: 0 0 12px 0;
+    color: #1a1a1a;
+}
+
+html[data-style-page="emails/security-activated"] .features-box ul {
+    margin: 0;
+    padding-left: 20px;
+    color: #4B5563;
+    font-size: 14px;
+    line-height: 1.8;
+}
+
+html[data-style-page="emails/security-activated"] .btn-wrapper {
+    text-align: center;
+    margin-top: 32px;
+}
+
+html[data-style-page="emails/security-activated"] .btn {
+    display: inline-block;
+    background: #2563EB;
+    color: #ffffff !important;
+    text-decoration: none;
+    padding: 14px 36px;
+    border-radius: 50px;
+    font-weight: 600;
+    font-size: 15px;
+    box-shadow: 0 4px 12px rgba(37, 99, 235, 0.2);
+}
+
+html[data-style-page="emails/security-activated"] .footer {
+    text-align: center;
+    padding: 24px 30px;
+    background: #F8FAFC;
+    color: #9CA3AF;
+    font-size: 12px;
+    border-top: 1px solid #E5E7EB;
+}
+
+html[data-style-page="emails/security-confirmation"] body {
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    background: #f8fafc;
+    margin: 0;
+    padding: 40px 20px;
+    color: #1a1a1a;
+}
+
+html[data-style-page="emails/security-confirmation"] .container {
+    max-width: 600px;
+    margin: 0 auto;
+    background: #ffffff;
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+}
+
+html[data-style-page="emails/security-confirmation"] .header {
+    background: #2563EB;
+    padding: 40px 30px;
+    text-align: center;
+    color: #ffffff;
+}
+
+html[data-style-page="emails/security-confirmation"] .header h1 {
+    margin: 0;
+    font-size: 24px;
+    font-weight: 700;
+}
+
+html[data-style-page="emails/security-confirmation"] .header p {
+    margin: 8px 0 0;
+    opacity: 0.9;
+    font-size: 15px;
+}
+
+html[data-style-page="emails/security-confirmation"] .content {
+    padding: 40px 30px;
+}
+
+html[data-style-page="emails/security-confirmation"] .greeting {
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom: 12px;
+    color: #1a1a1a;
+}
+
+html[data-style-page="emails/security-confirmation"] .text {
+    color: #4B5563;
+    font-size: 15px;
+    line-height: 1.6;
+    margin-bottom: 24px;
+}
+
+html[data-style-page="emails/security-confirmation"] .info-box {
+    background: #ffffff;
+    border: 1px solid #E5E7EB;
+    border-radius: 12px;
+    padding: 0;
+    margin-bottom: 24px;
+    overflow: hidden;
+}
+
+html[data-style-page="emails/security-confirmation"] .info-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 14px 20px;
+    border-bottom: 1px solid #F3F4F6;
+    font-size: 14px;
+}
+
+html[data-style-page="emails/security-confirmation"] .info-row:last-child {
+    border-bottom: none;
+}
+
+html[data-style-page="emails/security-confirmation"] .info-label {
+    color: #6B7280;
+    font-weight: 500;
+}
+
+html[data-style-page="emails/security-confirmation"] .info-value {
+    color: #1a1a1a;
+    font-weight: 600;
+    text-align: right;
+}
+
+html[data-style-page="emails/security-confirmation"] .info-value.package {
+    color: #2563EB;
+    font-size: 16px;
+    font-weight: 700;
+}
+
+html[data-style-page="emails/security-confirmation"] .info-value.status {
+    color: #F59E0B;
+}
+
+html[data-style-page="emails/security-confirmation"] .link-box {
+    background: #F8FAFC;
+    border: 1px dashed #CBD5E1;
+    border-radius: 8px;
+    padding: 16px 20px;
+    font-size: 13px;
+    margin-bottom: 24px;
+    word-break: break-all;
+}
+
+html[data-style-page="emails/security-confirmation"] .link-box a {
+    color: #2563EB;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+html[data-style-page="emails/security-confirmation"] .steps {
+    margin-bottom: 24px;
+}
+
+html[data-style-page="emails/security-confirmation"] .steps h3 {
+    font-size: 16px;
+    margin-bottom: 12px;
+    color: #1a1a1a;
+}
+
+html[data-style-page="emails/security-confirmation"] .steps ol {
+    margin: 0;
+    padding-left: 20px;
+    color: #4B5563;
+    font-size: 14px;
+    line-height: 1.8;
+}
+
+html[data-style-page="emails/security-confirmation"] .btn-wrapper {
+    text-align: center;
+    margin-top: 32px;
+}
+
+html[data-style-page="emails/security-confirmation"] .btn {
+    display: inline-block;
+    background: #2563EB;
+    color: #ffffff !important;
+    text-decoration: none;
+    padding: 14px 36px;
+    border-radius: 50px;
+    font-weight: 600;
+    font-size: 15px;
+    box-shadow: 0 4px 12px rgba(37, 99, 235, 0.2);
+}
+
+html[data-style-page="emails/security-confirmation"] .footer {
+    text-align: center;
+    padding: 24px 30px;
+    background: #F8FAFC;
+    color: #9CA3AF;
+    font-size: 12px;
+    border-top: 1px solid #E5E7EB;
+}
+
+html[data-style-page="emails/security-confirmation"] [data-view-style="emails-security-confirmation-1"] {
+    color: #1a1a1a;
+    display: block;
+    margin-bottom: 6px;
+}
+
+html[data-style-page="emails/security-confirmation"] [data-view-style="emails-security-confirmation-2"] {
+    font-size: 12px;
+    color: #6B7280;
+    margin-top: 8px;
+}
+
+html[data-style-page="emails/security-confirmation"] [data-view-style="emails-security-confirmation-3"] {
+    color: #2563EB;
+    text-decoration: none;
+}
+
+html[data-style-page="emails/security-deactivated"] body {
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    background: #f8fafc;
+    margin: 0;
+    padding: 40px 20px;
+    color: #1a1a1a;
+}
+
+html[data-style-page="emails/security-deactivated"] .container {
+    max-width: 600px;
+    margin: 0 auto;
+    background: #ffffff;
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+}
+
+html[data-style-page="emails/security-deactivated"] .header {
+    background: #EF4444;
+    padding: 40px 30px;
+    text-align: center;
+    color: #ffffff;
+}
+
+html[data-style-page="emails/security-deactivated"] .header h1 {
+    margin: 0;
+    font-size: 24px;
+    font-weight: 700;
+}
+
+html[data-style-page="emails/security-deactivated"] .header p {
+    margin: 8px 0 0;
+    opacity: 0.9;
+    font-size: 15px;
+}
+
+html[data-style-page="emails/security-deactivated"] .content {
+    padding: 40px 30px;
+}
+
+html[data-style-page="emails/security-deactivated"] .greeting {
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom: 12px;
+    color: #1a1a1a;
+}
+
+html[data-style-page="emails/security-deactivated"] .text {
+    color: #4B5563;
+    font-size: 15px;
+    line-height: 1.6;
+    margin-bottom: 24px;
+}
+
+html[data-style-page="emails/security-deactivated"] .info-box {
+    background: #ffffff;
+    border: 1px solid #E5E7EB;
+    border-radius: 12px;
+    padding: 0;
+    margin-bottom: 24px;
+    overflow: hidden;
+}
+
+html[data-style-page="emails/security-deactivated"] .info-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 14px 20px;
+    border-bottom: 1px solid #F3F4F6;
+    font-size: 14px;
+}
+
+html[data-style-page="emails/security-deactivated"] .info-row:last-child {
+    border-bottom: none;
+}
+
+html[data-style-page="emails/security-deactivated"] .info-label {
+    color: #6B7280;
+    font-weight: 500;
+}
+
+html[data-style-page="emails/security-deactivated"] .info-value {
+    color: #1a1a1a;
+    font-weight: 600;
+    text-align: right;
+}
+
+html[data-style-page="emails/security-deactivated"] .info-value.danger {
+    color: #EF4444;
+    font-weight: 700;
+}
+
+html[data-style-page="emails/security-deactivated"] .btn-wrapper {
+    text-align: center;
+    margin-top: 32px;
+}
+
+html[data-style-page="emails/security-deactivated"] .btn {
+    display: inline-block;
+    background: #2563EB;
+    color: #ffffff !important;
+    text-decoration: none;
+    padding: 14px 36px;
+    border-radius: 50px;
+    font-weight: 600;
+    font-size: 15px;
+    box-shadow: 0 4px 12px rgba(37, 99, 235, 0.2);
+}
+
+html[data-style-page="emails/security-deactivated"] .footer {
+    text-align: center;
+    padding: 24px 30px;
+    background: #F8FAFC;
+    color: #9CA3AF;
+    font-size: 12px;
+    border-top: 1px solid #E5E7EB;
+}
+
+html[data-style-page="emails/subscription-expiring-soon"] body {
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    background: #f8fafc;
+    margin: 0;
+    padding: 40px 20px;
+    color: #1a1a1a;
+}
+
+html[data-style-page="emails/subscription-expiring-soon"] .container {
+    max-width: 600px;
+    margin: 0 auto;
+    background: #ffffff;
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+}
+
+html[data-style-page="emails/subscription-expiring-soon"] .header {
+    background: #F59E0B;
+    padding: 40px 30px;
+    text-align: center;
+    color: #ffffff;
+}
+
+html[data-style-page="emails/subscription-expiring-soon"] .header h1 {
+    margin: 0;
+    font-size: 24px;
+    font-weight: 700;
+}
+
+html[data-style-page="emails/subscription-expiring-soon"] .content {
+    padding: 40px 30px;
+    text-align: center;
+}
+
+html[data-style-page="emails/subscription-expiring-soon"] .greeting {
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom: 12px;
+    color: #1a1a1a;
+}
+
+html[data-style-page="emails/subscription-expiring-soon"] .text {
+    color: #4B5563;
+    font-size: 15px;
+    line-height: 1.6;
+    margin-bottom: 24px;
+}
+
+html[data-style-page="emails/subscription-expiring-soon"] .text strong {
+    color: #1a1a1a;
+}
+
+html[data-style-page="emails/subscription-expiring-soon"] .btn-wrapper {
+    margin-top: 32px;
+}
+
+html[data-style-page="emails/subscription-expiring-soon"] .btn {
+    display: inline-block;
+    background: #2563EB;
+    color: #ffffff !important;
+    text-decoration: none;
+    padding: 14px 36px;
+    border-radius: 50px;
+    font-weight: 600;
+    font-size: 15px;
+    box-shadow: 0 4px 12px rgba(37, 99, 235, 0.2);
+}
+
+html[data-style-page="emails/subscription-expiring-soon"] .footer {
+    text-align: center;
+    padding: 24px 30px;
+    background: #F8FAFC;
+    color: #9CA3AF;
+    font-size: 12px;
+    border-top: 1px solid #E5E7EB;
+}
+
+html[data-style-page="emails/support-reply"] body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+}
+
+html[data-style-page="emails/support-reply"] .container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+html[data-style-page="emails/support-reply"] .header {
+    background: #2563EB;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    border-radius: 10px 10px 0 0;
+}
+
+html[data-style-page="emails/support-reply"] .content {
+    background: #f8fafc;
+    padding: 20px;
+    border: 1px solid #e2e8f0;
+    border-top: none;
+    border-radius: 0 0 10px 10px;
+}
+
+html[data-style-page="emails/support-reply"] .original {
+    background: white;
+    padding: 15px;
+    border-left: 4px solid #94a3b8;
+    margin-bottom: 20px;
+    font-style: italic;
+}
+
+html[data-style-page="emails/support-reply"] .reply {
+    background: white;
+    padding: 15px;
+    border-left: 4px solid #2563EB;
+}
+
+html[data-style-page="emails/support-reply"] [data-view-style="emails-support-reply-1"] {
+    margin-top: 0;
+    color: #2563EB;
+}
+
+html[data-style-page="emails/two-factor-code"] body {
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    background: #f8fafc;
+    margin: 0;
+    padding: 40px 20px;
+    color: #1a1a1a;
+}
+
+html[data-style-page="emails/two-factor-code"] .container {
+    max-width: 600px;
+    margin: 0 auto;
+    background: #ffffff;
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+}
+
+html[data-style-page="emails/two-factor-code"] .header {
+    background: #2563EB;
+    padding: 40px 30px;
+    text-align: center;
+    color: #ffffff;
+}
+
+html[data-style-page="emails/two-factor-code"] .header h1 {
+    margin: 0;
+    font-size: 24px;
+    font-weight: 700;
+}
+
+html[data-style-page="emails/two-factor-code"] .header p {
+    margin: 8px 0 0;
+    opacity: 0.9;
+    font-size: 15px;
+}
+
+html[data-style-page="emails/two-factor-code"] .content {
+    padding: 40px 30px;
+    text-align: center;
+}
+
+html[data-style-page="emails/two-factor-code"] .greeting {
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom: 12px;
+    color: #1a1a1a;
+}
+
+html[data-style-page="emails/two-factor-code"] .text {
+    color: #4B5563;
+    font-size: 15px;
+    line-height: 1.6;
+    margin-bottom: 24px;
+}
+
+html[data-style-page="emails/two-factor-code"] .code-box {
+    background: #F8FAFC;
+    border: 2px dashed #CBD5E1;
+    border-radius: 12px;
+    padding: 24px;
+    margin: 0 auto 24px auto;
+    max-width: 300px;
+}
+
+html[data-style-page="emails/two-factor-code"] .code {
+    font-family: 'Courier New', monospace;
+    font-size: 36px;
+    font-weight: 700;
+    letter-spacing: 8px;
+    color: #2563EB;
+    margin: 0;
+}
+
+html[data-style-page="emails/two-factor-code"] .expires {
+    color: #EF4444;
+    font-size: 14px;
+    font-weight: 500;
+    margin-top: 12px;
+}
+
+html[data-style-page="emails/two-factor-code"] .warning-box {
+    background: #FFFBEB;
+    border: 1px solid #FDE68A;
+    border-left: 4px solid #F59E0B;
+    border-radius: 8px;
+    padding: 16px 20px;
+    margin-top: 32px;
+    text-align: left;
+    font-size: 14px;
+    color: #92400E;
+    line-height: 1.5;
+}
+
+html[data-style-page="emails/two-factor-code"] .footer {
+    text-align: center;
+    padding: 24px 30px;
+    background: #F8FAFC;
+    color: #9CA3AF;
+    font-size: 12px;
+    border-top: 1px solid #E5E7EB;
+}
+
+html[data-style-page="emails/two-factor-code"] .footer a {
+    color: #2563EB;
+    text-decoration: none;
+}
+
+html[data-style-page="emails/two-factor-code"] [data-view-style="emails-two-factor-code-1"] {
+    display: block;
+    margin-bottom: 4px;
+}
+
+html[data-style-page="emails/welcome"] body {
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    background: #f8fafc;
+    margin: 0;
+    padding: 40px 20px;
+    color: #1a1a1a;
+}
+
+html[data-style-page="emails/welcome"] .container {
+    max-width: 600px;
+    margin: 0 auto;
+    background: #ffffff;
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+}
+
+html[data-style-page="emails/welcome"] .header {
+    background: #2563EB;
+    padding: 40px 30px;
+    text-align: center;
+    color: #ffffff;
+}
+
+html[data-style-page="emails/welcome"] .header h1 {
+    margin: 0;
+    font-size: 24px;
+    font-weight: 700;
+}
+
+html[data-style-page="emails/welcome"] .header p {
+    margin: 8px 0 0;
+    opacity: 0.9;
+    font-size: 15px;
+}
+
+html[data-style-page="emails/welcome"] .content {
+    padding: 40px 30px;
+}
+
+html[data-style-page="emails/welcome"] .greeting {
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom: 12px;
+    color: #1a1a1a;
+}
+
+html[data-style-page="emails/welcome"] .text {
+    color: #4B5563;
+    font-size: 15px;
+    line-height: 1.6;
+    margin-bottom: 24px;
+}
+
+html[data-style-page="emails/welcome"] .info-box {
+    background: #F8FAFC;
+    border: 1px solid #E5E7EB;
+    border-radius: 12px;
+    padding: 24px;
+    margin-bottom: 28px;
+}
+
+html[data-style-page="emails/welcome"] .feature-item {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 16px;
+    font-size: 14px;
+    color: #1a1a1a;
+    font-weight: 500;
+}
+
+html[data-style-page="emails/welcome"] .feature-item:last-child {
+    margin-bottom: 0;
+}
+
+html[data-style-page="emails/welcome"] .feature-dot {
+    width: 6px;
+    height: 6px;
+    background: #2563EB;
+    border-radius: 50%;
+    flex-shrink: 0;
+}
+
+html[data-style-page="emails/welcome"] .btn-wrapper {
+    text-align: center;
+    margin-top: 32px;
+}
+
+html[data-style-page="emails/welcome"] .btn {
+    display: inline-block;
+    background: #2563EB;
+    color: #ffffff !important;
+    text-decoration: none;
+    padding: 14px 36px;
+    border-radius: 50px;
+    font-weight: 600;
+    font-size: 15px;
+    box-shadow: 0 4px 12px rgba(37, 99, 235, 0.2);
+}
+
+html[data-style-page="emails/welcome"] .footer {
+    text-align: center;
+    padding: 24px 30px;
+    background: #F8FAFC;
+    color: #9CA3AF;
+    font-size: 12px;
+    border-top: 1px solid #E5E7EB;
+}
+
+html[data-style-page="emails/welcome"] .footer a {
+    color: #2563EB;
+    text-decoration: none;
+}
+
+html[data-style-page="emails/verify-email"] body {
+    margin: 0;
+    padding: 0;
+    background: #f3f6fc;
+    color: #334155;
+    font-family: Arial, sans-serif;
+}
+
+html[data-style-page="emails/verify-email"] .verification-mail-shell {
+    padding: 40px 16px;
+    background: #f3f6fc;
+}
+
+html[data-style-page="emails/verify-email"] .verification-mail-card {
+    width: 100%;
+    max-width: 560px;
+    border-radius: 20px;
+    border: 1px solid #e2e8f0;
+    background: #fff;
+}
+
+html[data-style-page="emails/verify-email"] .verification-mail-card > tbody > tr > td, html[data-style-page="emails/verify-email"] .verification-mail-card > tr > td {
+    padding: 36px;
+}
+
+html[data-style-page="emails/verify-email"] .verification-mail-brand {
+    color: #2563eb;
+    font-size: 28px;
+    font-weight: 800;
+    margin-bottom: 36px;
+}
+
+html[data-style-page="emails/verify-email"] .verification-mail-brand span {
+    padding-left: 10px;
+    color: #1e293b;
+    font-size: 20px;
+}
+
+html[data-style-page="emails/verify-email"] .verification-mail-label {
+    font-size: 10px;
+    letter-spacing: 2px;
+    font-weight: bold;
+    color: #2563eb;
+}
+
+html[data-style-page="emails/verify-email"] h1 {
+    margin: 18px 0 26px;
+    font-size: 32px;
+    line-height: 1.2;
+    color: #0f172a;
+    letter-spacing: -1px;
+}
+
+html[data-style-page="emails/verify-email"] p {
+    font-size: 14px;
+    line-height: 1.8;
+    color: #64748b;
+}
+
+html[data-style-page="emails/verify-email"] .verification-mail-action {
+    padding: 18px 0;
+}
+
+html[data-style-page="emails/verify-email"] .verification-mail-button {
+    display: inline-block;
+    padding: 15px 24px;
+    border-radius: 30px;
+    color: #fff;
+    background: #2563eb;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+html[data-style-page="emails/verify-email"] .verification-mail-note {
+    font-size: 12px;
+}
+
+html[data-style-page="emails/verify-email"] .verification-mail-divider {
+    height: 1px;
+    margin: 28px 0;
+    background: #e2e8f0;
+}
+
+html[data-style-page="emails/verify-email"] .verification-mail-link {
+    font-size: 11px;
+    overflow-wrap: anywhere;
+    word-break: break-all;
+}
+
+html[data-style-page="emails/verify-email"] .verification-mail-link a {
+    color: #2563eb;
+}
+
+html[data-style-page="emails/verify-email"] .verification-mail-footer {
+    font-size: 11px;
+    margin-top: 24px;
+    color: #94a3b8;
+}
+
+@media(max-width: 600px) {
+    html[data-style-page="emails/verify-email"] .verification-mail-card td {
+        padding: 24px !important;
+    }
+}

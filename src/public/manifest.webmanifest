@@ -1,0 +1,14 @@
+{
+    "id": "/",
+    "name": "Booking — Appointments",
+    "short_name": "Booking",
+    "start_url": "/dashboard",
+    "scope": "/",
+    "display": "standalone",
+    "background_color": "#F8FAFC",
+    "theme_color": "#2563EB",
+    "description": "Book and manage your appointments.",
+    "icons": [
+        { "src": "/booking-icon.svg", "sizes": "any", "type": "image/svg+xml", "purpose": "any maskable" }
+    ]
+}

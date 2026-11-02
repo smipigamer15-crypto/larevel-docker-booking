@@ -1,0 +1,222 @@
+.footer {
+    background: linear-gradient(180deg, #fafbfc 0%, #f1f5f9 100%);
+    border-top: 1px solid #E5E7EB;
+}
+
+.footer-title {
+    color: #111827;
+    font-size: 0.95rem;
+    letter-spacing: 0.3px;
+    position: relative;
+    padding-bottom: 10px;
+}
+
+.footer-title::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 30px;
+    height: 2px;
+    background: linear-gradient(90deg, #2563EB, #7C3AED);
+    border-radius: 2px;
+}
+
+.footer-links li {
+    margin-bottom: 8px;
+}
+
+.footer-links a {
+    color: #6B7280;
+    text-decoration: none;
+    font-size: 0.9rem;
+    transition: all 0.3s ease;
+    position: relative;
+    display: inline-block;
+}
+
+.footer-links a::before {
+    content: '';
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    width: 0;
+    height: 1px;
+    background: #2563EB;
+    transition: width 0.3s ease;
+}
+
+.footer-links a:hover {
+    color: #2563EB;
+    transform: translateX(4px);
+}
+
+.footer-links a:hover::before {
+    width: 100%;
+}
+
+.social-link {
+    width: 40px;
+    height: 40px;
+    background: rgba(255, 255, 255, 0.8);
+    border: 1px solid #E5E7EB;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #6B7280;
+    font-size: 0.9rem;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    text-decoration: none;
+}
+
+.social-link:hover {
+    background: #2563EB;
+    color: white;
+    border-color: #2563EB;
+    transform: translateY(-3px);
+    box-shadow: 0 8px 25px rgba(37, 99, 235, 0.2);
+}
+
+.social-link:nth-child(1):hover {
+    background: #1877F2;
+    border-color: #1877F2;
+}
+
+.social-link:nth-child(2):hover {
+    background: #000000;
+    border-color: #000000;
+}
+
+.social-link:nth-child(3):hover {
+    background: #E4405F;
+    border-color: #E4405F;
+}
+
+.social-link:nth-child(4):hover {
+    background: #0A66C2;
+    border-color: #0A66C2;
+}
+
+.social-link:nth-child(5):hover {
+    background: #FF0000;
+    border-color: #FF0000;
+}
+
+.footer-newsletter .form-control:focus {
+    border-color: #2563EB;
+    box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.1);
+}
+
+.footer-newsletter .btn-primary {
+    background: #2563EB;
+    border: none;
+    padding: 10px 20px;
+    transition: all 0.3s ease;
+}
+
+.footer-newsletter .btn-primary:hover {
+    background: #1d4ed8;
+    transform: translateY(-2px);
+    box-shadow: 0 8px 25px rgba(37, 99, 235, 0.3);
+}
+
+@media (max-width: 991.98px) {
+    .footer {
+        padding: 40px 0 30px;
+    }
+    .footer-title::after {
+        width: 20px;
+    }
+    .footer-socials {
+        gap: 8px;
+    }
+    .social-link {
+        width: 36px;
+        height: 36px;
+        font-size: 0.8rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .footer {
+        text-align: center;
+    }
+    .footer-title::after {
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    .footer-links a::before {
+        display: none;
+    }
+    .footer-bottom {
+        text-align: center !important;
+    }
+    .footer-bottom .col-md-6 {
+        text-align: center !important;
+    }
+    .footer-newsletter {
+        max-width: 400px;
+        margin: 0 auto;
+    }
+    .footer-socials {
+        justify-content: center;
+    }
+    .footer-brand {
+        text-align: center;
+    }
+    .footer-contact {
+        text-align: center;
+    }
+}
+
+[data-view-style="partials-footer-1"] {
+    font-size: 0.95rem;
+    line-height: 1.7;
+    max-width: 320px;
+}
+
+[data-view-style="partials-footer-2"] {
+    font-size: 0.9rem;
+}
+
+[data-view-style="partials-footer-3"] {
+    border: 1px solid #E5E7EB;
+    padding: 10px 18px;
+    font-size: 0.9rem;
+}
+
+[data-view-style="partials-footer-4"] {
+    white-space: nowrap;
+}
+
+[data-view-style="partials-footer-5"] {
+    font-size: 0.9rem;
+}
+
+[data-view-style="partials-footer-6"] {
+    font-size: 0.9rem;
+}
+
+[data-view-style="partials-footer-7"] {
+    border-top: 1px solid #E5E7EB;
+}
+
+[data-view-style="partials-footer-8"] {
+    font-size: 0.85rem;
+}
+
+[data-view-style="partials-footer-9"] {
+    font-size: 0.85rem;
+    text-decoration: none;
+}
+
+[data-view-style="partials-footer-10"] {
+    font-size: 0.85rem;
+    text-decoration: none;
+}
+
+[data-view-style="partials-footer-11"] {
+    font-size: 0.85rem;
+    text-decoration: none;
+}

@@ -1,0 +1,893 @@
+html[data-style-page="errors/403"] .error-page {
+    background: #f8faff;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+}
+
+html[data-style-page="errors/403"] .error-card {
+    background: #fff;
+    border: 1px solid rgba(0, 0, 0, 0.04);
+    border-radius: 24px;
+    padding: 48px 40px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.04);
+    text-align: center;
+    animation: fadeInUp 0.5s cubic-bezier(0.34, 1.56, 0.64, 1) both;
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+html[data-style-page="errors/403"] .error-icon-wrap {
+    width: 88px;
+    height: 88px;
+    border-radius: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    font-size: 2.2rem;
+    margin: 0 auto 24px;
+    box-shadow: 0 12px 30px rgba(239, 68, 68, 0.3);
+}
+
+html[data-style-page="errors/403"] .error-code {
+    font-size: 3.5rem;
+    font-weight: 800;
+    color: #1a1a1a;
+    line-height: 1;
+    margin-bottom: 8px;
+    letter-spacing: -0.02em;
+}
+
+html[data-style-page="errors/403"] .error-title {
+    font-size: 1.4rem;
+    font-weight: 700;
+    color: #1a1a1a;
+    margin-bottom: 16px;
+}
+
+html[data-style-page="errors/403"] .error-message {
+    color: #64748B;
+    font-size: 0.95rem;
+    line-height: 1.6;
+    margin-bottom: 28px;
+}
+
+html[data-style-page="errors/403"] .error-actions {
+    display: flex;
+    gap: 12px;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-bottom: 24px;
+}
+
+html[data-style-page="errors/403"] .btn-primary-modern {
+    display: inline-flex;
+    align-items: center;
+    padding: 10px 24px;
+    background: linear-gradient(135deg, #2563EB, #7C3AED);
+    color: #fff;
+    font-weight: 600;
+    font-size: 0.9rem;
+    border: none;
+    border-radius: 10px;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(37, 99, 235, 0.15);
+}
+
+html[data-style-page="errors/403"] .btn-primary-modern:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 25px rgba(37, 99, 235, 0.25);
+    color: #fff;
+}
+
+html[data-style-page="errors/403"] .btn-clear {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    padding: 10px 24px;
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: #1a1a1a;
+    background: #fff;
+    border: 1px solid #E5E7EB;
+    border-radius: 10px;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+html[data-style-page="errors/403"] .btn-clear:hover {
+    border-color: #2563EB;
+    color: #2563EB;
+    background: rgba(37, 99, 235, 0.04);
+}
+
+html[data-style-page="errors/403"] .error-help {
+    font-size: 0.8rem;
+    color: #94A3B8;
+    padding-top: 20px;
+    border-top: 1px solid #F1F5F9;
+}
+
+@media (max-width: 576px) {
+    html[data-style-page="errors/403"] .error-card {
+        padding: 32px 24px;
+    }
+    html[data-style-page="errors/403"] .error-code {
+        font-size: 2.8rem;
+    }
+    html[data-style-page="errors/403"] .error-title {
+        font-size: 1.2rem;
+    }
+    html[data-style-page="errors/403"] .error-actions {
+        flex-direction: column;
+    }
+    html[data-style-page="errors/403"] .btn-primary-modern, html[data-style-page="errors/403"] .btn-clear {
+        width: 100%;
+        justify-content: center;
+    }
+}
+
+html[data-style-page="errors/403"] [data-view-style="errors-403-1"] {
+    background: linear-gradient(135deg, #EF4444, #DC2626);
+}
+
+html[data-style-page="errors/404"] .error-page {
+    background: #f8faff;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+}
+
+html[data-style-page="errors/404"] .error-card {
+    background: #fff;
+    border: 1px solid rgba(0, 0, 0, 0.04);
+    border-radius: 24px;
+    padding: 48px 40px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.04);
+    text-align: center;
+    animation: fadeInUp 0.5s cubic-bezier(0.34, 1.56, 0.64, 1) both;
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+html[data-style-page="errors/404"] .error-icon-wrap {
+    width: 88px;
+    height: 88px;
+    border-radius: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    font-size: 2.2rem;
+    margin: 0 auto 24px;
+    box-shadow: 0 12px 30px rgba(37, 99, 235, 0.3);
+}
+
+html[data-style-page="errors/404"] .error-code {
+    font-size: 3.5rem;
+    font-weight: 800;
+    color: #1a1a1a;
+    line-height: 1;
+    margin-bottom: 8px;
+    letter-spacing: -0.02em;
+}
+
+html[data-style-page="errors/404"] .error-title {
+    font-size: 1.4rem;
+    font-weight: 700;
+    color: #1a1a1a;
+    margin-bottom: 16px;
+}
+
+html[data-style-page="errors/404"] .error-message {
+    color: #64748B;
+    font-size: 0.95rem;
+    line-height: 1.6;
+    margin-bottom: 28px;
+}
+
+html[data-style-page="errors/404"] .error-actions {
+    display: flex;
+    gap: 12px;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-bottom: 24px;
+}
+
+html[data-style-page="errors/404"] .btn-primary-modern {
+    display: inline-flex;
+    align-items: center;
+    padding: 10px 24px;
+    background: linear-gradient(135deg, #2563EB, #7C3AED);
+    color: #fff;
+    font-weight: 600;
+    font-size: 0.9rem;
+    border: none;
+    border-radius: 10px;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(37, 99, 235, 0.15);
+}
+
+html[data-style-page="errors/404"] .btn-primary-modern:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 25px rgba(37, 99, 235, 0.25);
+    color: #fff;
+}
+
+html[data-style-page="errors/404"] .btn-clear {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    padding: 10px 24px;
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: #1a1a1a;
+    background: #fff;
+    border: 1px solid #E5E7EB;
+    border-radius: 10px;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+html[data-style-page="errors/404"] .btn-clear:hover {
+    border-color: #2563EB;
+    color: #2563EB;
+    background: rgba(37, 99, 235, 0.04);
+}
+
+html[data-style-page="errors/404"] .btn-clear i {
+    transition: transform 0.3s ease;
+}
+
+html[data-style-page="errors/404"] .btn-clear:hover i.fa-arrow-left {
+    transform: translateX(-3px);
+}
+
+html[data-style-page="errors/404"] .error-help {
+    font-size: 0.8rem;
+    color: #94A3B8;
+    padding-top: 20px;
+    border-top: 1px solid #F1F5F9;
+}
+
+@media (max-width: 576px) {
+    html[data-style-page="errors/404"] .error-card {
+        padding: 32px 24px;
+    }
+    html[data-style-page="errors/404"] .error-code {
+        font-size: 2.8rem;
+    }
+    html[data-style-page="errors/404"] .error-title {
+        font-size: 1.2rem;
+    }
+    html[data-style-page="errors/404"] .error-actions {
+        flex-direction: column;
+    }
+    html[data-style-page="errors/404"] .btn-primary-modern, html[data-style-page="errors/404"] .btn-clear {
+        width: 100%;
+        justify-content: center;
+    }
+}
+
+html[data-style-page="errors/404"] [data-view-style="errors-404-1"] {
+    background: linear-gradient(135deg, #2563EB, #7C3AED);
+}
+
+html[data-style-page="errors/419"] .error-page {
+    background: #f8faff;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+}
+
+html[data-style-page="errors/419"] .error-card {
+    background: #fff;
+    border: 1px solid rgba(0, 0, 0, 0.04);
+    border-radius: 24px;
+    padding: 48px 40px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.04);
+    text-align: center;
+    animation: fadeInUp 0.5s cubic-bezier(0.34, 1.56, 0.64, 1) both;
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+html[data-style-page="errors/419"] .error-icon-wrap {
+    width: 88px;
+    height: 88px;
+    border-radius: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    font-size: 2.2rem;
+    margin: 0 auto 24px;
+    box-shadow: 0 12px 30px rgba(245, 158, 11, 0.3);
+}
+
+html[data-style-page="errors/419"] .error-code {
+    font-size: 3.5rem;
+    font-weight: 800;
+    color: #1a1a1a;
+    line-height: 1;
+    margin-bottom: 8px;
+    letter-spacing: -0.02em;
+}
+
+html[data-style-page="errors/419"] .error-title {
+    font-size: 1.4rem;
+    font-weight: 700;
+    color: #1a1a1a;
+    margin-bottom: 16px;
+}
+
+html[data-style-page="errors/419"] .error-message {
+    color: #64748B;
+    font-size: 0.95rem;
+    line-height: 1.6;
+    margin-bottom: 28px;
+}
+
+html[data-style-page="errors/419"] .error-actions {
+    display: flex;
+    gap: 12px;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-bottom: 24px;
+}
+
+html[data-style-page="errors/419"] .btn-primary-modern {
+    display: inline-flex;
+    align-items: center;
+    padding: 10px 24px;
+    background: linear-gradient(135deg, #2563EB, #7C3AED);
+    color: #fff;
+    font-weight: 600;
+    font-size: 0.9rem;
+    border: none;
+    border-radius: 10px;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(37, 99, 235, 0.15);
+}
+
+html[data-style-page="errors/419"] .btn-primary-modern:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 25px rgba(37, 99, 235, 0.25);
+    color: #fff;
+}
+
+html[data-style-page="errors/419"] .btn-clear {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    padding: 10px 24px;
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: #1a1a1a;
+    background: #fff;
+    border: 1px solid #E5E7EB;
+    border-radius: 10px;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+html[data-style-page="errors/419"] .btn-clear:hover {
+    border-color: #2563EB;
+    color: #2563EB;
+    background: rgba(37, 99, 235, 0.04);
+}
+
+html[data-style-page="errors/419"] .error-help {
+    font-size: 0.8rem;
+    color: #94A3B8;
+    padding-top: 20px;
+    border-top: 1px solid #F1F5F9;
+}
+
+@media (max-width: 576px) {
+    html[data-style-page="errors/419"] .error-card {
+        padding: 32px 24px;
+    }
+    html[data-style-page="errors/419"] .error-code {
+        font-size: 2.8rem;
+    }
+    html[data-style-page="errors/419"] .error-title {
+        font-size: 1.2rem;
+    }
+    html[data-style-page="errors/419"] .error-actions {
+        flex-direction: column;
+    }
+    html[data-style-page="errors/419"] .btn-primary-modern, html[data-style-page="errors/419"] .btn-clear {
+        width: 100%;
+        justify-content: center;
+    }
+}
+
+html[data-style-page="errors/419"] [data-view-style="errors-419-1"] {
+    background: linear-gradient(135deg, #F59E0B, #F97316);
+}
+
+html[data-style-page="errors/429"] .error-page {
+    background: #f8faff;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+}
+
+html[data-style-page="errors/429"] .error-card {
+    background: #fff;
+    border: 1px solid rgba(0, 0, 0, 0.04);
+    border-radius: 24px;
+    padding: 48px 40px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.04);
+    text-align: center;
+    animation: fadeInUp 0.5s cubic-bezier(0.34, 1.56, 0.64, 1) both;
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+html[data-style-page="errors/429"] .error-icon-wrap {
+    width: 88px;
+    height: 88px;
+    border-radius: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    font-size: 2.2rem;
+    margin: 0 auto 24px;
+    box-shadow: 0 12px 30px rgba(245, 158, 11, 0.3);
+    animation: pulse 2s ease-in-out infinite;
+}
+
+@keyframes pulse {
+    0%, 100% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.05);
+    }
+}
+
+html[data-style-page="errors/429"] .error-code {
+    font-size: 3.5rem;
+    font-weight: 800;
+    color: #1a1a1a;
+    line-height: 1;
+    margin-bottom: 8px;
+    letter-spacing: -0.02em;
+}
+
+html[data-style-page="errors/429"] .error-title {
+    font-size: 1.4rem;
+    font-weight: 700;
+    color: #1a1a1a;
+    margin-bottom: 16px;
+}
+
+html[data-style-page="errors/429"] .error-message {
+    color: #64748B;
+    font-size: 0.95rem;
+    line-height: 1.6;
+    margin-bottom: 24px;
+}
+
+html[data-style-page="errors/429"] .error-timer {
+    display: inline-flex;
+    align-items: center;
+    padding: 10px 20px;
+    background: rgba(245, 158, 11, 0.08);
+    color: #F59E0B;
+    border-radius: 12px;
+    font-size: 0.9rem;
+    font-weight: 500;
+    margin-bottom: 28px;
+}
+
+html[data-style-page="errors/429"] .error-timer strong {
+    font-weight: 700;
+    margin: 0 4px;
+}
+
+html[data-style-page="errors/429"] .error-actions {
+    display: flex;
+    gap: 12px;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-bottom: 24px;
+}
+
+html[data-style-page="errors/429"] .btn-primary-modern {
+    display: inline-flex;
+    align-items: center;
+    padding: 10px 24px;
+    background: linear-gradient(135deg, #2563EB, #7C3AED);
+    color: #fff;
+    font-weight: 600;
+    font-size: 0.9rem;
+    border: none;
+    border-radius: 10px;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(37, 99, 235, 0.15);
+}
+
+html[data-style-page="errors/429"] .btn-primary-modern:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 25px rgba(37, 99, 235, 0.25);
+    color: #fff;
+}
+
+html[data-style-page="errors/429"] .btn-clear {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    padding: 10px 24px;
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: #1a1a1a;
+    background: #fff;
+    border: 1px solid #E5E7EB;
+    border-radius: 10px;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+html[data-style-page="errors/429"] .btn-clear:hover {
+    border-color: #2563EB;
+    color: #2563EB;
+    background: rgba(37, 99, 235, 0.04);
+}
+
+html[data-style-page="errors/429"] .btn-clear i {
+    transition: transform 0.3s ease;
+}
+
+html[data-style-page="errors/429"] .btn-clear:hover i.fa-arrow-left {
+    transform: translateX(-3px);
+}
+
+html[data-style-page="errors/429"] .error-help {
+    font-size: 0.8rem;
+    color: #94A3B8;
+    padding-top: 20px;
+    border-top: 1px solid #F1F5F9;
+}
+
+@media (max-width: 576px) {
+    html[data-style-page="errors/429"] .error-card {
+        padding: 32px 24px;
+    }
+    html[data-style-page="errors/429"] .error-code {
+        font-size: 2.8rem;
+    }
+    html[data-style-page="errors/429"] .error-title {
+        font-size: 1.2rem;
+    }
+    html[data-style-page="errors/429"] .error-actions {
+        flex-direction: column;
+    }
+    html[data-style-page="errors/429"] .btn-primary-modern,
+    html[data-style-page="errors/429"] .btn-clear {
+        width: 100%;
+        justify-content: center;
+    }
+}
+
+html[data-style-page="errors/429"] [data-view-style="errors-429-1"] {
+    background: linear-gradient(135deg, #F59E0B, #F97316);
+}
+
+html[data-style-page="errors/500"] .error-page {
+    background: #f8faff;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+}
+
+html[data-style-page="errors/500"] .error-card {
+    background: #fff;
+    border: 1px solid rgba(0, 0, 0, 0.04);
+    border-radius: 24px;
+    padding: 48px 40px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.04);
+    text-align: center;
+    animation: fadeInUp 0.5s cubic-bezier(0.34, 1.56, 0.64, 1) both;
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+html[data-style-page="errors/500"] .error-icon-wrap {
+    width: 88px;
+    height: 88px;
+    border-radius: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    font-size: 2.2rem;
+    margin: 0 auto 24px;
+    box-shadow: 0 12px 30px rgba(239, 68, 68, 0.3);
+}
+
+html[data-style-page="errors/500"] .error-code {
+    font-size: 3.5rem;
+    font-weight: 800;
+    color: #1a1a1a;
+    line-height: 1;
+    margin-bottom: 8px;
+    letter-spacing: -0.02em;
+}
+
+html[data-style-page="errors/500"] .error-title {
+    font-size: 1.4rem;
+    font-weight: 700;
+    color: #1a1a1a;
+    margin-bottom: 16px;
+}
+
+html[data-style-page="errors/500"] .error-message {
+    color: #64748B;
+    font-size: 0.95rem;
+    line-height: 1.6;
+    margin-bottom: 28px;
+}
+
+html[data-style-page="errors/500"] .error-actions {
+    display: flex;
+    gap: 12px;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-bottom: 24px;
+}
+
+html[data-style-page="errors/500"] .btn-primary-modern {
+    display: inline-flex;
+    align-items: center;
+    padding: 10px 24px;
+    background: linear-gradient(135deg, #2563EB, #7C3AED);
+    color: #fff;
+    font-weight: 600;
+    font-size: 0.9rem;
+    border: none;
+    border-radius: 10px;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(37, 99, 235, 0.15);
+}
+
+html[data-style-page="errors/500"] .btn-primary-modern:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 25px rgba(37, 99, 235, 0.25);
+    color: #fff;
+}
+
+html[data-style-page="errors/500"] .btn-clear {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    padding: 10px 24px;
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: #1a1a1a;
+    background: #fff;
+    border: 1px solid #E5E7EB;
+    border-radius: 10px;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+html[data-style-page="errors/500"] .btn-clear:hover {
+    border-color: #2563EB;
+    color: #2563EB;
+    background: rgba(37, 99, 235, 0.04);
+}
+
+html[data-style-page="errors/500"] .error-help {
+    font-size: 0.8rem;
+    color: #94A3B8;
+    padding-top: 20px;
+    border-top: 1px solid #F1F5F9;
+}
+
+@media (max-width: 576px) {
+    html[data-style-page="errors/500"] .error-card {
+        padding: 32px 24px;
+    }
+    html[data-style-page="errors/500"] .error-code {
+        font-size: 2.8rem;
+    }
+    html[data-style-page="errors/500"] .error-title {
+        font-size: 1.2rem;
+    }
+    html[data-style-page="errors/500"] .error-actions {
+        flex-direction: column;
+    }
+    html[data-style-page="errors/500"] .btn-primary-modern, html[data-style-page="errors/500"] .btn-clear {
+        width: 100%;
+        justify-content: center;
+    }
+}
+
+html[data-style-page="errors/500"] [data-view-style="errors-500-1"] {
+    background: linear-gradient(135deg, #EF4444, #B91C1C);
+}
+
+html[data-style-page="errors/503"] .error-page {
+    background: #f8faff;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+}
+
+html[data-style-page="errors/503"] .error-card {
+    background: #fff;
+    border: 1px solid rgba(0, 0, 0, 0.04);
+    border-radius: 24px;
+    padding: 48px 40px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.04);
+    text-align: center;
+    animation: fadeInUp 0.5s cubic-bezier(0.34, 1.56, 0.64, 1) both;
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+html[data-style-page="errors/503"] .error-icon-wrap {
+    width: 88px;
+    height: 88px;
+    border-radius: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    font-size: 2.2rem;
+    margin: 0 auto 24px;
+    box-shadow: 0 12px 30px rgba(124, 58, 237, 0.3);
+    animation: pulse 2s ease-in-out infinite;
+}
+
+@keyframes pulse {
+    0%, 100% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.05);
+    }
+}
+
+html[data-style-page="errors/503"] .error-code {
+    font-size: 3.5rem;
+    font-weight: 800;
+    color: #1a1a1a;
+    line-height: 1;
+    margin-bottom: 8px;
+    letter-spacing: -0.02em;
+}
+
+html[data-style-page="errors/503"] .error-title {
+    font-size: 1.4rem;
+    font-weight: 700;
+    color: #1a1a1a;
+    margin-bottom: 16px;
+}
+
+html[data-style-page="errors/503"] .error-message {
+    color: #64748B;
+    font-size: 0.95rem;
+    line-height: 1.6;
+    margin-bottom: 28px;
+}
+
+html[data-style-page="errors/503"] .error-actions {
+    display: flex;
+    gap: 12px;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-bottom: 24px;
+}
+
+html[data-style-page="errors/503"] .btn-primary-modern {
+    display: inline-flex;
+    align-items: center;
+    padding: 10px 24px;
+    background: linear-gradient(135deg, #2563EB, #7C3AED);
+    color: #fff;
+    font-weight: 600;
+    font-size: 0.9rem;
+    border: none;
+    border-radius: 10px;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(37, 99, 235, 0.15);
+}
+
+html[data-style-page="errors/503"] .btn-primary-modern:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 25px rgba(37, 99, 235, 0.25);
+    color: #fff;
+}
+
+html[data-style-page="errors/503"] .error-help {
+    font-size: 0.8rem;
+    color: #94A3B8;
+    padding-top: 20px;
+    border-top: 1px solid #F1F5F9;
+}
+
+@media (max-width: 576px) {
+    html[data-style-page="errors/503"] .error-card {
+        padding: 32px 24px;
+    }
+    html[data-style-page="errors/503"] .error-code {
+        font-size: 2.8rem;
+    }
+    html[data-style-page="errors/503"] .error-title {
+        font-size: 1.2rem;
+    }
+    html[data-style-page="errors/503"] .btn-primary-modern {
+        width: 100%;
+        justify-content: center;
+    }
+}
+
+html[data-style-page="errors/503"] [data-view-style="errors-503-1"] {
+    background: linear-gradient(135deg, #7C3AED, #2563EB);
+}

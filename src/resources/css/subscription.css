@@ -1,0 +1,1409 @@
+html[data-style-page="pricing"] .pricing-page {
+    background: linear-gradient(180deg, #fafbfc 0%, #f0f4ff 100%);
+    min-height: 80vh;
+}
+
+html[data-style-page="pricing"] .section-badge {
+    background: rgba(37, 99, 235, 0.08);
+    color: #2563EB;
+    font-size: 0.8rem;
+    font-weight: 600;
+    padding: 6px 20px;
+    border-radius: 50px;
+    letter-spacing: 0.5px;
+}
+
+html[data-style-page="pricing"] .section-title {
+    font-size: 2.5rem;
+    font-weight: 800;
+    background: linear-gradient(135deg, #1a1a1a 0%, #2563EB 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+html[data-style-page="pricing"] .pricing-card {
+    background: rgba(255, 255, 255, 0.92);
+    backdrop-filter: blur(20px);
+    border-radius: 24px !important;
+    transition: all 0.3s ease;
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.04) !important;
+}
+
+html[data-style-page="pricing"] .pricing-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 30px 80px rgba(37, 99, 235, 0.08) !important;
+}
+
+html[data-style-page="pricing"] .pricing-card.popular {
+    border: 2px solid #2563EB !important;
+    position: relative;
+}
+
+html[data-style-page="pricing"] .popular-badge {
+    position: absolute;
+    top: -12px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: linear-gradient(135deg, #2563EB, #7C3AED);
+    color: white;
+    padding: 4px 20px;
+    border-radius: 50px;
+    font-size: 0.75rem;
+    font-weight: 600;
+}
+
+html[data-style-page="pricing"] .price-wrapper .display-4 {
+    font-weight: 800;
+    color: #1a1a1a;
+}
+
+html[data-style-page="pricing"] .btn-primary {
+    background: linear-gradient(135deg, #2563EB, #7C3AED);
+    border: none;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(37, 99, 235, 0.15);
+    padding: 10px 32px;
+}
+
+html[data-style-page="pricing"] .btn-primary:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 30px rgba(37, 99, 235, 0.25);
+}
+
+html[data-style-page="pricing"] .pricing-card .btn-outline-primary {
+    border: 2px solid #E5E7EB;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    color: #1a1a1a;
+    padding: 10px 32px;
+}
+
+html[data-style-page="pricing"] .pricing-card .btn-outline-primary:hover {
+    border-color: #2563EB;
+    color: #2563EB;
+    background: rgba(37, 99, 235, 0.04);
+}
+
+html[data-style-page="pricing"] .accordion-item {
+    background: rgba(255, 255, 255, 0.92);
+    backdrop-filter: blur(20px);
+    border-radius: 12px !important;
+}
+
+html[data-style-page="pricing"] .accordion-button {
+    border-radius: 12px !important;
+    padding: 16px 20px;
+    font-weight: 600;
+}
+
+html[data-style-page="pricing"] .accordion-button:focus {
+    box-shadow: none;
+    border-color: #2563EB;
+}
+
+html[data-style-page="pricing"] .accordion-button:not(.collapsed) {
+    color: #2563EB;
+    background: rgba(37, 99, 235, 0.04);
+    border-radius: 12px 12px 0 0 !important;
+}
+
+html[data-style-page="pricing"] .accordion-body {
+    padding: 16px 20px;
+}
+
+@media (max-width: 768px) {
+    html[data-style-page="pricing"] .section-title {
+        font-size: 2rem;
+    }
+    html[data-style-page="pricing"] .pricing-card {
+        margin-bottom: 20px;
+    }
+}
+
+html[data-style-page="pricing"] [data-view-style="pricing-1"] {
+    font-size: 1.1rem;
+}
+
+html[data-style-page="subscription/booking-checkout"] .checkout-page {
+    background: linear-gradient(180deg, #f8faff 0%, #ffffff 50%, #f0f4ff 100%);
+    min-height: 100vh;
+    padding: 60px 0 80px;
+}
+
+html[data-style-page="subscription/booking-checkout"] .checkout-title {
+    font-size: 2.5rem;
+    font-weight: 800;
+}
+
+html[data-style-page="subscription/booking-checkout"] .gradient-text {
+    background: linear-gradient(135deg, #2563EB, #7C3AED);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+html[data-style-page="subscription/booking-checkout"] .checkout-card {
+    background: rgba(255, 255, 255, 0.95);
+    backdrop-filter: blur(20px);
+    border-radius: 28px !important;
+    padding: 40px;
+}
+
+html[data-style-page="subscription/booking-checkout"] .plan-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 24px;
+    border-bottom: 2px dashed #E5E7EB;
+    margin-bottom: 24px;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+html[data-style-page="subscription/booking-checkout"] .plan-icon {
+    width: 56px;
+    height: 56px;
+    border-radius: 16px;
+    background: linear-gradient(135deg, #2563EB, #7C3AED);
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+    flex-shrink: 0;
+    box-shadow: 0 8px 25px rgba(37, 99, 235, 0.2);
+}
+
+html[data-style-page="subscription/booking-checkout"] .plan-price {
+    text-align: right;
+}
+
+html[data-style-page="subscription/booking-checkout"] .price-amount {
+    font-size: 2rem;
+    font-weight: 800;
+    color: #2563EB;
+    line-height: 1;
+}
+
+html[data-style-page="subscription/booking-checkout"] .price-period {
+    font-size: 0.9rem;
+    color: #6B7280;
+    font-weight: 500;
+}
+
+html[data-style-page="subscription/booking-checkout"] .features-preview {
+    margin-bottom: 24px;
+}
+
+html[data-style-page="subscription/booking-checkout"] .feature-mini {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 8px 12px;
+    background: rgba(16, 185, 129, 0.04);
+    border-radius: 10px;
+    font-size: 0.85rem;
+    font-weight: 500;
+    color: #1a1a1a;
+}
+
+html[data-style-page="subscription/booking-checkout"] .feature-mini i {
+    font-size: 0.9rem;
+    flex-shrink: 0;
+}
+
+html[data-style-page="subscription/booking-checkout"] .divider {
+    position: relative;
+    text-align: center;
+    margin: 24px 0;
+}
+
+html[data-style-page="subscription/booking-checkout"] .divider::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 0;
+    right: 0;
+    height: 1px;
+    background: #E5E7EB;
+}
+
+html[data-style-page="subscription/booking-checkout"] .divider span {
+    position: relative;
+    background: white;
+    padding: 0 20px;
+    font-size: 0.85rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: #6B7280;
+}
+
+html[data-style-page="subscription/booking-checkout"] .checkout-form .form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+html[data-style-page="subscription/booking-checkout"] .checkout-form .form-label {
+    font-size: 0.85rem;
+    font-weight: 600;
+    color: #1a1a1a;
+    margin-bottom: 0;
+}
+
+html[data-style-page="subscription/booking-checkout"] .checkout-form .form-label i {
+    color: #2563EB;
+    font-size: 0.85rem;
+}
+
+html[data-style-page="subscription/booking-checkout"] .checkout-form .form-control {
+    padding: 14px 18px;
+    border: 2px solid #E5E7EB;
+    border-radius: 14px;
+    font-size: 0.95rem;
+    transition: all 0.3s ease;
+    background: #F8FAFC;
+}
+
+html[data-style-page="subscription/booking-checkout"] .checkout-form .form-control:focus {
+    border-color: #2563EB;
+    background: white;
+    box-shadow: 0 0 0 4px rgba(37, 99, 235, 0.08);
+}
+
+html[data-style-page="subscription/booking-checkout"] .checkout-form .form-control::placeholder {
+    color: #9CA3AF;
+}
+
+html[data-style-page="subscription/booking-checkout"] .secure-info {
+    display: flex;
+    justify-content: center;
+    gap: 24px;
+    margin: 24px 0;
+    padding: 16px;
+    background: rgba(37, 99, 235, 0.04);
+    border-radius: 14px;
+    flex-wrap: wrap;
+}
+
+html[data-style-page="subscription/booking-checkout"] .secure-info-item {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 0.8rem;
+    font-weight: 500;
+    color: #4B5563;
+}
+
+html[data-style-page="subscription/booking-checkout"] .secure-info-item i {
+    color: #10B981;
+    font-size: 0.9rem;
+}
+
+html[data-style-page="subscription/booking-checkout"] .btn-checkout {
+    background: linear-gradient(135deg, #2563EB, #7C3AED);
+    border: none;
+    font-weight: 700;
+    font-size: 1.05rem;
+    box-shadow: 0 10px 30px rgba(37, 99, 235, 0.25);
+    transition: all 0.3s ease;
+    letter-spacing: 0.5px;
+}
+
+html[data-style-page="subscription/booking-checkout"] .btn-checkout:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 15px 40px rgba(37, 99, 235, 0.35);
+}
+
+html[data-style-page="subscription/booking-checkout"] .cancel-link {
+    color: #6B7280;
+    text-decoration: none;
+    font-size: 0.9rem;
+    font-weight: 500;
+    transition: color 0.2s ease;
+}
+
+html[data-style-page="subscription/booking-checkout"] .cancel-link:hover {
+    color: #2563EB;
+}
+
+html[data-style-page="subscription/booking-checkout"] .trust-badge {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 0.8rem;
+    color: #6B7280;
+    font-weight: 500;
+}
+
+html[data-style-page="subscription/booking-checkout"] .trust-badge i {
+    color: #2563EB;
+    font-size: 1rem;
+}
+
+html[data-style-page="subscription/booking-checkout"] .alert-danger {
+    background: rgba(239, 68, 68, 0.08);
+    border: none;
+    color: #EF4444;
+    padding: 14px 20px;
+}
+
+@media (max-width: 768px) {
+    html[data-style-page="subscription/booking-checkout"] .checkout-page {
+        padding: 30px 0 50px;
+    }
+    html[data-style-page="subscription/booking-checkout"] .checkout-title {
+        font-size: 1.75rem;
+    }
+    html[data-style-page="subscription/booking-checkout"] .checkout-card {
+        padding: 24px;
+        border-radius: 20px !important;
+    }
+    html[data-style-page="subscription/booking-checkout"] .plan-header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    html[data-style-page="subscription/booking-checkout"] .plan-price {
+        text-align: left;
+    }
+    html[data-style-page="subscription/booking-checkout"] .price-amount {
+        font-size: 1.6rem;
+    }
+    html[data-style-page="subscription/booking-checkout"] .secure-info {
+        gap: 12px;
+        padding: 12px;
+    }
+    html[data-style-page="subscription/booking-checkout"] .secure-info-item {
+        font-size: 0.75rem;
+    }
+    html[data-style-page="subscription/booking-checkout"] .trust-badges .d-flex {
+        gap: 16px !important;
+    }
+    html[data-style-page="subscription/booking-checkout"] .trust-badge {
+        font-size: 0.75rem;
+    }
+}
+
+html[data-style-page="subscription/booking-manage"] .client-status-page {
+    background: linear-gradient(180deg, #f8faff 0%, #ffffff 100%);
+    min-height: 100vh;
+}
+
+html[data-style-page="subscription/booking-manage"] .status-hero {
+    padding: 50px 0 30px;
+    background: linear-gradient(180deg, #f0f4ff 0%, transparent 100%);
+}
+
+html[data-style-page="subscription/booking-manage"] .hero-badge {
+    background: rgba(37, 99, 235, 0.08);
+    color: #2563EB;
+    font-size: 0.8rem;
+    font-weight: 600;
+    padding: 8px 20px;
+    border-radius: 50px;
+    letter-spacing: 0.5px;
+}
+
+html[data-style-page="subscription/booking-manage"] .hero-title {
+    font-size: 2.5rem;
+    font-weight: 800;
+}
+
+html[data-style-page="subscription/booking-manage"] .gradient-text {
+    background: linear-gradient(135deg, #2563EB, #7C3AED);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+html[data-style-page="subscription/booking-manage"] .status-card {
+    background: rgba(255, 255, 255, 0.95);
+    backdrop-filter: blur(20px);
+    border-radius: 28px;
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.06);
+    border: 1px solid rgba(255, 255, 255, 0.8);
+    padding: 40px;
+    margin-bottom: 24px;
+}
+
+html[data-style-page="subscription/booking-manage"] .status-header {
+    text-align: center;
+    margin-bottom: 32px;
+}
+
+html[data-style-page="subscription/booking-manage"] .status-icon-wrapper {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+html[data-style-page="subscription/booking-manage"] .status-icon-circle {
+    position: relative;
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2.5rem;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+}
+
+html[data-style-page="subscription/booking-manage"] .status-icon-circle.success {
+    background: linear-gradient(135deg, rgba(16, 185, 129, 0.15), rgba(16, 185, 129, 0.05));
+    color: #10B981;
+}
+
+html[data-style-page="subscription/booking-manage"] .status-icon-circle.warning {
+    background: linear-gradient(135deg, rgba(245, 158, 11, 0.15), rgba(245, 158, 11, 0.05));
+    color: #F59E0B;
+}
+
+html[data-style-page="subscription/booking-manage"] .status-icon-circle.danger {
+    background: linear-gradient(135deg, rgba(239, 68, 68, 0.15), rgba(239, 68, 68, 0.05));
+    color: #EF4444;
+}
+
+html[data-style-page="subscription/booking-manage"] .status-icon-circle.primary {
+    background: linear-gradient(135deg, rgba(37, 99, 235, 0.15), rgba(37, 99, 235, 0.05));
+    color: #2563EB;
+}
+
+html[data-style-page="subscription/booking-manage"] .pulse-ring {
+    position: absolute;
+    inset: 0;
+    border-radius: 50%;
+    border: 2px solid rgba(16, 185, 129, 0.3);
+    animation: pulseRing 2s ease-out infinite;
+}
+
+@keyframes pulseRing {
+    0% {
+        transform: scale(1);
+        opacity: 1;
+    }
+    100% {
+        transform: scale(1.4);
+        opacity: 0;
+    }
+}
+
+html[data-style-page="subscription/booking-manage"] .status-badges {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+html[data-style-page="subscription/booking-manage"] .badge-status {
+    display: inline-flex;
+    align-items: center;
+    padding: 8px 20px;
+    border-radius: 50px;
+    font-size: 0.85rem;
+    font-weight: 600;
+}
+
+html[data-style-page="subscription/booking-manage"] .status-pending {
+    background: rgba(245, 158, 11, 0.12);
+    color: #F59E0B;
+}
+
+html[data-style-page="subscription/booking-manage"] .status-approved {
+    background: rgba(37, 99, 235, 0.12);
+    color: #2563EB;
+}
+
+html[data-style-page="subscription/booking-manage"] .status-contacted {
+    background: rgba(13, 202, 240, 0.12);
+    color: #0EA5E9;
+}
+
+html[data-style-page="subscription/booking-manage"] .status-rejected {
+    background: rgba(239, 68, 68, 0.12);
+    color: #EF4444;
+}
+
+html[data-style-page="subscription/booking-manage"] .status-deactivated {
+    background: rgba(107, 114, 128, 0.12);
+    color: #6B7280;
+}
+
+html[data-style-page="subscription/booking-manage"] .status-active {
+    background: rgba(16, 185, 129, 0.12);
+    color: #10B981;
+}
+
+html[data-style-page="subscription/booking-manage"] .plan-summary {
+    background: linear-gradient(135deg, rgba(37, 99, 235, 0.04), rgba(124, 58, 237, 0.04));
+    border-radius: 20px;
+    padding: 8px;
+    margin-bottom: 24px;
+}
+
+html[data-style-page="subscription/booking-manage"] .plan-summary-item {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    padding: 16px 20px;
+}
+
+html[data-style-page="subscription/booking-manage"] .plan-summary-icon {
+    width: 44px;
+    height: 44px;
+    border-radius: 12px;
+    background: white;
+    color: #2563EB;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.1rem;
+    flex-shrink: 0;
+    box-shadow: 0 4px 12px rgba(37, 99, 235, 0.08);
+}
+
+html[data-style-page="subscription/booking-manage"] .summary-label {
+    display: block;
+    font-size: 0.7rem;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    color: #6B7280;
+    font-weight: 600;
+    margin-bottom: 2px;
+}
+
+html[data-style-page="subscription/booking-manage"] .summary-value {
+    font-size: 0.95rem;
+    font-weight: 700;
+    color: #1a1a1a;
+    margin: 0;
+}
+
+html[data-style-page="subscription/booking-manage"] .expiration-banner {
+    border-radius: 16px;
+    padding: 20px 24px;
+    margin-bottom: 24px;
+}
+
+html[data-style-page="subscription/booking-manage"] .expiring-success {
+    background: linear-gradient(135deg, rgba(16, 185, 129, 0.08), rgba(16, 185, 129, 0.04));
+    border: 1px solid rgba(16, 185, 129, 0.15);
+    color: #10B981;
+}
+
+html[data-style-page="subscription/booking-manage"] .expiring-warning {
+    background: linear-gradient(135deg, rgba(245, 158, 11, 0.08), rgba(245, 158, 11, 0.04));
+    border: 1px solid rgba(245, 158, 11, 0.15);
+    color: #F59E0B;
+}
+
+html[data-style-page="subscription/booking-manage"] .expiring-danger {
+    background: linear-gradient(135deg, rgba(239, 68, 68, 0.08), rgba(239, 68, 68, 0.04));
+    border: 1px solid rgba(239, 68, 68, 0.15);
+    color: #EF4444;
+}
+
+html[data-style-page="subscription/booking-manage"] .expiration-icon {
+    width: 48px;
+    height: 48px;
+    border-radius: 12px;
+    background: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.3rem;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+html[data-style-page="subscription/booking-manage"] .expiration-label {
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    opacity: 0.7;
+    font-weight: 600;
+}
+
+html[data-style-page="subscription/booking-manage"] .expiration-days {
+    font-weight: 800;
+    margin: 0;
+    font-size: 1.5rem;
+}
+
+html[data-style-page="subscription/booking-manage"] .success-message {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    padding: 20px 24px;
+    background: linear-gradient(135deg, rgba(16, 185, 129, 0.06), rgba(16, 185, 129, 0.02));
+    border-radius: 16px;
+    border: 1px solid rgba(16, 185, 129, 0.1);
+    margin-bottom: 24px;
+}
+
+html[data-style-page="subscription/booking-manage"] .success-icon {
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, #10B981, #059669);
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.3rem;
+    flex-shrink: 0;
+    box-shadow: 0 8px 20px rgba(16, 185, 129, 0.2);
+}
+
+html[data-style-page="subscription/booking-manage"] .features-section {
+    margin-bottom: 24px;
+}
+
+html[data-style-page="subscription/booking-manage"] .features-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 16px;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+html[data-style-page="subscription/booking-manage"] .features-count {
+    display: inline-flex;
+    align-items: center;
+    background: rgba(37, 99, 235, 0.08);
+    color: #2563EB;
+    padding: 6px 16px;
+    border-radius: 50px;
+    font-size: 0.8rem;
+    font-weight: 600;
+}
+
+html[data-style-page="subscription/booking-manage"] .feature-card {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 14px 18px;
+    border-radius: 14px;
+    transition: all 0.2s ease;
+    border: 1px solid transparent;
+}
+
+html[data-style-page="subscription/booking-manage"] .feature-card.active {
+    background: rgba(16, 185, 129, 0.04);
+    border-color: rgba(16, 185, 129, 0.12);
+}
+
+html[data-style-page="subscription/booking-manage"] .feature-card.inactive {
+    background: rgba(107, 114, 128, 0.04);
+    border-color: rgba(107, 114, 128, 0.08);
+    opacity: 0.65;
+}
+
+html[data-style-page="subscription/booking-manage"] .feature-card:hover {
+    transform: translateX(4px);
+}
+
+html[data-style-page="subscription/booking-manage"] .feature-icon {
+    width: 36px;
+    height: 36px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.95rem;
+    flex-shrink: 0;
+}
+
+html[data-style-page="subscription/booking-manage"] .feature-card.active .feature-icon {
+    background: linear-gradient(135deg, #2563EB, #7C3AED);
+    color: white;
+}
+
+html[data-style-page="subscription/booking-manage"] .feature-card.inactive .feature-icon {
+    background: rgba(107, 114, 128, 0.1);
+    color: #6B7280;
+}
+
+html[data-style-page="subscription/booking-manage"] .feature-name {
+    flex: 1;
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: #1a1a1a;
+}
+
+html[data-style-page="subscription/booking-manage"] .feature-status {
+    font-size: 0.7rem;
+    font-weight: 700;
+    padding: 4px 12px;
+    border-radius: 50px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+html[data-style-page="subscription/booking-manage"] .feature-status.active {
+    background: rgba(16, 185, 129, 0.12);
+    color: #10B981;
+}
+
+html[data-style-page="subscription/booking-manage"] .feature-status.inactive {
+    background: rgba(107, 114, 128, 0.12);
+    color: #6B7280;
+}
+
+html[data-style-page="subscription/booking-manage"] .actions-section {
+    display: flex;
+    gap: 12px;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-top: 8px;
+}
+
+html[data-style-page="subscription/booking-manage"] .btn-action {
+    padding: 12px 28px;
+    border-radius: 50px;
+    font-weight: 600;
+    font-size: 0.95rem;
+    transition: all 0.3s ease;
+}
+
+html[data-style-page="subscription/booking-manage"] .btn-primary {
+    background: linear-gradient(135deg, #2563EB, #7C3AED);
+    border: none;
+    color: white;
+    box-shadow: 0 8px 25px rgba(37, 99, 235, 0.2);
+}
+
+html[data-style-page="subscription/booking-manage"] .btn-primary:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 12px 35px rgba(37, 99, 235, 0.3);
+    color: white;
+}
+
+html[data-style-page="subscription/booking-manage"] .btn-outline-primary {
+    border: 2px solid #E5E7EB;
+    color: #1a1a1a;
+    background: transparent;
+}
+
+html[data-style-page="subscription/booking-manage"] .btn-outline-primary:hover {
+    border-color: #2563EB;
+    color: #2563EB;
+    background: rgba(37, 99, 235, 0.04);
+    transform: translateY(-3px);
+}
+
+html[data-style-page="subscription/booking-manage"] .pending-state {
+    text-align: center;
+    padding: 20px 0;
+}
+
+html[data-style-page="subscription/booking-manage"] .pending-progress {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 32px;
+    gap: 0;
+}
+
+html[data-style-page="subscription/booking-manage"] .progress-step {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+}
+
+html[data-style-page="subscription/booking-manage"] .step-icon {
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    background: #E5E7EB;
+    color: #9CA3AF;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.9rem;
+    transition: all 0.3s ease;
+}
+
+html[data-style-page="subscription/booking-manage"] .progress-step.active .step-icon {
+    background: linear-gradient(135deg, #10B981, #059669);
+    color: white;
+    box-shadow: 0 6px 18px rgba(16, 185, 129, 0.25);
+}
+
+html[data-style-page="subscription/booking-manage"] .progress-step.current .step-icon {
+    background: linear-gradient(135deg, #2563EB, #7C3AED);
+    color: white;
+    box-shadow: 0 6px 18px rgba(37, 99, 235, 0.25);
+    animation: pulseCurrent 1.5s ease-in-out infinite;
+}
+
+@keyframes pulseCurrent {
+    0%, 100% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.08);
+    }
+}
+
+html[data-style-page="subscription/booking-manage"] .progress-step span {
+    font-size: 0.75rem;
+    font-weight: 600;
+    color: #6B7280;
+}
+
+html[data-style-page="subscription/booking-manage"] .progress-step.active span,
+html[data-style-page="subscription/booking-manage"] .progress-step.current span {
+    color: #1a1a1a;
+}
+
+html[data-style-page="subscription/booking-manage"] .progress-line {
+    width: 60px;
+    height: 3px;
+    background: #E5E7EB;
+    margin: 0 8px;
+    margin-bottom: 28px;
+    border-radius: 3px;
+}
+
+html[data-style-page="subscription/booking-manage"] .progress-line.active {
+    background: linear-gradient(90deg, #10B981, #2563EB);
+}
+
+html[data-style-page="subscription/booking-manage"] .approved-state,
+html[data-style-page="subscription/booking-manage"] .danger-state {
+    text-align: center;
+    padding: 20px 0;
+}
+
+html[data-style-page="subscription/booking-manage"] .approved-icon {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, rgba(37, 99, 235, 0.12), rgba(37, 99, 235, 0.04));
+    color: #2563EB;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2.5rem;
+    margin: 0 auto 20px;
+}
+
+html[data-style-page="subscription/booking-manage"] .danger-icon {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, rgba(239, 68, 68, 0.12), rgba(239, 68, 68, 0.04));
+    color: #EF4444;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2.5rem;
+    margin: 0 auto 20px;
+}
+
+html[data-style-page="subscription/booking-manage"] .btn-lg-action {
+    padding: 14px 40px;
+    border-radius: 50px;
+    font-weight: 700;
+    font-size: 1rem;
+}
+
+html[data-style-page="subscription/booking-manage"] .support-footer {
+    background: rgba(255, 255, 255, 0.8);
+    backdrop-filter: blur(20px);
+    border-radius: 20px;
+    padding: 20px;
+    border: 1px solid rgba(255, 255, 255, 0.8);
+}
+
+html[data-style-page="subscription/booking-manage"] .support-item {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+}
+
+html[data-style-page="subscription/booking-manage"] .support-item i {
+    width: 44px;
+    height: 44px;
+    border-radius: 12px;
+    background: linear-gradient(135deg, #2563EB, #7C3AED);
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1rem;
+    flex-shrink: 0;
+}
+
+html[data-style-page="subscription/booking-manage"] .support-label {
+    display: block;
+    font-size: 0.7rem;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    color: #6B7280;
+    font-weight: 600;
+}
+
+html[data-style-page="subscription/booking-manage"] .support-item a {
+    color: #1a1a1a;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 0.9rem;
+    transition: color 0.2s ease;
+}
+
+html[data-style-page="subscription/booking-manage"] .support-item a:hover {
+    color: #2563EB;
+}
+
+@media (max-width: 768px) {
+    html[data-style-page="subscription/booking-manage"] .status-hero {
+        padding: 30px 0 20px;
+    }
+    html[data-style-page="subscription/booking-manage"] .hero-title {
+        font-size: 1.75rem;
+    }
+    html[data-style-page="subscription/booking-manage"] .status-card {
+        padding: 24px;
+        border-radius: 20px;
+    }
+    html[data-style-page="subscription/booking-manage"] .status-icon-circle {
+        width: 72px;
+        height: 72px;
+        font-size: 2rem;
+    }
+    html[data-style-page="subscription/booking-manage"] .plan-summary-item {
+        padding: 12px 16px;
+    }
+    html[data-style-page="subscription/booking-manage"] .expiration-banner {
+        padding: 16px 20px;
+    }
+    html[data-style-page="subscription/booking-manage"] .success-message {
+        flex-direction: column;
+        text-align: center;
+        padding: 20px;
+    }
+    html[data-style-page="subscription/booking-manage"] .feature-card {
+        padding: 12px 14px;
+    }
+    html[data-style-page="subscription/booking-manage"] .btn-action {
+        width: 100%;
+        padding: 12px 20px;
+    }
+    html[data-style-page="subscription/booking-manage"] .progress-line {
+        width: 30px;
+    }
+    html[data-style-page="subscription/booking-manage"] .step-icon {
+        width: 38px;
+        height: 38px;
+        font-size: 0.8rem;
+    }
+}
+
+html[data-style-page="subscription/booking-manage"] [data-view-style="subscription-booking-manage-1"] {
+    background: linear-gradient(135deg, rgba(245, 158, 11, 0.12), rgba(245, 158, 11, 0.04));
+    color: #F59E0B;
+}
+
+html[data-style-page="subscription/booking-report"] * {
+    box-sizing: border-box;
+}
+
+html[data-style-page="subscription/booking-report"] body {
+    font-family: DejaVu Sans, sans-serif;
+    font-size: 13px;
+    color: #1a1a1a;
+    padding: 30px;
+}
+
+html[data-style-page="subscription/booking-report"] .header {
+    text-align: center;
+    border-bottom: 3px solid #2563EB;
+    padding-bottom: 20px;
+    margin-bottom: 30px;
+}
+
+html[data-style-page="subscription/booking-report"] .header h1 {
+    font-size: 24px;
+    margin: 0 0 6px;
+    color: #2563EB;
+}
+
+html[data-style-page="subscription/booking-report"] .header p {
+    color: #6B7280;
+    margin: 0;
+}
+
+html[data-style-page="subscription/booking-report"] .section {
+    margin-bottom: 24px;
+}
+
+html[data-style-page="subscription/booking-report"] .section h2 {
+    font-size: 16px;
+    color: #2563EB;
+    border-bottom: 1px solid #E5E7EB;
+    padding-bottom: 8px;
+    margin-bottom: 14px;
+}
+
+html[data-style-page="subscription/booking-report"] table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+html[data-style-page="subscription/booking-report"] table td {
+    padding: 8px 12px;
+    border-bottom: 1px solid #F1F5F9;
+}
+
+html[data-style-page="subscription/booking-report"] table td:first-child {
+    color: #6B7280;
+    font-weight: 600;
+    width: 40%;
+}
+
+html[data-style-page="subscription/booking-report"] .badge {
+    display: inline-block;
+    padding: 4px 12px;
+    border-radius: 12px;
+    font-size: 11px;
+    font-weight: 700;
+}
+
+html[data-style-page="subscription/booking-report"] .badge-active {
+    background: #D1FAE5;
+    color: #059669;
+}
+
+html[data-style-page="subscription/booking-report"] .badge-pending {
+    background: #FEF3C7;
+    color: #D97706;
+}
+
+html[data-style-page="subscription/booking-report"] .badge-deactivated {
+    background: #F3F4F6;
+    color: #6B7280;
+}
+
+html[data-style-page="subscription/booking-report"] .features {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+html[data-style-page="subscription/booking-report"] .feature {
+    width: 48%;
+    padding: 8px 12px;
+    background: #F8FAFC;
+    border-radius: 6px;
+    font-size: 12px;
+}
+
+html[data-style-page="subscription/booking-report"] .footer {
+    text-align: center;
+    margin-top: 40px;
+    padding-top: 20px;
+    border-top: 1px solid #E5E7EB;
+    color: #9CA3AF;
+    font-size: 11px;
+}
+
+html[data-style-page="subscription/booking-success"] .success-page {
+    background: linear-gradient(180deg, #f0fdf4 0%, #ffffff 50%, #f0f9ff 100%);
+    min-height: 100vh;
+    padding: 60px 0 80px;
+}
+
+html[data-style-page="subscription/booking-success"] .success-card {
+    background: rgba(255, 255, 255, 0.95);
+    backdrop-filter: blur(20px);
+    border-radius: 28px !important;
+    padding: 50px 40px;
+}
+
+html[data-style-page="subscription/booking-success"] .success-icon-wrapper {
+    position: relative;
+    width: 100px;
+    height: 100px;
+    margin: 0 auto 24px;
+}
+
+html[data-style-page="subscription/booking-success"] .success-icon {
+    position: relative;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, #10B981, #059669);
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 3rem;
+    box-shadow: 0 15px 40px rgba(16, 185, 129, 0.3);
+    z-index: 2;
+    animation: scaleIn 0.5s cubic-bezier(0.34, 1.56, 0.64, 1);
+}
+
+@keyframes scaleIn {
+    0% {
+        transform: scale(0);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+html[data-style-page="subscription/booking-success"] .success-pulse {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    background: rgba(16, 185, 129, 0.3);
+    animation: pulseRing 2s ease-out infinite;
+    z-index: 1;
+}
+
+html[data-style-page="subscription/booking-success"] .pulse-2 {
+    animation-delay: 1s;
+}
+
+@keyframes pulseRing {
+    0% {
+        transform: scale(1);
+        opacity: 0.5;
+    }
+    100% {
+        transform: scale(1.8);
+        opacity: 0;
+    }
+}
+
+html[data-style-page="subscription/booking-success"] .success-title {
+    font-size: 2rem;
+    color: #1a1a1a;
+    margin-bottom: 8px;
+}
+
+html[data-style-page="subscription/booking-success"] .plan-summary {
+    background: linear-gradient(135deg, rgba(37, 99, 235, 0.04), rgba(124, 58, 237, 0.04));
+    padding: 20px;
+    border-radius: 16px;
+    margin-bottom: 20px;
+}
+
+html[data-style-page="subscription/booking-success"] .plan-icon-success {
+    width: 48px;
+    height: 48px;
+    border-radius: 12px;
+    background: linear-gradient(135deg, #2563EB, #7C3AED);
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.3rem;
+    flex-shrink: 0;
+}
+
+html[data-style-page="subscription/booking-success"] .badge-active {
+    display: inline-flex;
+    align-items: center;
+    background: rgba(16, 185, 129, 0.12);
+    color: #10B981;
+    padding: 6px 14px;
+    border-radius: 50px;
+    font-size: 0.75rem;
+    font-weight: 600;
+}
+
+html[data-style-page="subscription/booking-success"] .details-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 12px;
+    margin-bottom: 28px;
+}
+
+html[data-style-page="subscription/booking-success"] .detail-item {
+    background: #F8FAFC;
+    padding: 14px 16px;
+    border-radius: 12px;
+    text-align: left;
+    border: 1px solid rgba(0, 0, 0, 0.04);
+}
+
+html[data-style-page="subscription/booking-success"] .detail-label {
+    display: block;
+    font-size: 0.7rem;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    color: #6B7280;
+    font-weight: 600;
+    margin-bottom: 4px;
+}
+
+html[data-style-page="subscription/booking-success"] .detail-value {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    font-size: 0.9rem;
+    font-weight: 700;
+    color: #1a1a1a;
+    word-break: break-word;
+}
+
+html[data-style-page="subscription/booking-success"] .actions {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+html[data-style-page="subscription/booking-success"] .btn-view-status {
+    background: linear-gradient(135deg, #2563EB, #7C3AED);
+    border: none;
+    font-weight: 700;
+    font-size: 1rem;
+    box-shadow: 0 10px 30px rgba(37, 99, 235, 0.25);
+    transition: all 0.3s ease;
+}
+
+html[data-style-page="subscription/booking-success"] .btn-view-status:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 15px 40px rgba(37, 99, 235, 0.35);
+    color: #ffffff;
+}
+
+html[data-style-page="subscription/booking-success"] .btn-outline-secondary {
+    border: 2px solid #E5E7EB;
+    font-weight: 600;
+    color: #1a1a1a;
+    background: transparent;
+    transition: all 0.3s ease;
+}
+
+html[data-style-page="subscription/booking-success"] .btn-outline-secondary:hover {
+    border-color: #2563EB;
+    color: #2563EB;
+    background: rgba(37, 99, 235, 0.04);
+    transform: translateY(-2px);
+}
+
+html[data-style-page="subscription/booking-success"] .info-message {
+    background: rgba(37, 99, 235, 0.04);
+    padding: 16px 20px;
+    border-radius: 16px;
+    border: 1px solid rgba(37, 99, 235, 0.08);
+}
+
+html[data-style-page="subscription/booking-success"] .info-message i {
+    font-size: 1.2rem;
+    flex-shrink: 0;
+    margin-top: 2px;
+}
+
+@media (max-width: 768px) {
+    html[data-style-page="subscription/booking-success"] .success-page {
+        padding: 30px 0 50px;
+    }
+    html[data-style-page="subscription/booking-success"] .success-card {
+        padding: 30px 24px;
+        border-radius: 20px !important;
+    }
+    html[data-style-page="subscription/booking-success"] .success-title {
+        font-size: 1.5rem;
+    }
+    html[data-style-page="subscription/booking-success"] .success-icon-wrapper,
+    html[data-style-page="subscription/booking-success"] .success-icon {
+        width: 80px;
+        height: 80px;
+        font-size: 2.2rem;
+    }
+    html[data-style-page="subscription/booking-success"] .details-grid {
+        grid-template-columns: 1fr;
+        gap: 8px;
+    }
+    html[data-style-page="subscription/booking-success"] .plan-summary {
+        padding: 16px;
+    }
+}
+
+html[data-style-page="subscription/booking-success"] [data-view-style="subscription-booking-success-1"] {
+    font-size: 0.5rem;
+}
+
+html[data-style-page="subscription/success"] [data-view-style="subscription-success-1"] {
+    font-size: 5rem;
+}
+
+html[data-style-page="pricing"] .pricing-page {
+    background: #f8faff;
+    scroll-margin-top: 100px;
+}
+
+html[data-style-page="pricing"] .pricing-card {
+    border: 1px solid #e2e8f0 !important;
+    border-radius: 20px;
+    box-shadow: 0 10px 35px rgba(30,41,59,0.035) !important;
+    overflow: visible;
+}
+
+html[data-style-page="pricing"] .pricing-card.popular {
+    border: 2px solid #2563eb !important;
+    transform: none;
+}
+
+html[data-style-page="pricing"] .pricing-card:hover {
+    transform: translateY(-4px);
+}
+
+html[data-style-page="pricing"] .pricing-card .card-body {
+    display: flex;
+    flex-direction: column;
+    padding: 32px 24px !important;
+}
+
+html[data-style-page="pricing"] .pricing-card .card-body > .btn {
+    margin-top: auto;
+    min-height: 46px;
+}
+
+html[data-style-page="pricing"] .pricing-card .price-wrapper {
+    padding-block: 10px;
+}
+
+html[data-style-page="pricing"] .pricing-card .display-4 {
+    font-size: clamp(2.6rem, 4vw, 3.3rem);
+    letter-spacing: -0.04em;
+    color: #1e293b;
+}
+
+html[data-style-page="pricing"] .popular-badge {
+    border-radius: 30px;
+    background: #2563eb;
+}
+
+html[data-style-page="pricing"] .accordion-item {
+    border: 1px solid #e2e8f0 !important;
+    border-radius: 14px !important;
+    overflow: hidden;
+}
+
+html[data-style-page="pricing"] .accordion-button {
+    padding: 20px;
+    font-weight: 600;
+    font-size: 0.9rem;
+}
+
+html[data-style-page="pricing"] .accordion-button:not(.collapsed) {
+    color: #2563eb;
+    background: #eff6ff;
+}
+
+html[data-style-page="pricing"] .accordion-body {
+    line-height: 1.8;
+}

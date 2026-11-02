@@ -1,0 +1,94 @@
+services:
+  app:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: booking_app
+    restart: unless-stopped
+    working_dir: /var/www/html
+    volumes:
+      - ./src:/var/www/html
+      - ./docker/php/local.ini:/usr/local/etc/php/conf.d/local.ini
+    networks:
+      - booking-network
+    depends_on:
+      - db
+    environment:
+      - PHP_MEMORY_LIMIT=512M
+      - PHP_MAX_EXECUTION_TIME=300
+      - DB_HOST=db
+      - DB_PORT=3306
+      - DB_DATABASE=${DOCKER_DB_DATABASE:-booking_db}
+      - DB_USERNAME=${DOCKER_DB_USER:-booking_user}
+      - DB_PASSWORD=${DOCKER_DB_PASSWORD:?Set DOCKER_DB_PASSWORD in the root .env file}
+
+  webserver:
+    image: nginx:alpine
+    container_name: booking_webserver
+    restart: unless-stopped
+    ports:
+      - "80:80"
+      - "443:443"
+    volumes:
+      - ./src:/var/www/html
+      - ./docker/nginx/conf.d:/etc/nginx/conf.d
+    networks:
+      - booking-network
+    depends_on:
+      - app
+
+  db:
+    image: mysql:8.0
+    container_name: booking_db
+    restart: unless-stopped
+    environment:
+      MYSQL_DATABASE: ${DOCKER_DB_DATABASE:-booking_db}
+      MYSQL_ROOT_PASSWORD: ${DOCKER_DB_ROOT_PASSWORD:?Set DOCKER_DB_ROOT_PASSWORD in the root .env file}
+      MYSQL_PASSWORD: ${DOCKER_DB_PASSWORD:?Set DOCKER_DB_PASSWORD in the root .env file}
+      MYSQL_USER: ${DOCKER_DB_USER:-booking_user}
+      MYSQL_ROOT_HOST: '%'
+    ports:
+      - "3307:3306"
+    volumes:
+      - ./docker/mysql/data:/var/lib/mysql
+      - ./docker/mysql/my.cnf:/etc/mysql/conf.d/my.cnf
+    networks:
+      - booking-network
+    command: --default-authentication-plugin=mysql_native_password --character-set-server=utf8mb4 --collation-server=utf8mb4_unicode_ci
+    healthcheck:
+      test: ["CMD-SHELL", "mysqladmin ping -h localhost -u root -p\"$$MYSQL_ROOT_PASSWORD\" --silent"]
+      timeout: 20s
+      retries: 10
+      interval: 10s
+
+  phpmyadmin:
+    image: phpmyadmin/phpmyadmin:latest
+    container_name: booking_phpmyadmin
+    restart: unless-stopped
+    environment:
+      PMA_HOST: db
+      PMA_PORT: 3306
+      PMA_ARBITRARY: 1
+      UPLOAD_LIMIT: 100M
+    ports:
+      - "8080:80"
+    networks:
+      - booking-network
+    depends_on:
+      db:
+        condition: service_healthy
+
+  mailhog:
+    image: mailhog/mailhog:latest
+    container_name: booking_mailhog
+    restart: unless-stopped
+    ports:
+      - "8025:8025"
+      - "1025:1025"
+    networks:
+      - booking-network
+
+networks:
+  booking-network:
+    driver: bridge
+    name: booking-network

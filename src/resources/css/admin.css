@@ -1,0 +1,6811 @@
+@import './notifications.css';
+
+html[data-style-page="admin/api-tokens/index"] .admin-security {
+    background: #050817;
+    min-height: 100vh;
+}
+
+html[data-style-page="admin/api-tokens/index"] .badge-total {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    padding: 10px 16px;
+    font-size: 0.875rem;
+    font-weight: 600;
+    color: #F8FAFC;
+    background: #2563EB;
+    border-radius: 10px;
+    line-height: 1.2;
+    min-height: 42px;
+}
+
+html[data-style-page="admin/api-tokens/index"] .badge-total i {
+    font-size: 0.85rem;
+}
+
+html[data-style-page="admin/api-tokens/index"] .btn-clear {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    padding: 10px 16px;
+    font-size: 0.875rem;
+    font-weight: 600;
+    color: #F8FAFC;
+    background: #0F172A;
+    border: 1px solid #1E293B;
+    border-radius: 10px;
+    text-decoration: none;
+    line-height: 1.2;
+    min-height: 42px;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+html[data-style-page="admin/api-tokens/index"] .btn-clear:hover {
+    border-color: #2563EB;
+    color: #2563EB;
+    background: rgba(37, 99, 235, 0.04);
+}
+
+html[data-style-page="admin/api-tokens/index"] .btn-clear i {
+    font-size: 0.8rem;
+}
+
+html[data-style-page="admin/api-tokens/index"] .stat-card {
+    transition: all 0.3s cubic-bezier(0.34, 1.56, 0.64, 1);
+    border: 1px solid rgba(0, 0, 0, 0.04);
+    height: 100%;
+    min-height: 160px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+html[data-style-page="admin/api-tokens/index"] .stat-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.06) !important;
+}
+
+html[data-style-page="admin/api-tokens/index"] .stat-icon {
+    width: 48px;
+    height: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    margin: 0 auto;
+    font-size: 1.2rem;
+}
+
+html[data-style-page="admin/api-tokens/index"] .bg-primary-soft {
+    background: rgba(37, 99, 235, 0.08);
+}
+
+html[data-style-page="admin/api-tokens/index"] .bg-success-soft {
+    background: rgba(25, 135, 84, 0.08);
+}
+
+html[data-style-page="admin/api-tokens/index"] .bg-danger-soft {
+    background: rgba(220, 53, 69, 0.08);
+}
+
+html[data-style-page="admin/api-tokens/index"] .bg-warning-soft {
+    background: rgba(245, 158, 11, 0.08);
+}
+
+html[data-style-page="admin/api-tokens/index"] .bg-purple-soft {
+    background: rgba(124, 58, 237, 0.08);
+}
+
+html[data-style-page="admin/api-tokens/index"] .text-purple {
+    color: #7C3AED;
+}
+
+html[data-style-page="admin/api-tokens/index"] .btn-primary-modern {
+    display: inline-flex;
+    align-items: center;
+    padding: 10px 24px;
+    background: linear-gradient(135deg, #2563EB, #7C3AED);
+    color: #F8FAFC;
+    font-weight: 600;
+    font-size: 0.9rem;
+    border: none;
+    border-radius: 10px;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(37, 99, 235, 0.15);
+}
+
+html[data-style-page="admin/api-tokens/index"] .btn-primary-modern:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 30px rgba(37, 99, 235, 0.25);
+    color: #F8FAFC;
+}
+
+html[data-style-page="admin/api-tokens/index"] .form-control,
+html[data-style-page="admin/api-tokens/index"] .form-select {
+    padding: 10px 16px;
+    border: 2px solid #1E293B;
+    border-radius: 12px;
+    transition: all 0.3s ease;
+    font-size: 0.9rem;
+}
+
+html[data-style-page="admin/api-tokens/index"] .form-control:focus,
+html[data-style-page="admin/api-tokens/index"] .form-select:focus {
+    border-color: #2563EB;
+    box-shadow: 0 0 0 4px rgba(37, 99, 235, 0.06);
+}
+
+html[data-style-page="admin/api-tokens/index"] .form-label {
+    font-size: 0.9rem;
+    color: #F8FAFC;
+    margin-bottom: 6px;
+}
+
+html[data-style-page="admin/api-tokens/index"] .ability-check {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    padding: 6px 12px;
+    background: #0F172A;
+    border: 1px solid #1E293B;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+html[data-style-page="admin/api-tokens/index"] .ability-check:hover {
+    border-color: #2563EB;
+}
+
+html[data-style-page="admin/api-tokens/index"] .ability-check input[type="checkbox"] {
+    accent-color: #2563EB;
+}
+
+html[data-style-page="admin/api-tokens/index"] .ability-check:has(input:checked) {
+    background: rgba(37, 99, 235, 0.06);
+    border-color: #2563EB;
+    color: #2563EB;
+    font-weight: 600;
+}
+
+html[data-style-page="admin/api-tokens/index"] .avatar {
+    flex-shrink: 0;
+}
+
+html[data-style-page="admin/api-tokens/index"] .btn-action {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 36px;
+    height: 36px;
+    border: none;
+    border-radius: 8px;
+    font-size: 0.85rem;
+    transition: all 0.2s ease;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+html[data-style-page="admin/api-tokens/index"] .btn-action-delete {
+    background: transparent;
+    color: #dc3545;
+    border: 2px solid #dc3545;
+}
+
+html[data-style-page="admin/api-tokens/index"] .btn-action-delete:hover {
+    background: #dc3545;
+    color: #F8FAFC;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 15px rgba(220, 53, 69, 0.2);
+}
+
+html[data-style-page="admin/api-tokens/index"] .table {
+    --bs-table-hover-bg: rgba(37, 99, 235, 0.02);
+}
+
+html[data-style-page="admin/api-tokens/index"] .table thead th {
+    font-weight: 600;
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    letter-spacing: 0.3px;
+    color: #94A3B8;
+    border-bottom: 2px solid #1E293B;
+}
+
+html[data-style-page="admin/api-tokens/index"] .table tbody td {
+    vertical-align: middle;
+    padding: 12px 8px;
+    font-size: 0.9rem;
+    border-bottom: 1px solid #1E293B;
+}
+
+html[data-style-page="admin/api-tokens/index"] code {
+    background: rgba(37, 99, 235, 0.06);
+    padding: 2px 8px;
+    border-radius: 6px;
+    font-size: 0.8rem;
+}
+
+@media (max-width: 768px) {
+    html[data-style-page="admin/api-tokens/index"] .admin-security {
+        padding: 16px 0;
+    }
+    html[data-style-page="admin/api-tokens/index"] .admin-security h1 {
+        font-size: 1.5rem;
+    }
+    html[data-style-page="admin/api-tokens/index"] .stat-card {
+        padding: 12px !important;
+    }
+    html[data-style-page="admin/api-tokens/index"] .stat-card h3 {
+        font-size: 1.5rem;
+    }
+    html[data-style-page="admin/api-tokens/index"] .stat-icon {
+        width: 40px;
+        height: 40px;
+        font-size: 1rem;
+    }
+    html[data-style-page="admin/api-tokens/index"] .table tbody td {
+        padding: 8px 6px;
+        font-size: 0.8rem;
+    }
+    html[data-style-page="admin/api-tokens/index"] .btn-clear,
+    html[data-style-page="admin/api-tokens/index"] .btn-primary-modern {
+        width: 100%;
+        justify-content: center;
+    }
+}
+
+html[data-style-page="admin/api-tokens/index"] [data-view-style="admin-api-tokens-index-1"] {
+    word-break: break-all;
+}
+
+html[data-style-page="admin/api-tokens/index"] [data-view-style="admin-api-tokens-index-2"] {
+    width: 32px;
+    height: 32px;
+    font-size: 0.7rem;
+}
+
+html[data-style-page="admin/backups/index"] .admin-security {
+    background: #050817;
+    min-height: 100vh;
+}
+
+html[data-style-page="admin/backups/index"] .badge-total {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    padding: 10px 16px;
+    font-size: 0.875rem;
+    font-weight: 600;
+    color: #F8FAFC;
+    background: #2563EB;
+    border-radius: 10px;
+    line-height: 1.2;
+    min-height: 42px;
+}
+
+html[data-style-page="admin/backups/index"] .badge-total i {
+    font-size: 0.85rem;
+}
+
+html[data-style-page="admin/backups/index"] .btn-clear {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    padding: 10px 16px;
+    font-size: 0.875rem;
+    font-weight: 600;
+    color: #F8FAFC;
+    background: #0F172A;
+    border: 1px solid #1E293B;
+    border-radius: 10px;
+    text-decoration: none;
+    line-height: 1.2;
+    min-height: 42px;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+html[data-style-page="admin/backups/index"] .btn-clear:hover {
+    border-color: #2563EB;
+    color: #2563EB;
+    background: rgba(37, 99, 235, 0.04);
+}
+
+html[data-style-page="admin/backups/index"] .btn-clear i {
+    font-size: 0.8rem;
+}
+
+html[data-style-page="admin/backups/index"] .stat-card {
+    transition: all 0.3s cubic-bezier(0.34, 1.56, 0.64, 1);
+    border: 1px solid rgba(0, 0, 0, 0.04);
+    height: 100%;
+    min-height: 160px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+html[data-style-page="admin/backups/index"] .stat-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.06) !important;
+}
+
+html[data-style-page="admin/backups/index"] .stat-icon {
+    width: 48px;
+    height: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    margin: 0 auto;
+    font-size: 1.2rem;
+}
+
+html[data-style-page="admin/backups/index"] .bg-primary-soft {
+    background: rgba(37, 99, 235, 0.08);
+}
+
+html[data-style-page="admin/backups/index"] .bg-info-soft {
+    background: rgba(13, 202, 240, 0.08);
+}
+
+html[data-style-page="admin/backups/index"] .bg-warning-soft {
+    background: rgba(255, 193, 7, 0.08);
+}
+
+html[data-style-page="admin/backups/index"] .bg-success-soft {
+    background: rgba(25, 135, 84, 0.08);
+}
+
+html[data-style-page="admin/backups/index"] .btn-action {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 36px;
+    height: 36px;
+    border: none;
+    border-radius: 8px;
+    font-size: 0.85rem;
+    transition: all 0.2s ease;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+html[data-style-page="admin/backups/index"] .btn-action i {
+    width: 16px;
+    text-align: center;
+}
+
+html[data-style-page="admin/backups/index"] .btn-action-download {
+    background: linear-gradient(135deg, #2563EB, #7C3AED);
+    color: #F8FAFC;
+}
+
+html[data-style-page="admin/backups/index"] .btn-action-download:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 15px rgba(37, 99, 235, 0.25);
+    color: #F8FAFC;
+}
+
+html[data-style-page="admin/backups/index"] .btn-action-delete {
+    background: transparent;
+    color: #dc3545;
+    border: 2px solid #dc3545;
+}
+
+html[data-style-page="admin/backups/index"] .btn-action-delete:hover {
+    background: #dc3545;
+    color: #F8FAFC;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 15px rgba(220, 53, 69, 0.2);
+}
+
+html[data-style-page="admin/backups/index"] .table {
+    --bs-table-hover-bg: rgba(37, 99, 235, 0.02);
+}
+
+html[data-style-page="admin/backups/index"] .table thead th {
+    font-weight: 600;
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    letter-spacing: 0.3px;
+    color: #94A3B8;
+    border-bottom: 2px solid #1E293B;
+}
+
+html[data-style-page="admin/backups/index"] .table tbody td {
+    vertical-align: middle;
+    padding: 12px 8px;
+    font-size: 0.9rem;
+    border-bottom: 1px solid #1E293B;
+}
+
+html[data-style-page="admin/backups/index"] .table tbody tr:hover {
+    background: rgba(37, 99, 235, 0.02);
+}
+
+html[data-style-page="admin/backups/index"] .avatar {
+    flex-shrink: 0;
+}
+
+html[data-style-page="admin/backups/index"] .alert {
+    border: none;
+}
+
+html[data-style-page="admin/backups/index"] .alert-info {
+    background: rgba(37, 99, 235, 0.06);
+    color: #2563EB;
+}
+
+html[data-style-page="admin/backups/index"] .alert-success {
+    background: rgba(16, 185, 129, 0.08);
+    color: #10B981;
+}
+
+html[data-style-page="admin/backups/index"] .alert-danger {
+    background: rgba(239, 68, 68, 0.08);
+    color: #EF4444;
+}
+
+@media (max-width: 768px) {
+    html[data-style-page="admin/backups/index"] .admin-security {
+        padding: 16px 0;
+    }
+    html[data-style-page="admin/backups/index"] .admin-security h1 {
+        font-size: 1.5rem;
+    }
+    html[data-style-page="admin/backups/index"] .stat-card {
+        padding: 12px !important;
+    }
+    html[data-style-page="admin/backups/index"] .stat-card h3 {
+        font-size: 1.5rem;
+    }
+    html[data-style-page="admin/backups/index"] .stat-icon {
+        width: 40px;
+        height: 40px;
+        font-size: 1rem;
+    }
+    html[data-style-page="admin/backups/index"] .table tbody td {
+        padding: 8px 6px;
+        font-size: 0.8rem;
+    }
+}
+
+html[data-style-page="admin/backups/index"] [data-view-style="admin-backups-index-1"] {
+    width: 36px;
+    height: 36px;
+}
+
+html[data-style-page="admin/bookings/index"] .admin-security {
+    background: #050817;
+    min-height: 100vh;
+}
+
+html[data-style-page="admin/bookings/index"] .badge-total {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    padding: 10px 16px;
+    font-size: 0.875rem;
+    font-weight: 600;
+    color: #F8FAFC;
+    background: #2563EB;
+    border-radius: 10px;
+    line-height: 1.2;
+    min-height: 42px;
+    cursor: default;
+    user-select: none;
+}
+
+html[data-style-page="admin/bookings/index"] .badge-total i {
+    font-size: 0.85rem;
+}
+
+html[data-style-page="admin/bookings/index"] .btn-clear {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    padding: 10px 16px;
+    font-size: 0.875rem;
+    font-weight: 600;
+    color: #F8FAFC;
+    background: #0F172A;
+    border: 1px solid #1E293B;
+    border-radius: 10px;
+    text-decoration: none;
+    line-height: 1.2;
+    min-height: 42px;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+html[data-style-page="admin/bookings/index"] .btn-clear:hover {
+    border-color: #2563EB;
+    color: #2563EB;
+    background: rgba(37, 99, 235, 0.04);
+}
+
+html[data-style-page="admin/bookings/index"] .btn-clear i {
+    font-size: 0.85rem;
+}
+
+html[data-style-page="admin/bookings/index"] .stat-card {
+    transition: all 0.3s cubic-bezier(0.34, 1.56, 0.64, 1);
+    border: 1px solid rgba(0, 0, 0, 0.04);
+    height: 100%;
+    min-height: 160px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+html[data-style-page="admin/bookings/index"] .stat-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.06) !important;
+}
+
+html[data-style-page="admin/bookings/index"] .stat-icon {
+    width: 48px;
+    height: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    margin: 0 auto;
+    font-size: 1.2rem;
+}
+
+html[data-style-page="admin/bookings/index"] .bg-primary-soft {
+    background: rgba(37, 99, 235, 0.08);
+}
+
+html[data-style-page="admin/bookings/index"] .bg-success-soft {
+    background: rgba(25, 135, 84, 0.08);
+}
+
+html[data-style-page="admin/bookings/index"] .bg-warning-soft {
+    background: rgba(245, 158, 11, 0.08);
+}
+
+html[data-style-page="admin/bookings/index"] .bg-danger-soft {
+    background: rgba(220, 53, 69, 0.08);
+}
+
+html[data-style-page="admin/bookings/index"] .bg-purple-soft {
+    background: rgba(124, 58, 237, 0.08);
+}
+
+html[data-style-page="admin/bookings/index"] .bg-secondary-soft {
+    background: rgba(108, 117, 125, 0.08);
+}
+
+html[data-style-page="admin/bookings/index"] .text-purple {
+    color: #7C3AED;
+}
+
+html[data-style-page="admin/bookings/index"] .btn-action {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 36px;
+    height: 36px;
+    border: none;
+    border-radius: 8px;
+    font-size: 0.85rem;
+    transition: all 0.2s ease;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+html[data-style-page="admin/bookings/index"] .btn-action i {
+    width: 16px;
+    text-align: center;
+}
+
+html[data-style-page="admin/bookings/index"] .btn-action-view {
+    background: linear-gradient(135deg, #2563EB, #7C3AED);
+    color: #F8FAFC;
+}
+
+html[data-style-page="admin/bookings/index"] .btn-action-view:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 15px rgba(37, 99, 235, 0.25);
+    color: #F8FAFC;
+}
+
+html[data-style-page="admin/bookings/index"] .table {
+    --bs-table-hover-bg: rgba(37, 99, 235, 0.02);
+}
+
+html[data-style-page="admin/bookings/index"] .table thead th {
+    font-weight: 600;
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    letter-spacing: 0.3px;
+    color: #94A3B8;
+    border-bottom: 2px solid #1E293B;
+}
+
+html[data-style-page="admin/bookings/index"] .table tbody td {
+    vertical-align: middle;
+    padding: 12px 8px;
+    font-size: 0.9rem;
+    border-bottom: 1px solid #1E293B;
+}
+
+html[data-style-page="admin/bookings/index"] .table tbody tr:hover {
+    background: rgba(37, 99, 235, 0.02);
+}
+
+html[data-style-page="admin/bookings/index"] .avatar {
+    flex-shrink: 0;
+}
+
+html[data-style-page="admin/bookings/index"] .status-badge {
+    font-weight: 500;
+    font-size: 0.75rem;
+}
+
+html[data-style-page="admin/bookings/index"] .form-control, html[data-style-page="admin/bookings/index"] .form-select {
+    padding: 10px 16px;
+    border: 2px solid #1E293B;
+    border-radius: 10px;
+    font-size: 0.95rem;
+    transition: all 0.3s ease;
+}
+
+html[data-style-page="admin/bookings/index"] .form-control:focus, html[data-style-page="admin/bookings/index"] .form-select:focus {
+    border-color: #2563EB;
+    box-shadow: 0 0 0 4px rgba(37, 99, 235, 0.05);
+}
+
+html[data-style-page="admin/bookings/index"] .btn-primary {
+    background: linear-gradient(135deg, #2563EB, #7C3AED);
+    border: none;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(37, 99, 235, 0.15);
+}
+
+html[data-style-page="admin/bookings/index"] .btn-primary:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 30px rgba(37, 99, 235, 0.25);
+}
+
+html[data-style-page="admin/bookings/index"] .pagination-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-top: 32px;
+    margin-bottom: 16px;
+}
+
+html[data-style-page="admin/bookings/index"] .pagination-wrapper nav {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+html[data-style-page="admin/bookings/index"] .pagination-wrapper .pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    flex-wrap: wrap;
+}
+
+html[data-style-page="admin/bookings/index"] .pagination-wrapper .page-item {
+    margin: 0;
+}
+
+html[data-style-page="admin/bookings/index"] .pagination-wrapper .page-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 44px;
+    height: 44px;
+    padding: 8px 14px;
+    border: 1px solid #1E293B;
+    border-radius: 12px;
+    background: #0F172A;
+    color: #F8FAFC;
+    font-weight: 600;
+    font-size: 0.9rem;
+    transition: all 0.3s cubic-bezier(0.34, 1.56, 0.64, 1);
+    text-decoration: none;
+    line-height: 1;
+}
+
+html[data-style-page="admin/bookings/index"] .pagination-wrapper .page-link:hover {
+    background: #10182B;
+    border-color: #2563EB;
+    color: #2563EB;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(37, 99, 235, 0.1);
+}
+
+html[data-style-page="admin/bookings/index"] .pagination-wrapper .page-item.active .page-link {
+    background: linear-gradient(135deg, #2563EB, #7C3AED);
+    border-color: transparent;
+    color: #F8FAFC;
+    box-shadow: 0 4px 15px rgba(37, 99, 235, 0.25);
+}
+
+html[data-style-page="admin/bookings/index"] .pagination-wrapper .page-item.disabled .page-link {
+    background: #10182B;
+    color: #94A3B8;
+    border-color: #1E293B;
+    cursor: not-allowed;
+    opacity: 0.6;
+    pointer-events: none;
+}
+
+html[data-style-page="admin/bookings/index"] .pagination-wrapper .page-item:first-child .page-link,
+html[data-style-page="admin/bookings/index"] .pagination-wrapper .page-item:last-child .page-link {
+    padding: 8px 18px;
+    min-width: auto;
+    gap: 6px;
+}
+
+html[data-style-page="admin/bookings/index"] .pagination-wrapper .page-link svg {
+    width: 12px;
+    height: 12px;
+}
+
+@media (max-width: 768px) {
+    html[data-style-page="admin/bookings/index"] .admin-security {
+        padding: 16px 0;
+    }
+    html[data-style-page="admin/bookings/index"] .admin-security h1 {
+        font-size: 1.5rem;
+    }
+    html[data-style-page="admin/bookings/index"] .stat-card {
+        padding: 12px !important;
+    }
+    html[data-style-page="admin/bookings/index"] .stat-card h3 {
+        font-size: 1.5rem;
+    }
+    html[data-style-page="admin/bookings/index"] .stat-icon {
+        width: 40px;
+        height: 40px;
+        font-size: 1rem;
+    }
+    html[data-style-page="admin/bookings/index"] .table tbody td {
+        padding: 8px 6px;
+        font-size: 0.8rem;
+    }
+    html[data-style-page="admin/bookings/index"] .avatar {
+        width: 28px !important;
+        height: 28px !important;
+        font-size: 0.6rem !important;
+    }
+    html[data-style-page="admin/bookings/index"] .btn-clear {
+        width: 100%;
+        justify-content: center;
+    }
+    html[data-style-page="admin/bookings/index"] .pagination-wrapper .pagination {
+        gap: 4px;
+    }
+    html[data-style-page="admin/bookings/index"] .pagination-wrapper .page-link {
+        min-width: 36px;
+        height: 36px;
+        padding: 4px 10px;
+        font-size: 0.8rem;
+        border-radius: 10px;
+    }
+    html[data-style-page="admin/bookings/index"] .pagination-wrapper .page-item:first-child .page-link,
+    html[data-style-page="admin/bookings/index"] .pagination-wrapper .page-item:last-child .page-link {
+        padding: 4px 12px;
+    }
+}
+
+html[data-style-page="admin/bookings/index"] [data-view-style="admin-bookings-index-1"] {
+    width: 36px;
+    height: 36px;
+    font-size: 0.75rem;
+}
+
+html[data-style-page="admin/bookings/index"] [data-view-style="admin-bookings-index-2"] {
+    width: 36px;
+    height: 36px;
+    font-size: 0.9rem;
+}
+
+html[data-style-page="admin/bookings/show"] .admin-security {
+    background: #050817;
+    min-height: 100vh;
+}
+
+html[data-style-page="admin/bookings/show"] .badge-total {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    padding: 10px 16px;
+    font-size: 0.875rem;
+    font-weight: 600;
+    color: #F8FAFC;
+    background: #2563EB;
+    border-radius: 10px;
+    line-height: 1.2;
+    min-height: 42px;
+    cursor: default;
+    user-select: none;
+}
+
+html[data-style-page="admin/bookings/show"] .badge-total i {
+    font-size: 0.85rem;
+}
+
+html[data-style-page="admin/bookings/show"] .btn-clear {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    padding: 10px 16px;
+    font-size: 0.875rem;
+    font-weight: 600;
+    color: #F8FAFC;
+    background: #0F172A;
+    border: 1px solid #1E293B;
+    border-radius: 10px;
+    text-decoration: none;
+    line-height: 1.2;
+    min-height: 42px;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+html[data-style-page="admin/bookings/show"] .btn-clear:hover {
+    border-color: #2563EB;
+    color: #2563EB;
+    background: rgba(37, 99, 235, 0.04);
+}
+
+html[data-style-page="admin/bookings/show"] .btn-clear i {
+    font-size: 0.85rem;
+}
+
+html[data-style-page="admin/bookings/show"] .bg-primary-soft {
+    background: rgba(37, 99, 235, 0.08);
+}
+
+html[data-style-page="admin/bookings/show"] .bg-success-soft {
+    background: rgba(25, 135, 84, 0.08);
+}
+
+html[data-style-page="admin/bookings/show"] .bg-danger-soft {
+    background: rgba(220, 53, 69, 0.08);
+}
+
+html[data-style-page="admin/bookings/show"] .bg-secondary-soft {
+    background: rgba(108, 117, 125, 0.08);
+}
+
+html[data-style-page="admin/bookings/show"] .card-header-custom {
+    padding: 16px 24px;
+    border-bottom: 1px solid #1E293B;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #0F172A;
+}
+
+html[data-style-page="admin/bookings/show"] .card-body-custom {
+    padding: 20px 24px;
+}
+
+html[data-style-page="admin/bookings/show"] .info-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+    border-bottom: 1px solid #1E293B;
+    gap: 16px;
+}
+
+html[data-style-page="admin/bookings/show"] .info-row:last-child {
+    border-bottom: none;
+}
+
+html[data-style-page="admin/bookings/show"] .info-label {
+    font-weight: 500;
+    color: #94A3B8;
+    font-size: 0.9rem;
+    flex-shrink: 0;
+}
+
+html[data-style-page="admin/bookings/show"] .info-value {
+    font-weight: 500;
+    color: #F8FAFC;
+    text-align: right;
+    word-break: break-word;
+}
+
+html[data-style-page="admin/bookings/show"] .status-badge {
+    font-weight: 500;
+    font-size: 0.75rem;
+}
+
+html[data-style-page="admin/bookings/show"] .form-select {
+    padding: 10px 16px;
+    border: 2px solid #1E293B;
+    border-radius: 12px;
+    transition: all 0.3s ease;
+    font-size: 0.9rem;
+}
+
+html[data-style-page="admin/bookings/show"] .form-select:hover {
+    border-color: #1E293B;
+}
+
+html[data-style-page="admin/bookings/show"] .form-select:focus {
+    border-color: #2563EB;
+    box-shadow: 0 0 0 4px rgba(37, 99, 235, 0.06);
+}
+
+html[data-style-page="admin/bookings/show"] .form-label {
+    font-size: 0.9rem;
+    color: #F8FAFC;
+    margin-bottom: 6px;
+}
+
+html[data-style-page="admin/bookings/show"] .btn-primary-modern {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 24px;
+    background: linear-gradient(135deg, #2563EB, #7C3AED);
+    color: #F8FAFC;
+    font-weight: 600;
+    font-size: 0.9rem;
+    border: none;
+    border-radius: 10px;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(37, 99, 235, 0.15);
+    min-height: 42px;
+}
+
+html[data-style-page="admin/bookings/show"] .btn-primary-modern:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 30px rgba(37, 99, 235, 0.25);
+    color: #F8FAFC;
+}
+
+html[data-style-page="admin/bookings/show"] .btn-danger-modern {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    padding: 10px 16px;
+    font-size: 0.875rem;
+    font-weight: 600;
+    color: #dc3545;
+    background: #0F172A;
+    border: 1px solid #dc3545;
+    border-radius: 10px;
+    line-height: 1.2;
+    min-height: 42px;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+html[data-style-page="admin/bookings/show"] .btn-danger-modern:hover {
+    background: #dc3545;
+    color: #F8FAFC;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 15px rgba(220, 53, 69, 0.2);
+}
+
+@media (max-width: 768px) {
+    html[data-style-page="admin/bookings/show"] .admin-security {
+        padding: 16px 0;
+    }
+    html[data-style-page="admin/bookings/show"] .admin-security h1 {
+        font-size: 1.5rem;
+    }
+    html[data-style-page="admin/bookings/show"] .info-row {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 4px;
+    }
+    html[data-style-page="admin/bookings/show"] .info-value {
+        text-align: left;
+    }
+    html[data-style-page="admin/bookings/show"] .card-body-custom {
+        padding: 16px;
+    }
+    html[data-style-page="admin/bookings/show"] .card-header-custom {
+        padding: 14px 16px;
+    }
+    html[data-style-page="admin/bookings/show"] .btn-clear,
+    html[data-style-page="admin/bookings/show"] .btn-danger-modern,
+    html[data-style-page="admin/bookings/show"] .btn-primary-modern {
+        width: 100%;
+        justify-content: center;
+    }
+    html[data-style-page="admin/bookings/show"] .avatar-lg {
+        width: 52px !important;
+        height: 52px !important;
+        font-size: 1.1rem !important;
+    }
+}
+
+html[data-style-page="admin/bookings/show"] [data-view-style="admin-bookings-show-1"] {
+    width: 64px;
+    height: 64px;
+    font-size: 1.4rem;
+}
+
+html[data-style-page="admin/bookings/show"] [data-view-style="admin-bookings-show-2"] {
+    font-size: 0.7rem;
+    letter-spacing: 0.3px;
+}
+
+html[data-style-page="admin/custom-rules/edit"] .admin-security {
+    background: #050817;
+    min-height: 100vh;
+}
+
+html[data-style-page="admin/custom-rules/edit"] .badge-total {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    padding: 10px 16px;
+    font-size: 0.875rem;
+    font-weight: 600;
+    color: #F8FAFC;
+    background: #2563EB;
+    border-radius: 10px;
+    line-height: 1.2;
+    min-height: 42px;
+}
+
+html[data-style-page="admin/custom-rules/edit"] .badge-total i {
+    font-size: 0.85rem;
+}
+
+html[data-style-page="admin/custom-rules/edit"] .btn-clear {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    padding: 10px 16px;
+    font-size: 0.875rem;
+    font-weight: 600;
+    color: #F8FAFC;
+    background: #0F172A;
+    border: 1px solid #1E293B;
+    border-radius: 10px;
+    text-decoration: none;
+    line-height: 1.2;
+    min-height: 42px;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+html[data-style-page="admin/custom-rules/edit"] .btn-clear:hover {
+    border-color: #2563EB;
+    color: #2563EB;
+    background: rgba(37, 99, 235, 0.04);
+}
+
+html[data-style-page="admin/custom-rules/edit"] .btn-primary-modern {
+    display: inline-flex;
+    align-items: center;
+    padding: 10px 24px;
+    background: linear-gradient(135deg, #2563EB, #7C3AED);
+    color: #F8FAFC;
+    font-weight: 600;
+    font-size: 0.9rem;
+    border: none;
+    border-radius: 10px;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(37, 99, 235, 0.15);
+    min-height: 42px;
+}
+
+html[data-style-page="admin/custom-rules/edit"] .btn-primary-modern:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 30px rgba(37, 99, 235, 0.25);
+    color: #F8FAFC;
+}
+
+html[data-style-page="admin/custom-rules/edit"] .bg-primary-soft {
+    background: rgba(37, 99, 235, 0.08);
+}
+
+html[data-style-page="admin/custom-rules/edit"] .avatar {
+    flex-shrink: 0;
+}
+
+html[data-style-page="admin/custom-rules/edit"] .form-control {
+    padding: 10px 16px;
+    border: 2px solid #1E293B;
+    border-radius: 12px;
+    transition: all 0.3s ease;
+    font-size: 0.9rem;
+}
+
+html[data-style-page="admin/custom-rules/edit"] .form-control:focus {
+    border-color: #2563EB;
+    box-shadow: 0 0 0 4px rgba(37, 99, 235, 0.06);
+}
+
+html[data-style-page="admin/custom-rules/edit"] .form-control::placeholder {
+    color: #94a3b8;
+    font-size: 0.85rem;
+}
+
+html[data-style-page="admin/custom-rules/edit"] .form-label {
+    font-size: 0.9rem;
+    color: #F8FAFC;
+    margin-bottom: 6px;
+}
+
+html[data-style-page="admin/custom-rules/edit"] .form-check-input:checked {
+    background-color: #2563EB;
+    border-color: #2563EB;
+}
+
+html[data-style-page="admin/custom-rules/edit"] .form-check-label {
+    cursor: pointer;
+}
+
+html[data-style-page="admin/custom-rules/edit"] .hour-grid {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    gap: 4px;
+}
+
+html[data-style-page="admin/custom-rules/edit"] .hour-check input {
+    display: none;
+}
+
+html[data-style-page="admin/custom-rules/edit"] .hour-check span {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 6px 4px;
+    font-size: 0.7rem;
+    font-weight: 600;
+    background: #0F172A;
+    border: 1px solid #1E293B;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+html[data-style-page="admin/custom-rules/edit"] .hour-check input:checked + span {
+    background: linear-gradient(135deg, #2563EB, #7C3AED);
+    color: #F8FAFC;
+    border-color: transparent;
+    box-shadow: 0 2px 8px rgba(37, 99, 235, 0.25);
+}
+
+html[data-style-page="admin/custom-rules/edit"] .hour-check:hover span {
+    border-color: #2563EB;
+}
+
+html[data-style-page="admin/custom-rules/edit"] .day-grid {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 6px;
+}
+
+html[data-style-page="admin/custom-rules/edit"] .day-check input {
+    display: none;
+}
+
+html[data-style-page="admin/custom-rules/edit"] .day-check span {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 8px;
+    font-size: 0.8rem;
+    font-weight: 600;
+    background: #0F172A;
+    border: 1px solid #1E293B;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+html[data-style-page="admin/custom-rules/edit"] .day-check input:checked + span {
+    background: linear-gradient(135deg, #2563EB, #7C3AED);
+    color: #F8FAFC;
+    border-color: transparent;
+    box-shadow: 0 2px 8px rgba(37, 99, 235, 0.25);
+}
+
+html[data-style-page="admin/custom-rules/edit"] .day-check:hover span {
+    border-color: #2563EB;
+}
+
+@media (max-width: 768px) {
+    html[data-style-page="admin/custom-rules/edit"] .admin-security {
+        padding: 16px 0;
+    }
+    html[data-style-page="admin/custom-rules/edit"] .hour-grid {
+        grid-template-columns: repeat(6, 1fr);
+    }
+    html[data-style-page="admin/custom-rules/edit"] .day-grid {
+        grid-template-columns: repeat(4, 1fr);
+    }
+    html[data-style-page="admin/custom-rules/edit"] .btn-primary-modern,
+    html[data-style-page="admin/custom-rules/edit"] .btn-clear {
+        width: 100%;
+        justify-content: center;
+    }
+}
+
+html[data-style-page="admin/custom-rules/edit"] [data-view-style="admin-custom-rules-edit-1"] {
+    width: 56px;
+    height: 56px;
+    font-size: 1.2rem;
+}
+
+html[data-style-page="admin/custom-rules/edit"] [data-view-style="admin-custom-rules-edit-2"] {
+    width: 56px;
+    height: 28px;
+}
+
+html[data-style-page="admin/custom-rules/index"] .admin-security {
+    background: #050817;
+    min-height: 100vh;
+}
+
+html[data-style-page="admin/custom-rules/index"] .badge-total {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    padding: 10px 16px;
+    font-size: 0.875rem;
+    font-weight: 600;
+    color: #F8FAFC;
+    background: #2563EB;
+    border-radius: 10px;
+    line-height: 1.2;
+    min-height: 42px;
+}
+
+html[data-style-page="admin/custom-rules/index"] .badge-total i {
+    font-size: 0.85rem;
+}
+
+html[data-style-page="admin/custom-rules/index"] .btn-clear {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    padding: 10px 16px;
+    font-size: 0.875rem;
+    font-weight: 600;
+    color: #F8FAFC;
+    background: #0F172A;
+    border: 1px solid #1E293B;
+    border-radius: 10px;
+    text-decoration: none;
+    line-height: 1.2;
+    min-height: 42px;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+html[data-style-page="admin/custom-rules/index"] .btn-clear:hover {
+    border-color: #2563EB;
+    color: #2563EB;
+    background: rgba(37, 99, 235, 0.04);
+}
+
+html[data-style-page="admin/custom-rules/index"] .btn-clear i {
+    font-size: 0.85rem;
+}
+
+html[data-style-page="admin/custom-rules/index"] .stat-card {
+    transition: all 0.3s cubic-bezier(0.34, 1.56, 0.64, 1);
+    border: 1px solid rgba(0, 0, 0, 0.04);
+    height: 100%;
+    min-height: 160px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+html[data-style-page="admin/custom-rules/index"] .stat-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.06) !important;
+}
+
+html[data-style-page="admin/custom-rules/index"] .stat-icon {
+    width: 48px;
+    height: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    margin: 0 auto;
+    font-size: 1.2rem;
+}
+
+html[data-style-page="admin/custom-rules/index"] .bg-primary-soft {
+    background: rgba(37, 99, 235, 0.08);
+}
+
+html[data-style-page="admin/custom-rules/index"] .bg-success-soft {
+    background: rgba(25, 135, 84, 0.08);
+}
+
+html[data-style-page="admin/custom-rules/index"] .bg-danger-soft {
+    background: rgba(220, 53, 69, 0.08);
+}
+
+html[data-style-page="admin/custom-rules/index"] .bg-warning-soft {
+    background: rgba(245, 158, 11, 0.08);
+}
+
+html[data-style-page="admin/custom-rules/index"] .bg-purple-soft {
+    background: rgba(124, 58, 237, 0.08);
+}
+
+html[data-style-page="admin/custom-rules/index"] .bg-info-soft {
+    background: rgba(13, 202, 240, 0.08);
+}
+
+html[data-style-page="admin/custom-rules/index"] .bg-secondary-soft {
+    background: rgba(108, 117, 125, 0.08);
+}
+
+html[data-style-page="admin/custom-rules/index"] .text-purple {
+    color: #7C3AED;
+}
+
+html[data-style-page="admin/custom-rules/index"] .avatar {
+    flex-shrink: 0;
+}
+
+html[data-style-page="admin/custom-rules/index"] .btn-action {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 36px;
+    height: 36px;
+    border: none;
+    border-radius: 8px;
+    font-size: 0.85rem;
+    transition: all 0.2s ease;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+html[data-style-page="admin/custom-rules/index"] .btn-action-view {
+    background: linear-gradient(135deg, #2563EB, #7C3AED);
+    color: #F8FAFC;
+}
+
+html[data-style-page="admin/custom-rules/index"] .btn-action-view:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 15px rgba(37, 99, 235, 0.25);
+    color: #F8FAFC;
+}
+
+html[data-style-page="admin/custom-rules/index"] .table {
+    --bs-table-hover-bg: rgba(37, 99, 235, 0.02);
+}
+
+html[data-style-page="admin/custom-rules/index"] .table thead th {
+    font-weight: 600;
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    letter-spacing: 0.3px;
+    color: #94A3B8;
+    border-bottom: 2px solid #1E293B;
+}
+
+html[data-style-page="admin/custom-rules/index"] .table tbody td {
+    vertical-align: middle;
+    padding: 12px 8px;
+    font-size: 0.9rem;
+    border-bottom: 1px solid #1E293B;
+}
+
+@media (max-width: 768px) {
+    html[data-style-page="admin/custom-rules/index"] .admin-security {
+        padding: 16px 0;
+    }
+    html[data-style-page="admin/custom-rules/index"] .stat-card {
+        padding: 12px !important;
+    }
+    html[data-style-page="admin/custom-rules/index"] .stat-card h3 {
+        font-size: 1.5rem;
+    }
+    html[data-style-page="admin/custom-rules/index"] .stat-icon {
+        width: 40px;
+        height: 40px;
+        font-size: 1rem;
+    }
+    html[data-style-page="admin/custom-rules/index"] .table tbody td {
+        padding: 8px 6px;
+        font-size: 0.8rem;
+    }
+}
+
+html[data-style-page="admin/custom-rules/index"] [data-view-style="admin-custom-rules-index-1"] {
+    width: 36px;
+    height: 36px;
+    font-size: 0.75rem;
+}
+
+html[data-style-page="admin/dashboard"] .admin-dashboard {
+    background: linear-gradient(180deg, #10182B 0%, #f0f4ff 100%);
+    min-height: 100vh;
+}
+
+html[data-style-page="admin/dashboard"] .admin-header {
+    margin-bottom: 24px;
+    padding-bottom: 16px;
+    border-bottom: 1px solid #1E293B;
+}
+
+html[data-style-page="admin/dashboard"] .quick-actions .btn {
+    font-weight: 500;
+    border-width: 2px;
+}
+
+html[data-style-page="admin/dashboard"] .quick-actions .btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 15px rgba(37, 99, 235, 0.08);
+}
+
+html[data-style-page="admin/dashboard"] .stat-card {
+    background: rgba(255, 255, 255, 0.92);
+    backdrop-filter: blur(20px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 20px;
+    padding: 20px 24px;
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.02);
+    height: 100%;
+    min-height: 96px;
+}
+
+html[data-style-page="admin/dashboard"] .stat-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 12px 40px rgba(0, 0, 0, 0.04);
+}
+
+html[data-style-page="admin/dashboard"] .stat-icon {
+    width: 56px;
+    height: 56px;
+    border-radius: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+    flex-shrink: 0;
+}
+
+html[data-style-page="admin/dashboard"] .stat-info {
+    flex: 1;
+    min-width: 0;
+}
+
+html[data-style-page="admin/dashboard"] .stat-number {
+    display: block;
+    font-size: 1.6rem;
+    font-weight: 800;
+    color: #F8FAFC;
+    line-height: 1.2;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+html[data-style-page="admin/dashboard"] .stat-label {
+    display: block;
+    font-size: 0.85rem;
+    color: #94A3B8;
+    font-weight: 500;
+    white-space: nowrap;
+}
+
+html[data-style-page="admin/dashboard"] .stat-trend {
+    font-size: 0.75rem;
+    font-weight: 600;
+    padding: 4px 12px;
+    border-radius: 50px;
+    white-space: nowrap;
+    flex-shrink: 0;
+}
+
+html[data-style-page="admin/dashboard"] .stat-trend.up {
+    background: rgba(16, 185, 129, 0.08);
+    color: #10B981;
+}
+
+html[data-style-page="admin/dashboard"] .stat-trend.down {
+    background: rgba(239, 68, 68, 0.08);
+    color: #EF4444;
+}
+
+html[data-style-page="admin/dashboard"] .admin-card {
+    background: rgba(255, 255, 255, 0.92);
+    backdrop-filter: blur(20px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 20px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.02);
+    overflow: hidden;
+    height: 100%;
+}
+
+html[data-style-page="admin/dashboard"] .card-header-custom {
+    padding: 16px 24px;
+    border-bottom: 1px solid #1E293B;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: rgba(248, 250, 252, 0.4);
+}
+
+html[data-style-page="admin/dashboard"] .card-body-custom {
+    padding: 16px 24px;
+}
+
+html[data-style-page="admin/dashboard"] .recent-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px 24px;
+    border-bottom: 1px solid #1E293B;
+    transition: all 0.2s ease;
+}
+
+html[data-style-page="admin/dashboard"] .recent-item:hover {
+    background: #10182B;
+}
+
+html[data-style-page="admin/dashboard"] .recent-item:last-child {
+    border-bottom: none;
+}
+
+html[data-style-page="admin/dashboard"] .status-badge {
+    display: inline-block;
+    padding: 3px 14px;
+    border-radius: 50px;
+    font-size: 0.7rem;
+    font-weight: 600;
+}
+
+html[data-style-page="admin/dashboard"] .status-upcoming {
+    background: rgba(37, 99, 235, 0.08);
+    color: #2563EB;
+}
+
+html[data-style-page="admin/dashboard"] .status-completed {
+    background: rgba(16, 185, 129, 0.08);
+    color: #10B981;
+}
+
+html[data-style-page="admin/dashboard"] .status-cancelled {
+    background: rgba(239, 68, 68, 0.08);
+    color: #EF4444;
+}
+
+html[data-style-page="admin/dashboard"] .role-badge {
+    display: inline-block;
+    padding: 3px 14px;
+    border-radius: 50px;
+    font-size: 0.7rem;
+    font-weight: 600;
+}
+
+html[data-style-page="admin/dashboard"] .role-badge.admin {
+    background: rgba(124, 58, 237, 0.08);
+    color: #7C3AED;
+}
+
+html[data-style-page="admin/dashboard"] .role-badge.user {
+    background: rgba(37, 99, 235, 0.08);
+    color: #2563EB;
+}
+
+html[data-style-page="admin/dashboard"] .popular-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+    border-bottom: 1px solid #1E293B;
+}
+
+html[data-style-page="admin/dashboard"] .popular-item:last-child {
+    border-bottom: none;
+}
+
+html[data-style-page="admin/dashboard"] .popular-value {
+    font-weight: 700;
+    color: #2563EB;
+    font-size: 0.95rem;
+}
+
+html[data-style-page="admin/dashboard"] .status-stats {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+html[data-style-page="admin/dashboard"] .status-item {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+html[data-style-page="admin/dashboard"] .status-label {
+    min-width: 80px;
+    font-size: 0.9rem;
+    font-weight: 500;
+}
+
+html[data-style-page="admin/dashboard"] .status-bar {
+    height: 8px;
+    border-radius: 4px;
+    flex: 1;
+    transition: width 0.8s ease;
+}
+
+html[data-style-page="admin/dashboard"] .status-count {
+    min-width: 30px;
+    text-align: right;
+    font-weight: 600;
+    font-size: 0.9rem;
+}
+
+html[data-style-page="admin/dashboard"] .badge-notification {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 20px;
+    height: 20px;
+    padding: 0 6px;
+    margin-left: 6px;
+    font-size: 0.7rem;
+    font-weight: 700;
+    color: #F8FAFC;
+    background: #EF4444;
+    border-radius: 50px;
+    line-height: 1;
+    box-shadow: 0 2px 6px rgba(239, 68, 68, 0.3);
+}
+
+html[data-style-page="admin/dashboard"] .badge-notification-warning {
+    background: #F59E0B;
+    box-shadow: 0 2px 6px rgba(245, 158, 11, 0.3);
+}
+
+html[data-style-page="admin/dashboard"] .badge-notification-success {
+    background: #10B981;
+    box-shadow: 0 2px 6px rgba(16, 185, 129, 0.3);
+}
+
+html[data-style-page="admin/dashboard"] .badge-notification-info {
+    background: #2563EB;
+    box-shadow: 0 2px 6px rgba(37, 99, 235, 0.3);
+}
+
+html[data-style-page="admin/dashboard"] .text-purple {
+    color: #7C3AED;
+}
+
+html[data-style-page="admin/dashboard"] .bg-purple-soft {
+    background: rgba(124, 58, 237, 0.08);
+}
+
+html[data-style-page="admin/dashboard"] .bg-primary-soft {
+    background: rgba(37, 99, 235, 0.08);
+}
+
+@media (max-width: 768px) {
+    html[data-style-page="admin/dashboard"] .stat-number {
+        font-size: 1.4rem;
+    }
+    html[data-style-page="admin/dashboard"] .stat-icon {
+        width: 44px;
+        height: 44px;
+        font-size: 1.2rem;
+    }
+    html[data-style-page="admin/dashboard"] .stat-card {
+        padding: 16px 18px;
+    }
+    html[data-style-page="admin/dashboard"] .admin-header h1 {
+        font-size: 1.5rem;
+    }
+    html[data-style-page="admin/dashboard"] .quick-actions .btn {
+        font-size: 0.85rem;
+        padding: 6px 16px;
+    }
+}
+
+html[data-style-page="admin/dashboard"] [data-view-style="admin-dashboard-1"] {
+    background: rgba(37, 99, 235, 0.08);
+    color: #2563EB;
+}
+
+html[data-style-page="admin/dashboard"] [data-view-style="admin-dashboard-2"] {
+    background: rgba(16, 185, 129, 0.08);
+    color: #10B981;
+}
+
+html[data-style-page="admin/dashboard"] [data-view-style="admin-dashboard-3"] {
+    background: rgba(245, 158, 11, 0.08);
+    color: #F59E0B;
+}
+
+html[data-style-page="admin/dashboard"] [data-view-style="admin-dashboard-4"] {
+    background: rgba(124, 58, 237, 0.08);
+    color: #7C3AED;
+}
+
+html[data-style-page="admin/dashboard"] [data-view-style="admin-dashboard-5"] {
+    background: #2563EB;
+}
+
+html[data-style-page="admin/dashboard"] [data-view-style="admin-dashboard-6"] {
+    background: #10B981;
+}
+
+html[data-style-page="admin/dashboard"] [data-view-style="admin-dashboard-7"] {
+    background: #EF4444;
+}
+
+html[data-style-page="admin/dashboard"] [data-view-style="admin-dashboard-8"] {
+    background: #10182B;
+    border: 1px solid #1E293B;
+}
+
+html[data-style-page="admin/dashboard"] [data-view-style="admin-dashboard-9"] {
+    width: 32px;
+    height: 32px;
+    font-size: 12px;
+    font-weight: 600;
+}
+
+html[data-style-page="admin/dashboard"] [data-view-style="admin-dashboard-10"] {
+    width: 32px;
+    height: 32px;
+    font-size: 12px;
+    font-weight: 600;
+}
+
+html[data-style-page="admin/firewall/index"] .admin-security {
+    background: #050817;
+    min-height: 100vh;
+}
+
+html[data-style-page="admin/firewall/index"] .badge-total {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    padding: 10px 16px;
+    font-size: 0.875rem;
+    font-weight: 600;
+    color: #F8FAFC;
+    background: #2563EB;
+    border-radius: 10px;
+    line-height: 1.2;
+    min-height: 42px;
+}
+
+html[data-style-page="admin/firewall/index"] .badge-total i {
+    font-size: 0.85rem;
+}
+
+html[data-style-page="admin/firewall/index"] .btn-clear {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    padding: 10px 16px;
+    font-size: 0.875rem;
+    font-weight: 600;
+    color: #F8FAFC;
+    background: #0F172A;
+    border: 1px solid #1E293B;
+    border-radius: 10px;
+    text-decoration: none;
+    line-height: 1.2;
+    min-height: 42px;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+html[data-style-page="admin/firewall/index"] .btn-clear:hover {
+    border-color: #2563EB;
+    color: #2563EB;
+    background: rgba(37, 99, 235, 0.04);
+}
+
+html[data-style-page="admin/firewall/index"] .btn-clear i {
+    font-size: 0.8rem;
+    transition: transform 0.3s ease;
+}
+
+html[data-style-page="admin/firewall/index"] .stat-card {
+    transition: all 0.3s cubic-bezier(0.34, 1.56, 0.64, 1);
+    border: 1px solid rgba(0, 0, 0, 0.04);
+    height: 100%;
+    min-height: 160px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+html[data-style-page="admin/firewall/index"] .stat-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.06) !important;
+}
+
+html[data-style-page="admin/firewall/index"] .stat-icon {
+    width: 48px;
+    height: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    margin: 0 auto;
+    font-size: 1.2rem;
+}
+
+html[data-style-page="admin/firewall/index"] .bg-primary-soft {
+    background: rgba(37, 99, 235, 0.08);
+}
+
+html[data-style-page="admin/firewall/index"] .bg-success-soft {
+    background: rgba(25, 135, 84, 0.08);
+}
+
+html[data-style-page="admin/firewall/index"] .bg-danger-soft {
+    background: rgba(220, 53, 69, 0.08);
+}
+
+html[data-style-page="admin/firewall/index"] .bg-warning-soft {
+    background: rgba(245, 158, 11, 0.08);
+}
+
+html[data-style-page="admin/firewall/index"] .bg-purple-soft {
+    background: rgba(124, 58, 237, 0.08);
+}
+
+html[data-style-page="admin/firewall/index"] .bg-secondary-soft {
+    background: rgba(108, 117, 125, 0.08);
+}
+
+html[data-style-page="admin/firewall/index"] .text-purple {
+    color: #7C3AED;
+}
+
+html[data-style-page="admin/firewall/index"] .btn-action {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 36px;
+    height: 36px;
+    border: none;
+    border-radius: 8px;
+    font-size: 0.85rem;
+    transition: all 0.2s ease;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+html[data-style-page="admin/firewall/index"] .btn-action i {
+    width: 16px;
+    text-align: center;
+}
+
+html[data-style-page="admin/firewall/index"] .btn-action-pause {
+    background: transparent;
+    color: #F59E0B;
+    border: 2px solid #F59E0B;
+}
+
+html[data-style-page="admin/firewall/index"] .btn-action-pause:hover {
+    background: #F59E0B;
+    color: #F8FAFC;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 15px rgba(245, 158, 11, 0.25);
+}
+
+html[data-style-page="admin/firewall/index"] .btn-action-play {
+    background: linear-gradient(135deg, #10B981, #059669);
+    color: #F8FAFC;
+}
+
+html[data-style-page="admin/firewall/index"] .btn-action-play:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 15px rgba(16, 185, 129, 0.25);
+    color: #F8FAFC;
+}
+
+html[data-style-page="admin/firewall/index"] .btn-action-delete {
+    background: transparent;
+    color: #dc3545;
+    border: 2px solid #dc3545;
+}
+
+html[data-style-page="admin/firewall/index"] .btn-action-delete:hover {
+    background: #dc3545;
+    color: #F8FAFC;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 15px rgba(220, 53, 69, 0.2);
+}
+
+html[data-style-page="admin/firewall/index"] .table {
+    --bs-table-hover-bg: rgba(37, 99, 235, 0.02);
+}
+
+html[data-style-page="admin/firewall/index"] .table thead th {
+    font-weight: 600;
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    letter-spacing: 0.3px;
+    color: #94A3B8;
+    border-bottom: 2px solid #1E293B;
+}
+
+html[data-style-page="admin/firewall/index"] .table tbody td {
+    vertical-align: middle;
+    padding: 12px 8px;
+    font-size: 0.9rem;
+    border-bottom: 1px solid #1E293B;
+}
+
+html[data-style-page="admin/firewall/index"] .table tbody tr:hover {
+    background: rgba(37, 99, 235, 0.02);
+}
+
+html[data-style-page="admin/firewall/index"] .status-badge {
+    font-weight: 500;
+    font-size: 0.75rem;
+}
+
+html[data-style-page="admin/firewall/index"] .form-control,
+html[data-style-page="admin/firewall/index"] .form-select {
+    padding: 10px 16px;
+    border: 2px solid #1E293B;
+    border-radius: 12px;
+    transition: all 0.3s ease;
+    font-size: 0.9rem;
+    background: #0F172A;
+}
+
+html[data-style-page="admin/firewall/index"] .form-select-sm,
+html[data-style-page="admin/firewall/index"] .form-control-sm {
+    padding: 6px 12px;
+    font-size: 0.85rem;
+    border-radius: 10px;
+}
+
+html[data-style-page="admin/firewall/index"] .form-control:hover,
+html[data-style-page="admin/firewall/index"] .form-select:hover {
+    border-color: #1E293B;
+}
+
+html[data-style-page="admin/firewall/index"] .form-control:focus,
+html[data-style-page="admin/firewall/index"] .form-select:focus {
+    border-color: #2563EB;
+    box-shadow: 0 0 0 4px rgba(37, 99, 235, 0.06);
+}
+
+html[data-style-page="admin/firewall/index"] .form-control::placeholder {
+    color: #94a3b8;
+}
+
+html[data-style-page="admin/firewall/index"] .form-label {
+    font-size: 0.9rem;
+    color: #F8FAFC;
+    margin-bottom: 6px;
+}
+
+html[data-style-page="admin/firewall/index"] .btn-primary-modern {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 24px;
+    background: linear-gradient(135deg, #2563EB, #7C3AED);
+    color: #F8FAFC;
+    font-weight: 600;
+    font-size: 0.9rem;
+    border: none;
+    border-radius: 10px;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(37, 99, 235, 0.15);
+}
+
+html[data-style-page="admin/firewall/index"] .btn-primary-modern:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 30px rgba(37, 99, 235, 0.25);
+    color: #F8FAFC;
+}
+
+html[data-style-page="admin/firewall/index"] .invalid-feedback {
+    font-size: 0.85rem;
+    margin-top: 4px;
+}
+
+html[data-style-page="admin/firewall/index"] .is-invalid {
+    border-color: #dc3545 !important;
+}
+
+html[data-style-page="admin/firewall/index"] .pagination-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-top: 32px;
+    margin-bottom: 16px;
+}
+
+html[data-style-page="admin/firewall/index"] .pagination-wrapper nav {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+html[data-style-page="admin/firewall/index"] .pagination-wrapper .pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    flex-wrap: wrap;
+}
+
+html[data-style-page="admin/firewall/index"] .pagination-wrapper .page-item {
+    margin: 0;
+}
+
+html[data-style-page="admin/firewall/index"] .pagination-wrapper .page-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 44px;
+    height: 44px;
+    padding: 8px 14px;
+    border: 1px solid #1E293B;
+    border-radius: 12px;
+    background: #0F172A;
+    color: #F8FAFC;
+    font-weight: 600;
+    font-size: 0.9rem;
+    transition: all 0.3s cubic-bezier(0.34, 1.56, 0.64, 1);
+    text-decoration: none;
+    line-height: 1;
+}
+
+html[data-style-page="admin/firewall/index"] .pagination-wrapper .page-link:hover {
+    background: #10182B;
+    border-color: #2563EB;
+    color: #2563EB;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(37, 99, 235, 0.1);
+}
+
+html[data-style-page="admin/firewall/index"] .pagination-wrapper .page-item.active .page-link {
+    background: linear-gradient(135deg, #2563EB, #7C3AED);
+    border-color: transparent;
+    color: #F8FAFC;
+    box-shadow: 0 4px 15px rgba(37, 99, 235, 0.25);
+}
+
+html[data-style-page="admin/firewall/index"] .pagination-wrapper .page-item.disabled .page-link {
+    background: #10182B;
+    color: #94A3B8;
+    border-color: #1E293B;
+    cursor: not-allowed;
+    opacity: 0.6;
+    pointer-events: none;
+}
+
+html[data-style-page="admin/firewall/index"] .pagination-wrapper .page-item:first-child .page-link,
+html[data-style-page="admin/firewall/index"] .pagination-wrapper .page-item:last-child .page-link {
+    padding: 8px 18px;
+    min-width: auto;
+    gap: 6px;
+}
+
+html[data-style-page="admin/firewall/index"] .pagination-wrapper .page-link svg {
+    width: 12px;
+    height: 12px;
+}
+
+html[data-style-page="admin/firewall/index"] .results-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-top: 24px;
+    margin-bottom: 16px;
+}
+
+html[data-style-page="admin/firewall/index"] .results-info {
+    display: inline-flex;
+    align-items: center;
+    padding: 8px 20px;
+    font-size: 0.875rem;
+    color: #94A3B8;
+    background: #0F172A;
+    border: 1px solid #1E293B;
+    border-radius: 50px;
+    transition: all 0.3s ease;
+}
+
+html[data-style-page="admin/firewall/index"] .results-info:hover {
+    border-color: #2563EB;
+    color: #2563EB;
+}
+
+html[data-style-page="admin/firewall/index"] .results-info strong {
+    color: #F8FAFC;
+    font-weight: 700;
+    margin: 0 3px;
+}
+
+@media (max-width: 768px) {
+    html[data-style-page="admin/firewall/index"] .admin-security {
+        padding: 16px 0;
+    }
+    html[data-style-page="admin/firewall/index"] .admin-security h1 {
+        font-size: 1.5rem;
+    }
+    html[data-style-page="admin/firewall/index"] .stat-card {
+        padding: 12px !important;
+    }
+    html[data-style-page="admin/firewall/index"] .stat-card h3 {
+        font-size: 1.5rem;
+    }
+    html[data-style-page="admin/firewall/index"] .stat-icon {
+        width: 40px;
+        height: 40px;
+        font-size: 1rem;
+    }
+    html[data-style-page="admin/firewall/index"] .table tbody td {
+        padding: 8px 6px;
+        font-size: 0.8rem;
+    }
+    html[data-style-page="admin/firewall/index"] .btn-primary-modern,
+    html[data-style-page="admin/firewall/index"] .btn-clear {
+        width: 100%;
+        justify-content: center;
+    }
+    html[data-style-page="admin/firewall/index"] .pagination-wrapper .page-link {
+        min-width: 36px;
+        height: 36px;
+        padding: 4px 10px;
+        font-size: 0.8rem;
+    }
+}
+
+html[data-style-page="admin/firewall/logs"] .admin-security {
+    background: #050817;
+    min-height: 100vh;
+}
+
+html[data-style-page="admin/firewall/logs"] .badge-total {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    padding: 10px 16px;
+    font-size: 0.875rem;
+    font-weight: 600;
+    color: #F8FAFC;
+    background: #2563EB;
+    border-radius: 10px;
+    line-height: 1.2;
+    min-height: 42px;
+}
+
+html[data-style-page="admin/firewall/logs"] .badge-total i {
+    font-size: 0.85rem;
+}
+
+html[data-style-page="admin/firewall/logs"] .btn-clear {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    padding: 10px 16px;
+    font-size: 0.875rem;
+    font-weight: 600;
+    color: #F8FAFC;
+    background: #0F172A;
+    border: 1px solid #1E293B;
+    border-radius: 10px;
+    text-decoration: none;
+    line-height: 1.2;
+    min-height: 42px;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+html[data-style-page="admin/firewall/logs"] .btn-clear:hover {
+    border-color: #2563EB;
+    color: #2563EB;
+    background: rgba(37, 99, 235, 0.04);
+}
+
+html[data-style-page="admin/firewall/logs"] .btn-clear i {
+    font-size: 0.8rem;
+    transition: transform 0.3s ease;
+}
+
+html[data-style-page="admin/firewall/logs"] .stat-card {
+    transition: all 0.3s cubic-bezier(0.34, 1.56, 0.64, 1);
+    border: 1px solid rgba(0, 0, 0, 0.04);
+    height: 100%;
+    min-height: 160px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+html[data-style-page="admin/firewall/logs"] .stat-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.06) !important;
+}
+
+html[data-style-page="admin/firewall/logs"] .stat-icon {
+    width: 48px;
+    height: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    margin: 0 auto;
+    font-size: 1.2rem;
+}
+
+html[data-style-page="admin/firewall/logs"] .bg-primary-soft {
+    background: rgba(37, 99, 235, 0.08);
+}
+
+html[data-style-page="admin/firewall/logs"] .bg-success-soft {
+    background: rgba(25, 135, 84, 0.08);
+}
+
+html[data-style-page="admin/firewall/logs"] .bg-danger-soft {
+    background: rgba(220, 53, 69, 0.08);
+}
+
+html[data-style-page="admin/firewall/logs"] .bg-warning-soft {
+    background: rgba(245, 158, 11, 0.08);
+}
+
+html[data-style-page="admin/firewall/logs"] .bg-purple-soft {
+    background: rgba(124, 58, 237, 0.08);
+}
+
+html[data-style-page="admin/firewall/logs"] .bg-secondary-soft {
+    background: rgba(108, 117, 125, 0.08);
+}
+
+html[data-style-page="admin/firewall/logs"] .bg-dark-soft {
+    background: rgba(33, 37, 41, 0.08);
+}
+
+html[data-style-page="admin/firewall/logs"] .text-purple {
+    color: #7C3AED;
+}
+
+html[data-style-page="admin/firewall/logs"] .btn-action {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 36px;
+    height: 36px;
+    border: none;
+    border-radius: 8px;
+    font-size: 0.85rem;
+    transition: all 0.2s ease;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+html[data-style-page="admin/firewall/logs"] .btn-action i {
+    width: 16px;
+    text-align: center;
+}
+
+html[data-style-page="admin/firewall/logs"] .btn-action-delete {
+    background: transparent;
+    color: #dc3545;
+    border: 2px solid #dc3545;
+}
+
+html[data-style-page="admin/firewall/logs"] .btn-action-delete:hover {
+    background: #dc3545;
+    color: #F8FAFC;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 15px rgba(220, 53, 69, 0.2);
+}
+
+html[data-style-page="admin/firewall/logs"] .table {
+    --bs-table-hover-bg: rgba(37, 99, 235, 0.02);
+}
+
+html[data-style-page="admin/firewall/logs"] .table thead th {
+    font-weight: 600;
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    letter-spacing: 0.3px;
+    color: #94A3B8;
+    border-bottom: 2px solid #1E293B;
+}
+
+html[data-style-page="admin/firewall/logs"] .table tbody td {
+    vertical-align: middle;
+    padding: 12px 8px;
+    font-size: 0.9rem;
+    border-bottom: 1px solid #1E293B;
+}
+
+html[data-style-page="admin/firewall/logs"] .table tbody tr:hover {
+    background: rgba(37, 99, 235, 0.02);
+}
+
+html[data-style-page="admin/firewall/logs"] .avatar {
+    flex-shrink: 0;
+}
+
+html[data-style-page="admin/firewall/logs"] .status-badge {
+    font-weight: 500;
+    font-size: 0.75rem;
+}
+
+html[data-style-page="admin/firewall/logs"] code {
+    background: rgba(37, 99, 235, 0.06);
+    padding: 2px 8px;
+    border-radius: 6px;
+    font-size: 0.85rem;
+}
+
+html[data-style-page="admin/firewall/logs"] .form-control,
+html[data-style-page="admin/firewall/logs"] .form-select {
+    padding: 10px 16px;
+    border: 2px solid #1E293B;
+    border-radius: 12px;
+    transition: all 0.3s ease;
+    font-size: 0.9rem;
+    background: #0F172A;
+}
+
+html[data-style-page="admin/firewall/logs"] .form-select-sm,
+html[data-style-page="admin/firewall/logs"] .form-control-sm {
+    padding: 6px 12px;
+    font-size: 0.85rem;
+    border-radius: 10px;
+}
+
+html[data-style-page="admin/firewall/logs"] .form-control:hover,
+html[data-style-page="admin/firewall/logs"] .form-select:hover {
+    border-color: #1E293B;
+}
+
+html[data-style-page="admin/firewall/logs"] .form-control:focus,
+html[data-style-page="admin/firewall/logs"] .form-select:focus {
+    border-color: #2563EB;
+    box-shadow: 0 0 0 4px rgba(37, 99, 235, 0.06);
+}
+
+html[data-style-page="admin/firewall/logs"] .form-label {
+    font-size: 0.9rem;
+    color: #F8FAFC;
+    margin-bottom: 6px;
+}
+
+html[data-style-page="admin/firewall/logs"] .btn-primary-modern {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 24px;
+    background: linear-gradient(135deg, #2563EB, #7C3AED);
+    color: #F8FAFC;
+    font-weight: 600;
+    font-size: 0.9rem;
+    border: none;
+    border-radius: 10px;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(37, 99, 235, 0.15);
+}
+
+html[data-style-page="admin/firewall/logs"] .btn-primary-modern:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 30px rgba(37, 99, 235, 0.25);
+    color: #F8FAFC;
+}
+
+html[data-style-page="admin/firewall/logs"] .pagination-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-top: 32px;
+    margin-bottom: 16px;
+}
+
+html[data-style-page="admin/firewall/logs"] .pagination-wrapper nav {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+html[data-style-page="admin/firewall/logs"] .pagination-wrapper .pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    flex-wrap: wrap;
+}
+
+html[data-style-page="admin/firewall/logs"] .pagination-wrapper .page-item {
+    margin: 0;
+}
+
+html[data-style-page="admin/firewall/logs"] .pagination-wrapper .page-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 44px;
+    height: 44px;
+    padding: 8px 14px;
+    border: 1px solid #1E293B;
+    border-radius: 12px;
+    background: #0F172A;
+    color: #F8FAFC;
+    font-weight: 600;
+    font-size: 0.9rem;
+    transition: all 0.3s cubic-bezier(0.34, 1.56, 0.64, 1);
+    text-decoration: none;
+    line-height: 1;
+}
+
+html[data-style-page="admin/firewall/logs"] .pagination-wrapper .page-link:hover {
+    background: #10182B;
+    border-color: #2563EB;
+    color: #2563EB;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(37, 99, 235, 0.1);
+}
+
+html[data-style-page="admin/firewall/logs"] .pagination-wrapper .page-item.active .page-link {
+    background: linear-gradient(135deg, #2563EB, #7C3AED);
+    border-color: transparent;
+    color: #F8FAFC;
+    box-shadow: 0 4px 15px rgba(37, 99, 235, 0.25);
+}
+
+html[data-style-page="admin/firewall/logs"] .pagination-wrapper .page-item.disabled .page-link {
+    background: #10182B;
+    color: #94A3B8;
+    border-color: #1E293B;
+    cursor: not-allowed;
+    opacity: 0.6;
+    pointer-events: none;
+}
+
+html[data-style-page="admin/firewall/logs"] .pagination-wrapper .page-item:first-child .page-link,
+html[data-style-page="admin/firewall/logs"] .pagination-wrapper .page-item:last-child .page-link {
+    padding: 8px 18px;
+    min-width: auto;
+    gap: 6px;
+}
+
+html[data-style-page="admin/firewall/logs"] .pagination-wrapper .page-link svg {
+    width: 12px;
+    height: 12px;
+}
+
+html[data-style-page="admin/firewall/logs"] .results-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-top: 24px;
+    margin-bottom: 16px;
+}
+
+html[data-style-page="admin/firewall/logs"] .results-info {
+    display: inline-flex;
+    align-items: center;
+    padding: 8px 20px;
+    font-size: 0.875rem;
+    color: #94A3B8;
+    background: #0F172A;
+    border: 1px solid #1E293B;
+    border-radius: 50px;
+    transition: all 0.3s ease;
+}
+
+html[data-style-page="admin/firewall/logs"] .results-info:hover {
+    border-color: #2563EB;
+    color: #2563EB;
+}
+
+html[data-style-page="admin/firewall/logs"] .results-info strong {
+    color: #F8FAFC;
+    font-weight: 700;
+    margin: 0 3px;
+}
+
+@media (max-width: 768px) {
+    html[data-style-page="admin/firewall/logs"] .admin-security {
+        padding: 16px 0;
+    }
+    html[data-style-page="admin/firewall/logs"] .admin-security h1 {
+        font-size: 1.5rem;
+    }
+    html[data-style-page="admin/firewall/logs"] .stat-card {
+        padding: 12px !important;
+    }
+    html[data-style-page="admin/firewall/logs"] .stat-card h3 {
+        font-size: 1.5rem;
+    }
+    html[data-style-page="admin/firewall/logs"] .stat-icon {
+        width: 40px;
+        height: 40px;
+        font-size: 1rem;
+    }
+    html[data-style-page="admin/firewall/logs"] .table tbody td {
+        padding: 8px 6px;
+        font-size: 0.8rem;
+    }
+    html[data-style-page="admin/firewall/logs"] .btn-primary-modern,
+    html[data-style-page="admin/firewall/logs"] .btn-clear {
+        width: 100%;
+        justify-content: center;
+    }
+    html[data-style-page="admin/firewall/logs"] .pagination-wrapper .page-link {
+        min-width: 36px;
+        height: 36px;
+        padding: 4px 10px;
+        font-size: 0.8rem;
+    }
+}
+
+html[data-style-page="admin/firewall/logs"] [data-view-style="admin-firewall-logs-1"] {
+    width: 32px;
+    height: 32px;
+    font-size: 0.75rem;
+}
+
+html[data-style-page="admin/firewall/logs"] [data-view-style="admin-firewall-logs-2"] {
+    max-width: 300px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+html[data-style-page="admin/firewall/logs"] [data-view-style="admin-firewall-logs-3"] {
+    width: 28px;
+    height: 28px;
+    font-size: 0.65rem;
+}
+
+html[data-style-page="admin/monitoring/index"] .admin-security {
+    background: #050817;
+    min-height: 100vh;
+}
+
+html[data-style-page="admin/monitoring/index"] .badge-total {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    padding: 10px 16px;
+    font-size: 0.875rem;
+    font-weight: 600;
+    color: #F8FAFC;
+    background: #2563EB;
+    border-radius: 10px;
+    line-height: 1.2;
+    min-height: 42px;
+}
+
+html[data-style-page="admin/monitoring/index"] .badge-total i {
+    font-size: 0.85rem;
+}
+
+html[data-style-page="admin/monitoring/index"] .btn-clear {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    padding: 10px 16px;
+    font-size: 0.875rem;
+    font-weight: 600;
+    color: #F8FAFC;
+    background: #0F172A;
+    border: 1px solid #1E293B;
+    border-radius: 10px;
+    text-decoration: none;
+    line-height: 1.2;
+    min-height: 42px;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+html[data-style-page="admin/monitoring/index"] .btn-clear:hover {
+    border-color: #2563EB;
+    color: #2563EB;
+    background: rgba(37, 99, 235, 0.04);
+}
+
+html[data-style-page="admin/monitoring/index"] .btn-clear i {
+    font-size: 0.8rem;
+    transition: transform 0.3s ease;
+}
+
+html[data-style-page="admin/monitoring/index"] .stat-card {
+    transition: all 0.3s cubic-bezier(0.34, 1.56, 0.64, 1);
+    border: 1px solid rgba(0, 0, 0, 0.04);
+    height: 100%;
+    min-height: 160px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+html[data-style-page="admin/monitoring/index"] .stat-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.06) !important;
+}
+
+html[data-style-page="admin/monitoring/index"] .stat-icon {
+    width: 48px;
+    height: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    margin: 0 auto;
+    font-size: 1.2rem;
+}
+
+html[data-style-page="admin/monitoring/index"] .bg-primary-soft {
+    background: rgba(37, 99, 235, 0.08);
+}
+
+html[data-style-page="admin/monitoring/index"] .bg-info-soft {
+    background: rgba(13, 202, 240, 0.12);
+    color: #0b7a9e;
+}
+
+html[data-style-page="admin/monitoring/index"] .bg-warning-soft {
+    background: rgba(255, 193, 7, 0.12);
+    color: #b8860b;
+}
+
+html[data-style-page="admin/monitoring/index"] .bg-success-soft {
+    background: rgba(25, 135, 84, 0.12);
+    color: #0d6e41;
+}
+
+html[data-style-page="admin/monitoring/index"] .bg-danger-soft {
+    background: rgba(220, 53, 69, 0.12);
+    color: #a71d2a;
+}
+
+html[data-style-page="admin/monitoring/index"] .bg-secondary-soft {
+    background: rgba(108, 117, 125, 0.12);
+    color: #94A3B8;
+}
+
+html[data-style-page="admin/monitoring/index"] .btn-action {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 36px;
+    height: 36px;
+    border: none;
+    border-radius: 8px;
+    font-size: 0.85rem;
+    transition: all 0.2s ease;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+html[data-style-page="admin/monitoring/index"] .btn-action i {
+    width: 16px;
+    text-align: center;
+}
+
+html[data-style-page="admin/monitoring/index"] .btn-action-view {
+    background: linear-gradient(135deg, #2563EB, #7C3AED);
+    color: #F8FAFC;
+}
+
+html[data-style-page="admin/monitoring/index"] .btn-action-view:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 15px rgba(37, 99, 235, 0.25);
+    color: #F8FAFC;
+}
+
+html[data-style-page="admin/monitoring/index"] .btn-action:active {
+    transform: scale(0.95);
+}
+
+html[data-style-page="admin/monitoring/index"] .table {
+    --bs-table-hover-bg: rgba(37, 99, 235, 0.02);
+}
+
+html[data-style-page="admin/monitoring/index"] .table thead th {
+    font-weight: 600;
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    letter-spacing: 0.3px;
+    color: #94A3B8;
+    border-bottom: 2px solid #1E293B;
+}
+
+html[data-style-page="admin/monitoring/index"] .table tbody td {
+    vertical-align: middle;
+    padding: 12px 8px;
+    font-size: 0.9rem;
+    border-bottom: 1px solid #1E293B;
+}
+
+html[data-style-page="admin/monitoring/index"] .table tbody tr:hover {
+    background: rgba(37, 99, 235, 0.02);
+}
+
+html[data-style-page="admin/monitoring/index"] .avatar {
+    font-weight: 700;
+    font-size: 0.7rem;
+    flex-shrink: 0;
+}
+
+html[data-style-page="admin/monitoring/index"] .status-badge {
+    font-weight: 500;
+    font-size: 0.75rem;
+}
+
+html[data-style-page="admin/monitoring/index"] .form-control, html[data-style-page="admin/monitoring/index"] .form-select {
+    padding: 10px 16px;
+    border: 2px solid #1E293B;
+    border-radius: 10px;
+    font-size: 0.95rem;
+    transition: all 0.3s ease;
+}
+
+html[data-style-page="admin/monitoring/index"] .form-control:focus, html[data-style-page="admin/monitoring/index"] .form-select:focus {
+    border-color: #2563EB;
+    box-shadow: 0 0 0 4px rgba(37, 99, 235, 0.05);
+}
+
+html[data-style-page="admin/monitoring/index"] .btn-primary {
+    background: linear-gradient(135deg, #2563EB, #7C3AED);
+    border: none;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(37, 99, 235, 0.15);
+}
+
+html[data-style-page="admin/monitoring/index"] .btn-primary:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 30px rgba(37, 99, 235, 0.25);
+}
+
+html[data-style-page="admin/monitoring/index"] .pagination-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-top: 32px;
+    margin-bottom: 16px;
+}
+
+html[data-style-page="admin/monitoring/index"] .pagination-wrapper nav {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+html[data-style-page="admin/monitoring/index"] .pagination-wrapper .pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    flex-wrap: wrap;
+}
+
+html[data-style-page="admin/monitoring/index"] .pagination-wrapper .page-item {
+    margin: 0;
+}
+
+html[data-style-page="admin/monitoring/index"] .pagination-wrapper .page-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 44px;
+    height: 44px;
+    padding: 8px 14px;
+    border: 1px solid #1E293B;
+    border-radius: 12px;
+    background: #0F172A;
+    color: #F8FAFC;
+    font-weight: 600;
+    font-size: 0.9rem;
+    transition: all 0.3s cubic-bezier(0.34, 1.56, 0.64, 1);
+    text-decoration: none;
+    line-height: 1;
+}
+
+html[data-style-page="admin/monitoring/index"] .pagination-wrapper .page-link:hover {
+    background: #10182B;
+    border-color: #2563EB;
+    color: #2563EB;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(37, 99, 235, 0.1);
+}
+
+html[data-style-page="admin/monitoring/index"] .pagination-wrapper .page-item.active .page-link {
+    background: linear-gradient(135deg, #2563EB, #7C3AED);
+    border-color: transparent;
+    color: #F8FAFC;
+    box-shadow: 0 4px 15px rgba(37, 99, 235, 0.25);
+}
+
+html[data-style-page="admin/monitoring/index"] .pagination-wrapper .page-item.disabled .page-link {
+    background: #10182B;
+    color: #94A3B8;
+    border-color: #1E293B;
+    cursor: not-allowed;
+    opacity: 0.6;
+    pointer-events: none;
+}
+
+html[data-style-page="admin/monitoring/index"] .pagination-wrapper .page-item:first-child .page-link,
+    html[data-style-page="admin/monitoring/index"] .pagination-wrapper .page-item:last-child .page-link {
+    padding: 8px 18px;
+    min-width: auto;
+    gap: 6px;
+}
+
+html[data-style-page="admin/monitoring/index"] .pagination-wrapper .page-link svg {
+    width: 12px;
+    height: 12px;
+}
+
+@media (max-width: 768px) {
+    html[data-style-page="admin/monitoring/index"] .admin-security {
+        padding: 16px 0;
+    }
+    html[data-style-page="admin/monitoring/index"] .admin-security h1 {
+        font-size: 1.5rem;
+    }
+    html[data-style-page="admin/monitoring/index"] .stat-card {
+        padding: 12px !important;
+    }
+    html[data-style-page="admin/monitoring/index"] .stat-card h3 {
+        font-size: 1.5rem;
+    }
+    html[data-style-page="admin/monitoring/index"] .stat-icon {
+        width: 40px;
+        height: 40px;
+        font-size: 1rem;
+    }
+    html[data-style-page="admin/monitoring/index"] .table tbody td {
+        padding: 8px 6px;
+        font-size: 0.8rem;
+    }
+    html[data-style-page="admin/monitoring/index"] .avatar {
+        width: 28px !important;
+        height: 28px !important;
+        font-size: 0.6rem !important;
+    }
+    html[data-style-page="admin/monitoring/index"] .btn-clear {
+        width: 100%;
+        justify-content: center;
+        margin-bottom: 8px;
+    }
+    html[data-style-page="admin/monitoring/index"] .pagination-wrapper .page-link {
+        min-width: 36px;
+        height: 36px;
+        padding: 4px 10px;
+        font-size: 0.8rem;
+    }
+}
+
+html[data-style-page="admin/monitoring/index"] [data-view-style="admin-monitoring-index-1"] {
+    border-color: #FEE2E2;
+    background: #FEF2F2;
+}
+
+html[data-style-page="admin/monitoring/index"] [data-view-style="admin-monitoring-index-2"] {
+    font-size: 0.75rem;
+    padding: 3px 8px;
+    background: rgba(37, 99, 235, 0.06);
+    border-radius: 6px;
+}
+
+html[data-style-page="admin/monitoring/index"] [data-view-style="admin-monitoring-index-3"] {
+    max-width: 280px;
+}
+
+html[data-style-page="admin/monitoring/index"] [data-view-style="admin-monitoring-index-4"] {
+    width: 32px;
+    height: 32px;
+    font-size: 0.7rem;
+}
+
+html[data-style-page="admin/monitoring/index"] [data-view-style="admin-monitoring-index-5"] {
+    font-size: 0.75rem;
+    padding: 3px 8px;
+    background: #10182B;
+    border-radius: 6px;
+}
+
+html[data-style-page="admin/monitoring/show"] .admin-security {
+    background: #050817;
+    min-height: 100vh;
+}
+
+html[data-style-page="admin/monitoring/show"] .badge-total {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    padding: 10px 16px;
+    font-size: 0.875rem;
+    font-weight: 600;
+    color: #F8FAFC;
+    background: #2563EB;
+    border-radius: 10px;
+    line-height: 1.2;
+    min-height: 42px;
+}
+
+html[data-style-page="admin/monitoring/show"] .badge-total i {
+    font-size: 0.85rem;
+}
+
+html[data-style-page="admin/monitoring/show"] .btn-clear {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    padding: 10px 16px;
+    font-size: 0.875rem;
+    font-weight: 600;
+    color: #F8FAFC;
+    background: #0F172A;
+    border: 1px solid #1E293B;
+    border-radius: 10px;
+    text-decoration: none;
+    line-height: 1.2;
+    min-height: 42px;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+html[data-style-page="admin/monitoring/show"] .btn-clear:hover {
+    border-color: #2563EB;
+    color: #2563EB;
+    background: rgba(37, 99, 235, 0.04);
+}
+
+html[data-style-page="admin/monitoring/show"] .btn-clear i {
+    font-size: 0.8rem;
+    transition: transform 0.3s ease;
+}
+
+html[data-style-page="admin/monitoring/show"] .card-header-custom {
+    padding: 16px 24px;
+    border-bottom: 1px solid #1E293B;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #0F172A;
+}
+
+html[data-style-page="admin/monitoring/show"] .card-body-custom {
+    padding: 20px 24px;
+}
+
+html[data-style-page="admin/monitoring/show"] .info-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 12px 0;
+    border-bottom: 1px solid #1E293B;
+    gap: 20px;
+}
+
+html[data-style-page="admin/monitoring/show"] .info-row:last-child {
+    border-bottom: none;
+}
+
+html[data-style-page="admin/monitoring/show"] .info-label {
+    font-weight: 600;
+    color: #94A3B8;
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    flex-shrink: 0;
+    min-width: 140px;
+}
+
+html[data-style-page="admin/monitoring/show"] .info-value {
+    font-weight: 500;
+    color: #F8FAFC;
+    text-align: right;
+    word-break: break-word;
+    flex: 1;
+}
+
+html[data-style-page="admin/monitoring/show"] .avatar-large {
+    width: 80px;
+    height: 80px;
+    font-size: 1.8rem;
+}
+
+html[data-style-page="admin/monitoring/show"] .related-log-item {
+    display: block;
+    padding: 12px 24px;
+    border-bottom: 1px solid #1E293B;
+    text-decoration: none;
+    color: inherit;
+    transition: all 0.2s ease;
+}
+
+html[data-style-page="admin/monitoring/show"] .related-log-item:hover {
+    background: rgba(37, 99, 235, 0.04);
+    color: #2563EB;
+}
+
+html[data-style-page="admin/monitoring/show"] .related-log-item:last-child {
+    border-bottom: none;
+}
+
+html[data-style-page="admin/monitoring/show"] .bg-primary-soft {
+    background: rgba(37, 99, 235, 0.08);
+    color: #2563EB;
+}
+
+html[data-style-page="admin/monitoring/show"] .bg-info-soft {
+    background: rgba(13, 202, 240, 0.12);
+    color: #0b7a9e;
+}
+
+html[data-style-page="admin/monitoring/show"] .bg-warning-soft {
+    background: rgba(255, 193, 7, 0.12);
+    color: #b8860b;
+}
+
+html[data-style-page="admin/monitoring/show"] .bg-success-soft {
+    background: rgba(25, 135, 84, 0.12);
+    color: #0d6e41;
+}
+
+html[data-style-page="admin/monitoring/show"] .bg-danger-soft {
+    background: rgba(220, 53, 69, 0.12);
+    color: #a71d2a;
+}
+
+html[data-style-page="admin/monitoring/show"] .bg-secondary-soft {
+    background: rgba(108, 117, 125, 0.12);
+    color: #94A3B8;
+}
+
+html[data-style-page="admin/monitoring/show"] .btn-outline-primary {
+    border: 2px solid #1E293B;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    color: #F8FAFC;
+}
+
+html[data-style-page="admin/monitoring/show"] .btn-outline-primary:hover {
+    border-color: #2563EB;
+    color: #2563EB;
+    background: rgba(37, 99, 235, 0.04);
+}
+
+html[data-style-page="admin/monitoring/show"] .btn-outline-secondary {
+    border: 2px solid #1E293B;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    color: #94A3B8;
+}
+
+html[data-style-page="admin/monitoring/show"] .btn-outline-secondary:hover {
+    border-color: #2563EB;
+    color: #2563EB;
+    background: rgba(37, 99, 235, 0.04);
+}
+
+html[data-style-page="admin/monitoring/show"] .btn-outline-info {
+    border: 2px solid #1E293B;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    color: #0dcaf0;
+}
+
+html[data-style-page="admin/monitoring/show"] .btn-outline-info:hover {
+    border-color: #0dcaf0;
+    color: #F8FAFC;
+    background: #0dcaf0;
+}
+
+@media (max-width: 768px) {
+    html[data-style-page="admin/monitoring/show"] .admin-security {
+        padding: 16px 0;
+    }
+    html[data-style-page="admin/monitoring/show"] .admin-security h1 {
+        font-size: 1.5rem;
+    }
+    html[data-style-page="admin/monitoring/show"] .card-body-custom {
+        padding: 16px;
+    }
+    html[data-style-page="admin/monitoring/show"] .card-header-custom {
+        padding: 14px 16px;
+    }
+    html[data-style-page="admin/monitoring/show"] .info-row {
+        flex-direction: column;
+        gap: 8px;
+    }
+    html[data-style-page="admin/monitoring/show"] .info-label {
+        min-width: auto;
+    }
+    html[data-style-page="admin/monitoring/show"] .info-value {
+        text-align: left;
+    }
+    html[data-style-page="admin/monitoring/show"] .avatar-large {
+        width: 64px;
+        height: 64px;
+        font-size: 1.4rem;
+    }
+    html[data-style-page="admin/monitoring/show"] .btn-clear {
+        width: 100%;
+        justify-content: center;
+    }
+}
+
+html[data-style-page="admin/monitoring/show"] [data-view-style="admin-monitoring-show-1"] {
+    font-size: 0.85rem;
+    padding: 4px 10px;
+    background: rgba(37, 99, 235, 0.06);
+    border-radius: 6px;
+}
+
+html[data-style-page="admin/monitoring/show"] [data-view-style="admin-monitoring-show-2"] {
+    font-size: 0.85rem;
+    padding: 4px 10px;
+    background: #10182B;
+    border-radius: 6px;
+}
+
+html[data-style-page="admin/monitoring/show"] [data-view-style="admin-monitoring-show-3"] {
+    font-size: 0.8rem;
+    word-break: break-all;
+}
+
+html[data-style-page="admin/monitoring/show"] [data-view-style="admin-monitoring-show-4"] {
+    word-break: break-all;
+    font-size: 0.75rem;
+}
+
+html[data-style-page="admin/monitoring/show"] [data-view-style="admin-monitoring-show-5"] {
+    background: #10182B;
+    padding: 20px;
+    border-radius: 12px;
+    font-size: 0.8rem;
+    overflow-x: auto;
+    margin: 0;
+    border: 1px solid #1E293B;
+}
+
+html[data-style-page="admin/monitoring/show"] [data-view-style="admin-monitoring-show-6"] {
+    object-fit: cover;
+    border: 3px solid #1E293B;
+}
+
+html[data-style-page="admin/monitoring/show"] [data-view-style="admin-monitoring-show-7"] {
+    width: 80px;
+    height: 80px;
+    font-size: 1.8rem;
+}
+
+html[data-style-page="admin/monitoring/show"] [data-view-style="admin-monitoring-show-8"] {
+    width: 80px;
+    height: 80px;
+    font-size: 1.8rem;
+}
+
+html[data-style-page="admin/monitoring/show"] [data-view-style="admin-monitoring-show-9"] {
+    padding: 4px 8px;
+    font-size: 0.65rem;
+}
+
+html[data-style-page="admin/security/index"] .admin-security {
+    background: #050817;
+    min-height: 100vh;
+}
+
+html[data-style-page="admin/security/index"] .badge-total {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    padding: 10px 16px;
+    font-size: 0.875rem;
+    font-weight: 600;
+    color: #F8FAFC;
+    background: #2563EB;
+    border-radius: 10px;
+    line-height: 1.2;
+    min-height: 42px;
+}
+
+html[data-style-page="admin/security/index"] .badge-total i {
+    font-size: 0.85rem;
+}
+
+html[data-style-page="admin/security/index"] .btn-clear {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    padding: 10px 16px;
+    font-size: 0.875rem;
+    font-weight: 600;
+    color: #F8FAFC;
+    background: #0F172A;
+    border: 1px solid #1E293B;
+    border-radius: 10px;
+    text-decoration: none;
+    line-height: 1.2;
+    min-height: 42px;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+html[data-style-page="admin/security/index"] .btn-clear:hover {
+    border-color: #2563EB;
+    color: #2563EB;
+    background: rgba(37, 99, 235, 0.04);
+}
+
+html[data-style-page="admin/security/index"] .btn-clear i {
+    font-size: 0.8rem;
+}
+
+html[data-style-page="admin/security/index"] .stat-card {
+    transition: all 0.3s cubic-bezier(0.34, 1.56, 0.64, 1);
+    border: 1px solid rgba(0, 0, 0, 0.04);
+    height: 100%;
+    min-height: 160px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+html[data-style-page="admin/security/index"] .stat-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.06) !important;
+}
+
+html[data-style-page="admin/security/index"] .stat-icon {
+    width: 48px;
+    height: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    margin: 0 auto;
+    font-size: 1.2rem;
+}
+
+html[data-style-page="admin/security/index"] .bg-primary-soft {
+    background: rgba(37, 99, 235, 0.08);
+    color: #2563EB;
+}
+
+html[data-style-page="admin/security/index"] .bg-warning-soft {
+    background: rgba(255, 193, 7, 0.12);
+    color: #b8860b;
+}
+
+html[data-style-page="admin/security/index"] .bg-info-soft {
+    background: rgba(13, 202, 240, 0.12);
+    color: #0b7a9e;
+}
+
+html[data-style-page="admin/security/index"] .bg-success-soft {
+    background: rgba(25, 135, 84, 0.12);
+    color: #0d6e41;
+}
+
+html[data-style-page="admin/security/index"] .bg-danger-soft {
+    background: rgba(220, 53, 69, 0.12);
+    color: #a71d2a;
+}
+
+html[data-style-page="admin/security/index"] .bg-purple-soft {
+    background: rgba(139, 92, 246, 0.08);
+    color: #8B5CF6;
+}
+
+html[data-style-page="admin/security/index"] .bg-secondary-soft {
+    background: rgba(108, 117, 125, 0.12);
+    color: #94A3B8;
+}
+
+html[data-style-page="admin/security/index"] .text-purple {
+    color: #8B5CF6;
+}
+
+html[data-style-page="admin/security/index"] .btn-action {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 36px;
+    height: 36px;
+    border: none;
+    border-radius: 8px;
+    font-size: 0.85rem;
+    transition: all 0.2s ease;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+html[data-style-page="admin/security/index"] .btn-action i {
+    width: 16px;
+    text-align: center;
+}
+
+html[data-style-page="admin/security/index"] .btn-action-view {
+    background: linear-gradient(135deg, #2563EB, #7C3AED);
+    color: #F8FAFC;
+}
+
+html[data-style-page="admin/security/index"] .btn-action-view:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 15px rgba(37, 99, 235, 0.25);
+    color: #F8FAFC;
+}
+
+html[data-style-page="admin/security/index"] .btn-action-delete {
+    background: transparent;
+    color: #dc3545;
+    border: 2px solid #dc3545;
+}
+
+html[data-style-page="admin/security/index"] .btn-action-delete:hover {
+    background: #dc3545;
+    color: #F8FAFC;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 15px rgba(220, 53, 69, 0.2);
+}
+
+html[data-style-page="admin/security/index"] .btn-action:active {
+    transform: scale(0.95);
+}
+
+html[data-style-page="admin/security/index"] .table {
+    --bs-table-hover-bg: rgba(37, 99, 235, 0.02);
+}
+
+html[data-style-page="admin/security/index"] .table thead th {
+    font-weight: 600;
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    letter-spacing: 0.3px;
+    color: #94A3B8;
+    border-bottom: 2px solid #1E293B;
+}
+
+html[data-style-page="admin/security/index"] .table tbody td {
+    vertical-align: middle;
+    padding: 12px 8px;
+    font-size: 0.9rem;
+    border-bottom: 1px solid #1E293B;
+}
+
+html[data-style-page="admin/security/index"] .table tbody tr:hover {
+    background: rgba(37, 99, 235, 0.02);
+}
+
+html[data-style-page="admin/security/index"] .avatar {
+    font-weight: 700;
+    font-size: 0.7rem;
+    flex-shrink: 0;
+}
+
+html[data-style-page="admin/security/index"] .status-badge {
+    font-weight: 500;
+    font-size: 0.75rem;
+}
+
+html[data-style-page="admin/security/index"] .form-control, html[data-style-page="admin/security/index"] .form-select {
+    padding: 10px 16px;
+    border: 2px solid #1E293B;
+    border-radius: 10px;
+    font-size: 0.95rem;
+    transition: all 0.3s ease;
+}
+
+html[data-style-page="admin/security/index"] .form-control:focus, html[data-style-page="admin/security/index"] .form-select:focus {
+    border-color: #2563EB;
+    box-shadow: 0 0 0 4px rgba(37, 99, 235, 0.05);
+}
+
+html[data-style-page="admin/security/index"] .btn-primary {
+    background: linear-gradient(135deg, #2563EB, #7C3AED);
+    border: none;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(37, 99, 235, 0.15);
+}
+
+html[data-style-page="admin/security/index"] .btn-primary:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 30px rgba(37, 99, 235, 0.25);
+}
+
+html[data-style-page="admin/security/index"] .pagination-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-top: 32px;
+    margin-bottom: 16px;
+}
+
+html[data-style-page="admin/security/index"] .pagination-wrapper nav {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+html[data-style-page="admin/security/index"] .pagination-wrapper .pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    flex-wrap: wrap;
+}
+
+html[data-style-page="admin/security/index"] .pagination-wrapper .page-item {
+    margin: 0;
+}
+
+html[data-style-page="admin/security/index"] .pagination-wrapper .page-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 44px;
+    height: 44px;
+    padding: 8px 14px;
+    border: 1px solid #1E293B;
+    border-radius: 12px;
+    background: #0F172A;
+    color: #F8FAFC;
+    font-weight: 600;
+    font-size: 0.9rem;
+    transition: all 0.3s cubic-bezier(0.34, 1.56, 0.64, 1);
+    text-decoration: none;
+    line-height: 1;
+}
+
+html[data-style-page="admin/security/index"] .pagination-wrapper .page-link:hover {
+    background: #10182B;
+    border-color: #2563EB;
+    color: #2563EB;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(37, 99, 235, 0.1);
+}
+
+html[data-style-page="admin/security/index"] .pagination-wrapper .page-item.active .page-link {
+    background: linear-gradient(135deg, #2563EB, #7C3AED);
+    border-color: transparent;
+    color: #F8FAFC;
+    box-shadow: 0 4px 15px rgba(37, 99, 235, 0.25);
+}
+
+html[data-style-page="admin/security/index"] .pagination-wrapper .page-item.disabled .page-link {
+    background: #10182B;
+    color: #94A3B8;
+    border-color: #1E293B;
+    cursor: not-allowed;
+    opacity: 0.6;
+    pointer-events: none;
+}
+
+html[data-style-page="admin/security/index"] .pagination-wrapper .page-item:first-child .page-link,
+    html[data-style-page="admin/security/index"] .pagination-wrapper .page-item:last-child .page-link {
+    padding: 8px 18px;
+    min-width: auto;
+    gap: 6px;
+}
+
+html[data-style-page="admin/security/index"] .pagination-wrapper .page-link svg {
+    width: 12px;
+    height: 12px;
+}
+
+@media (max-width: 768px) {
+    html[data-style-page="admin/security/index"] .admin-security {
+        padding: 16px 0;
+    }
+    html[data-style-page="admin/security/index"] .admin-security h1 {
+        font-size: 1.5rem;
+    }
+    html[data-style-page="admin/security/index"] .stat-card {
+        padding: 12px !important;
+    }
+    html[data-style-page="admin/security/index"] .stat-card h3 {
+        font-size: 1.5rem;
+    }
+    html[data-style-page="admin/security/index"] .stat-icon {
+        width: 40px;
+        height: 40px;
+        font-size: 1rem;
+    }
+    html[data-style-page="admin/security/index"] .table tbody td {
+        padding: 8px 6px;
+        font-size: 0.8rem;
+    }
+    html[data-style-page="admin/security/index"] .avatar {
+        width: 28px !important;
+        height: 28px !important;
+        font-size: 0.6rem !important;
+    }
+    html[data-style-page="admin/security/index"] .btn-clear {
+        width: 100%;
+        justify-content: center;
+    }
+    html[data-style-page="admin/security/index"] .pagination-wrapper .page-link {
+        min-width: 36px;
+        height: 36px;
+        padding: 4px 10px;
+        font-size: 0.8rem;
+    }
+}
+
+html[data-style-page="admin/security/index"] [data-view-style="admin-security-index-1"] {
+    width: 32px;
+    height: 32px;
+    font-size: 0.8rem;
+}
+
+html[data-style-page="admin/security/show"] .admin-security-show .card {
+    border-radius: 12px !important;
+    border: 1px solid rgba(0, 0, 0, 0.04);
+}
+
+html[data-style-page="admin/security/show"] .admin-security-show .card-header {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.04);
+    padding: 16px 20px;
+}
+
+html[data-style-page="admin/security/show"] .admin-security-show .card-body {
+    padding: 20px;
+    color: #F8FAFC !important;
+}
+
+html[data-style-page="admin/security/show"] .badge-total {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    padding: 10px 16px;
+    font-size: 0.875rem;
+    font-weight: 600;
+    color: #F8FAFC;
+    background: #2563EB;
+    border-radius: 10px;
+    line-height: 1.2;
+    min-height: 42px;
+}
+
+html[data-style-page="admin/security/show"] .badge-total i {
+    font-size: 0.85rem;
+}
+
+html[data-style-page="admin/security/show"] .btn-clear {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    padding: 10px 16px;
+    font-size: 0.875rem;
+    font-weight: 600;
+    color: #F8FAFC;
+    background: #0F172A;
+    border: 1px solid #1E293B;
+    border-radius: 10px;
+    text-decoration: none;
+    line-height: 1.2;
+    min-height: 42px;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+html[data-style-page="admin/security/show"] .btn-clear:hover {
+    border-color: #2563EB;
+    color: #2563EB;
+    background: rgba(37, 99, 235, 0.04);
+}
+
+html[data-style-page="admin/security/show"] .btn-clear i {
+    font-size: 0.85rem;
+}
+
+html[data-style-page="admin/security/show"] .btn-action-header {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 8px 16px;
+    font-size: 0.8rem;
+    font-weight: 600;
+    color: #F8FAFC;
+    background: #0F172A;
+    border: 1px solid #1E293B;
+    border-radius: 8px;
+    line-height: 1.2;
+    min-height: 36px;
+    transition: all 0.3s ease;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+html[data-style-page="admin/security/show"] .btn-action-header:hover {
+    border-color: #2563EB;
+    color: #2563EB;
+    background: rgba(37, 99, 235, 0.04);
+}
+
+html[data-style-page="admin/security/show"] .btn-action-header i {
+    font-size: 0.75rem;
+}
+
+html[data-style-page="admin/security/show"] .btn-action-header-primary {
+    background: linear-gradient(135deg, #2563EB, #7C3AED);
+    color: #F8FAFC;
+    border-color: transparent;
+    box-shadow: 0 2px 8px rgba(37, 99, 235, 0.2);
+}
+
+html[data-style-page="admin/security/show"] .btn-action-header-primary:hover {
+    color: #F8FAFC;
+    border-color: transparent;
+    background: linear-gradient(135deg, #1e50c9, #6d28d9);
+    box-shadow: 0 4px 12px rgba(37, 99, 235, 0.3);
+}
+
+html[data-style-page="admin/security/show"] .admin-security-show .alert {
+    border: none;
+    border-radius: 12px !important;
+}
+
+html[data-style-page="admin/security/show"] .admin-security-show .alert-success {
+    background: rgba(16, 185, 129, 0.08);
+    color: #10B981;
+}
+
+html[data-style-page="admin/security/show"] .admin-security-show .alert-warning {
+    background: rgba(245, 158, 11, 0.08);
+    color: #F59E0B;
+}
+
+html[data-style-page="admin/security/show"] .admin-security-show .alert-info {
+    background: rgba(37, 99, 235, 0.08);
+    color: #2563EB;
+}
+
+html[data-style-page="admin/security/show"] .admin-security-show .alert-danger {
+    background: rgba(239, 68, 68, 0.08);
+    color: #EF4444;
+}
+
+html[data-style-page="admin/security/show"] .admin-security-show .alert-secondary {
+    background: rgba(107, 114, 128, 0.08);
+    color: #94A3B8;
+}
+
+html[data-style-page="admin/security/show"] .admin-security-show .card-body p,
+html[data-style-page="admin/security/show"] .admin-security-show .card-body strong,
+html[data-style-page="admin/security/show"] .admin-security-show .card-body span,
+html[data-style-page="admin/security/show"] .admin-security-show .card-body .fw-bold,
+html[data-style-page="admin/security/show"] .admin-security-show .card-body .fw-semibold {
+    color: #F8FAFC !important;
+}
+
+html[data-style-page="admin/security/show"] .admin-security-show .card-body .text-secondary {
+    color: #94A3B8 !important;
+}
+
+html[data-style-page="admin/security/show"] .admin-security-show .card-body .text-primary {
+    color: #2563EB !important;
+}
+
+html[data-style-page="admin/security/show"] .admin-security-show .card-body .text-success {
+    color: #10B981 !important;
+}
+
+html[data-style-page="admin/security/show"] .admin-security-show .card-body .text-danger {
+    color: #EF4444 !important;
+}
+
+html[data-style-page="admin/security/show"] .admin-security-show .card-body .text-warning {
+    color: #F59E0B !important;
+}
+
+html[data-style-page="admin/security/show"] .admin-security-show .card-body .badge {
+    color: #F8FAFC !important;
+}
+
+html[data-style-page="admin/security/show"] .admin-security-show .card-body .badge.bg-secondary {
+    color: #F8FAFC !important;
+}
+
+html[data-style-page="admin/security/show"] .admin-security-show .card-body .badge.bg-primary-soft {
+    color: #2563EB !important;
+}
+
+html[data-style-page="admin/security/show"] .feature-item {
+    transition: all 0.2s ease;
+    border: 1px solid transparent;
+}
+
+html[data-style-page="admin/security/show"] .feature-item.bg-success-soft {
+    background: rgba(16, 185, 129, 0.06);
+    border-color: rgba(16, 185, 129, 0.1);
+}
+
+html[data-style-page="admin/security/show"] .feature-item.bg-secondary-soft {
+    background: rgba(107, 114, 128, 0.04);
+    border-color: rgba(107, 114, 128, 0.05);
+}
+
+html[data-style-page="admin/security/show"] .feature-item .badge {
+    font-size: 0.65rem;
+    padding: 2px 12px;
+}
+
+html[data-style-page="admin/security/show"] .feature-item .small {
+    color: #F8FAFC !important;
+}
+
+html[data-style-page="admin/security/show"] .feature-item .text-secondary {
+    color: #94A3B8 !important;
+}
+
+html[data-style-page="admin/security/show"] .bg-primary-soft {
+    background: rgba(37, 99, 235, 0.08);
+    color: #2563EB;
+}
+
+html[data-style-page="admin/security/show"] .form-select,
+html[data-style-page="admin/security/show"] .form-control {
+    padding: 10px 16px;
+    border: 2px solid #1E293B;
+    border-radius: 10px;
+    font-size: 0.95rem;
+    transition: all 0.3s ease;
+}
+
+html[data-style-page="admin/security/show"] .form-select:focus,
+html[data-style-page="admin/security/show"] .form-control:focus {
+    border-color: #2563EB;
+    box-shadow: 0 0 0 4px rgba(37, 99, 235, 0.05);
+}
+
+html[data-style-page="admin/security/show"] .form-check-input:checked {
+    background-color: #2563EB;
+    border-color: #2563EB;
+}
+
+html[data-style-page="admin/security/show"] .btn-primary {
+    background: linear-gradient(135deg, #2563EB, #7C3AED);
+    border: none;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(37, 99, 235, 0.15);
+    padding: 10px 24px;
+}
+
+html[data-style-page="admin/security/show"] .btn-primary:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 30px rgba(37, 99, 235, 0.25);
+}
+
+html[data-style-page="admin/security/show"] .btn-danger {
+    background: linear-gradient(135deg, #EF4444, #DC2626);
+    border: none;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    padding: 10px 24px;
+}
+
+html[data-style-page="admin/security/show"] .btn-danger:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 30px rgba(239, 68, 68, 0.25);
+}
+
+html[data-style-page="admin/security/show"] .btn-outline-primary {
+    border: 2px solid #1E293B;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    color: #2563EB;
+    padding: 6px 18px;
+    background: transparent;
+}
+
+html[data-style-page="admin/security/show"] .btn-outline-primary:hover {
+    border-color: #2563EB;
+    color: #F8FAFC;
+    background: #2563EB;
+}
+
+html[data-style-page="admin/security/show"] .btn-outline-secondary {
+    border: 2px solid #1E293B;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    color: #F8FAFC;
+    padding: 6px 18px;
+}
+
+html[data-style-page="admin/security/show"] .btn-outline-secondary:hover {
+    border-color: #2563EB;
+    color: #2563EB;
+    background: rgba(37, 99, 235, 0.04);
+}
+
+html[data-style-page="admin/security/show"] .input-group .btn {
+    border-radius: 0 12px 12px 0 !important;
+}
+
+html[data-style-page="admin/security/show"] .input-group .form-control {
+    border-radius: 12px 0 0 12px !important;
+}
+
+@media (max-width: 768px) {
+    html[data-style-page="admin/security/show"] .admin-security-show .card-body {
+        padding: 16px;
+    }
+}
+
+html[data-style-page="admin/services/create"] .admin-security {
+    background: #050817;
+    min-height: 100vh;
+}
+
+html[data-style-page="admin/services/create"] .badge-total {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    padding: 10px 16px;
+    font-size: 0.875rem;
+    font-weight: 600;
+    color: #F8FAFC;
+    background: #2563EB;
+    border-radius: 10px;
+    line-height: 1.2;
+    min-height: 42px;
+    cursor: default;
+    user-select: none;
+}
+
+html[data-style-page="admin/services/create"] .badge-total i {
+    font-size: 0.85rem;
+}
+
+html[data-style-page="admin/services/create"] .btn-clear {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    padding: 10px 16px;
+    font-size: 0.875rem;
+    font-weight: 600;
+    color: #F8FAFC;
+    background: #0F172A;
+    border: 1px solid #1E293B;
+    border-radius: 10px;
+    text-decoration: none;
+    line-height: 1.2;
+    min-height: 42px;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+html[data-style-page="admin/services/create"] .btn-clear:hover {
+    border-color: #2563EB;
+    color: #2563EB;
+    background: rgba(37, 99, 235, 0.04);
+}
+
+html[data-style-page="admin/services/create"] .btn-clear i {
+    font-size: 0.85rem;
+}
+
+html[data-style-page="admin/services/create"] .bg-primary-soft {
+    background: rgba(37, 99, 235, 0.08);
+}
+
+html[data-style-page="admin/services/create"] .form-control,
+html[data-style-page="admin/services/create"] .form-select {
+    padding: 10px 16px;
+    border: 2px solid #1E293B;
+    border-radius: 12px;
+    transition: all 0.3s ease;
+    font-size: 0.9rem;
+    background: #0F172A;
+}
+
+html[data-style-page="admin/services/create"] .form-control:hover,
+html[data-style-page="admin/services/create"] .form-select:hover {
+    border-color: #1E293B;
+}
+
+html[data-style-page="admin/services/create"] .form-control:focus,
+html[data-style-page="admin/services/create"] .form-select:focus {
+    border-color: #2563EB;
+    box-shadow: 0 0 0 4px rgba(37, 99, 235, 0.06);
+    background: #0F172A;
+}
+
+html[data-style-page="admin/services/create"] .form-control::placeholder {
+    color: #94a3b8;
+}
+
+html[data-style-page="admin/services/create"] .form-label {
+    font-size: 0.9rem;
+    color: #F8FAFC;
+    margin-bottom: 6px;
+}
+
+html[data-style-page="admin/services/create"] textarea.form-control {
+    resize: vertical;
+    min-height: 100px;
+}
+
+html[data-style-page="admin/services/create"] .btn-primary-modern {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 24px;
+    background: linear-gradient(135deg, #2563EB, #7C3AED);
+    color: #F8FAFC;
+    font-weight: 600;
+    font-size: 0.9rem;
+    border: none;
+    border-radius: 10px;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(37, 99, 235, 0.15);
+    min-height: 42px;
+}
+
+html[data-style-page="admin/services/create"] .btn-primary-modern:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 30px rgba(37, 99, 235, 0.25);
+    color: #F8FAFC;
+}
+
+html[data-style-page="admin/services/create"] .invalid-feedback {
+    font-size: 0.85rem;
+    margin-top: 4px;
+}
+
+html[data-style-page="admin/services/create"] .is-invalid {
+    border-color: #dc3545 !important;
+}
+
+html[data-style-page="admin/services/create"] .is-invalid:focus {
+    box-shadow: 0 0 0 4px rgba(220, 53, 69, 0.06) !important;
+}
+
+@media (max-width: 768px) {
+    html[data-style-page="admin/services/create"] .admin-security {
+        padding: 16px 0;
+    }
+    html[data-style-page="admin/services/create"] .admin-security h1 {
+        font-size: 1.5rem;
+    }
+    html[data-style-page="admin/services/create"] .btn-primary-modern,
+    html[data-style-page="admin/services/create"] .btn-clear {
+        width: 100%;
+        justify-content: center;
+    }
+}
+
+html[data-style-page="admin/services/create"] [data-view-style="admin-services-create-1"] {
+    width: 64px;
+    height: 64px;
+    font-size: 1.4rem;
+}
+
+html[data-style-page="admin/services/edit"] .admin-security {
+    background: #050817;
+    min-height: 100vh;
+}
+
+html[data-style-page="admin/services/edit"] .badge-total {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    padding: 10px 16px;
+    font-size: 0.875rem;
+    font-weight: 600;
+    color: #F8FAFC;
+    background: #2563EB;
+    border-radius: 10px;
+    line-height: 1.2;
+    min-height: 42px;
+    cursor: default;
+    user-select: none;
+}
+
+html[data-style-page="admin/services/edit"] .badge-total i {
+    font-size: 0.85rem;
+}
+
+html[data-style-page="admin/services/edit"] .btn-clear {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    padding: 10px 16px;
+    font-size: 0.875rem;
+    font-weight: 600;
+    color: #F8FAFC;
+    background: #0F172A;
+    border: 1px solid #1E293B;
+    border-radius: 10px;
+    text-decoration: none;
+    line-height: 1.2;
+    min-height: 42px;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+html[data-style-page="admin/services/edit"] .btn-clear:hover {
+    border-color: #2563EB;
+    color: #2563EB;
+    background: rgba(37, 99, 235, 0.04);
+}
+
+html[data-style-page="admin/services/edit"] .btn-clear i {
+    font-size: 0.85rem;
+}
+
+html[data-style-page="admin/services/edit"] .bg-primary-soft {
+    background: rgba(37, 99, 235, 0.08);
+}
+
+html[data-style-page="admin/services/edit"] .bg-success-soft {
+    background: rgba(25, 135, 84, 0.08);
+}
+
+html[data-style-page="admin/services/edit"] .bg-danger-soft {
+    background: rgba(220, 53, 69, 0.08);
+}
+
+html[data-style-page="admin/services/edit"] .text-purple {
+    color: #7C3AED;
+}
+
+html[data-style-page="admin/services/edit"] .status-badge {
+    font-weight: 500;
+    font-size: 0.75rem;
+}
+
+html[data-style-page="admin/services/edit"] .form-control,
+html[data-style-page="admin/services/edit"] .form-select {
+    padding: 10px 16px;
+    border: 2px solid #1E293B;
+    border-radius: 12px;
+    transition: all 0.3s ease;
+    font-size: 0.9rem;
+    background: #0F172A;
+}
+
+html[data-style-page="admin/services/edit"] .form-control:hover,
+html[data-style-page="admin/services/edit"] .form-select:hover {
+    border-color: #1E293B;
+}
+
+html[data-style-page="admin/services/edit"] .form-control:focus,
+html[data-style-page="admin/services/edit"] .form-select:focus {
+    border-color: #2563EB;
+    box-shadow: 0 0 0 4px rgba(37, 99, 235, 0.06);
+    background: #0F172A;
+}
+
+html[data-style-page="admin/services/edit"] .form-control::placeholder {
+    color: #94a3b8;
+}
+
+html[data-style-page="admin/services/edit"] .form-label {
+    font-size: 0.9rem;
+    color: #F8FAFC;
+    margin-bottom: 6px;
+}
+
+html[data-style-page="admin/services/edit"] textarea.form-control {
+    resize: vertical;
+    min-height: 100px;
+}
+
+html[data-style-page="admin/services/edit"] .btn-primary-modern {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 24px;
+    background: linear-gradient(135deg, #2563EB, #7C3AED);
+    color: #F8FAFC;
+    font-weight: 600;
+    font-size: 0.9rem;
+    border: none;
+    border-radius: 10px;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(37, 99, 235, 0.15);
+    min-height: 42px;
+}
+
+html[data-style-page="admin/services/edit"] .btn-primary-modern:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 30px rgba(37, 99, 235, 0.25);
+    color: #F8FAFC;
+}
+
+html[data-style-page="admin/services/edit"] .invalid-feedback {
+    font-size: 0.85rem;
+    margin-top: 4px;
+}
+
+html[data-style-page="admin/services/edit"] .is-invalid {
+    border-color: #dc3545 !important;
+}
+
+html[data-style-page="admin/services/edit"] .is-invalid:focus {
+    box-shadow: 0 0 0 4px rgba(220, 53, 69, 0.06) !important;
+}
+
+@media (max-width: 768px) {
+    html[data-style-page="admin/services/edit"] .admin-security {
+        padding: 16px 0;
+    }
+    html[data-style-page="admin/services/edit"] .admin-security h1 {
+        font-size: 1.5rem;
+    }
+    html[data-style-page="admin/services/edit"] .btn-primary-modern,
+    html[data-style-page="admin/services/edit"] .btn-clear {
+        width: 100%;
+        justify-content: center;
+    }
+}
+
+html[data-style-page="admin/services/edit"] [data-view-style="admin-services-edit-1"] {
+    width: 64px;
+    height: 64px;
+    font-size: 1.4rem;
+}
+
+html[data-style-page="admin/services/edit"] [data-view-style="admin-services-edit-2"] {
+    font-size: 0.7rem;
+    letter-spacing: 0.3px;
+}
+
+html[data-style-page="admin/services/edit"] [data-view-style="admin-services-edit-3"] {
+    font-size: 1.25rem;
+}
+
+html[data-style-page="admin/services/edit"] [data-view-style="admin-services-edit-4"] {
+    width: 200px;
+    height: 120px;
+    object-fit: cover;
+    border: 2px solid #1E293B;
+}
+
+html[data-style-page="admin/services/edit"] [data-view-style="admin-services-edit-5"] {
+    width: 200px;
+    height: 120px;
+    background: linear-gradient(135deg, #e0f2fe, #dbeafe);
+    border: 2px solid #1E293B;
+}
+
+html[data-style-page="admin/services/edit"] [data-view-style="admin-services-edit-6"] {
+    opacity: 0.4;
+}
+
+html[data-style-page="admin/services/index"] .admin-security {
+    background: #050817;
+    min-height: 100vh;
+}
+
+html[data-style-page="admin/services/index"] .badge-total {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    padding: 10px 16px;
+    font-size: 0.875rem;
+    font-weight: 600;
+    color: #F8FAFC;
+    background: #2563EB;
+    border-radius: 10px;
+    line-height: 1.2;
+    min-height: 42px;
+}
+
+html[data-style-page="admin/services/index"] .badge-total i {
+    font-size: 0.85rem;
+}
+
+html[data-style-page="admin/services/index"] .btn-clear {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    padding: 10px 16px;
+    font-size: 0.875rem;
+    font-weight: 600;
+    color: #F8FAFC;
+    background: #0F172A;
+    border: 1px solid #1E293B;
+    border-radius: 10px;
+    text-decoration: none;
+    line-height: 1.2;
+    min-height: 42px;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+html[data-style-page="admin/services/index"] .btn-clear:hover {
+    border-color: #2563EB;
+    color: #2563EB;
+    background: rgba(37, 99, 235, 0.04);
+}
+
+html[data-style-page="admin/services/index"] .btn-clear i {
+    font-size: 0.85rem;
+}
+
+html[data-style-page="admin/services/index"] .stat-card {
+    transition: all 0.3s cubic-bezier(0.34, 1.56, 0.64, 1);
+    border: 1px solid rgba(0, 0, 0, 0.04);
+    height: 100%;
+    min-height: 160px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+html[data-style-page="admin/services/index"] .stat-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.06) !important;
+}
+
+html[data-style-page="admin/services/index"] .stat-icon {
+    width: 48px;
+    height: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    margin: 0 auto;
+    font-size: 1.2rem;
+}
+
+html[data-style-page="admin/services/index"] .bg-primary-soft {
+    background: rgba(37, 99, 235, 0.08);
+}
+
+html[data-style-page="admin/services/index"] .bg-info-soft {
+    background: rgba(13, 202, 240, 0.08);
+}
+
+html[data-style-page="admin/services/index"] .bg-success-soft {
+    background: rgba(25, 135, 84, 0.08);
+}
+
+html[data-style-page="admin/services/index"] .bg-warning-soft {
+    background: rgba(245, 158, 11, 0.08);
+}
+
+html[data-style-page="admin/services/index"] .bg-purple-soft {
+    background: rgba(124, 58, 237, 0.08);
+}
+
+html[data-style-page="admin/services/index"] .bg-danger-soft {
+    background: rgba(220, 53, 69, 0.08);
+}
+
+html[data-style-page="admin/services/index"] .text-purple {
+    color: #7C3AED;
+}
+
+html[data-style-page="admin/services/index"] .text-warning {
+    color: #F59E0B;
+}
+
+html[data-style-page="admin/services/index"] .btn-action {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 36px;
+    height: 36px;
+    border: none;
+    border-radius: 8px;
+    font-size: 0.85rem;
+    transition: all 0.2s ease;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+html[data-style-page="admin/services/index"] .btn-action i {
+    width: 16px;
+    text-align: center;
+}
+
+html[data-style-page="admin/services/index"] .btn-action-edit {
+    background: linear-gradient(135deg, #2563EB, #7C3AED);
+    color: #F8FAFC;
+}
+
+html[data-style-page="admin/services/index"] .btn-action-edit:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 15px rgba(37, 99, 235, 0.25);
+    color: #F8FAFC;
+}
+
+html[data-style-page="admin/services/index"] .btn-action-delete {
+    background: transparent;
+    color: #dc3545;
+    border: 2px solid #dc3545;
+}
+
+html[data-style-page="admin/services/index"] .btn-action-delete:hover {
+    background: #dc3545;
+    color: #F8FAFC;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 15px rgba(220, 53, 69, 0.2);
+}
+
+html[data-style-page="admin/services/index"] .table {
+    --bs-table-hover-bg: rgba(37, 99, 235, 0.02);
+}
+
+html[data-style-page="admin/services/index"] .table thead th {
+    font-weight: 600;
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    letter-spacing: 0.3px;
+    color: #94A3B8;
+    border-bottom: 2px solid #1E293B;
+}
+
+html[data-style-page="admin/services/index"] .table tbody td {
+    vertical-align: middle;
+    padding: 12px 8px;
+    font-size: 0.9rem;
+    border-bottom: 1px solid #1E293B;
+}
+
+html[data-style-page="admin/services/index"] .table tbody tr:hover {
+    background: rgba(37, 99, 235, 0.02);
+}
+
+html[data-style-page="admin/services/index"] .avatar {
+    flex-shrink: 0;
+}
+
+html[data-style-page="admin/services/index"] .status-badge {
+    font-weight: 500;
+    font-size: 0.75rem;
+}
+
+html[data-style-page="admin/services/index"] .form-control, html[data-style-page="admin/services/index"] .form-select {
+    padding: 10px 16px;
+    border: 2px solid #1E293B;
+    border-radius: 10px;
+    font-size: 0.95rem;
+    transition: all 0.3s ease;
+}
+
+html[data-style-page="admin/services/index"] .form-control:focus, html[data-style-page="admin/services/index"] .form-select:focus {
+    border-color: #2563EB;
+    box-shadow: 0 0 0 4px rgba(37, 99, 235, 0.05);
+}
+
+html[data-style-page="admin/services/index"] .btn-primary {
+    background: linear-gradient(135deg, #2563EB, #7C3AED);
+    border: none;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(37, 99, 235, 0.15);
+}
+
+html[data-style-page="admin/services/index"] .btn-primary:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 30px rgba(37, 99, 235, 0.25);
+}
+
+html[data-style-page="admin/services/index"] .pagination-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-top: 32px;
+    margin-bottom: 16px;
+}
+
+html[data-style-page="admin/services/index"] .pagination-wrapper nav {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+html[data-style-page="admin/services/index"] .pagination-wrapper .pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    flex-wrap: wrap;
+}
+
+html[data-style-page="admin/services/index"] .pagination-wrapper .page-item {
+    margin: 0;
+}
+
+html[data-style-page="admin/services/index"] .pagination-wrapper .page-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 44px;
+    height: 44px;
+    padding: 8px 14px;
+    border: 1px solid #1E293B;
+    border-radius: 12px;
+    background: #0F172A;
+    color: #F8FAFC;
+    font-weight: 600;
+    font-size: 0.9rem;
+    transition: all 0.3s cubic-bezier(0.34, 1.56, 0.64, 1);
+    text-decoration: none;
+    line-height: 1;
+}
+
+html[data-style-page="admin/services/index"] .pagination-wrapper .page-link:hover {
+    background: #10182B;
+    border-color: #2563EB;
+    color: #2563EB;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(37, 99, 235, 0.1);
+}
+
+html[data-style-page="admin/services/index"] .pagination-wrapper .page-item.active .page-link {
+    background: linear-gradient(135deg, #2563EB, #7C3AED);
+    border-color: transparent;
+    color: #F8FAFC;
+    box-shadow: 0 4px 15px rgba(37, 99, 235, 0.25);
+}
+
+html[data-style-page="admin/services/index"] .pagination-wrapper .page-item.disabled .page-link {
+    background: #10182B;
+    color: #94A3B8;
+    border-color: #1E293B;
+    cursor: not-allowed;
+    opacity: 0.6;
+    pointer-events: none;
+}
+
+html[data-style-page="admin/services/index"] .pagination-wrapper .page-item:first-child .page-link,
+html[data-style-page="admin/services/index"] .pagination-wrapper .page-item:last-child .page-link {
+    padding: 8px 18px;
+    min-width: auto;
+    gap: 6px;
+}
+
+html[data-style-page="admin/services/index"] .pagination-wrapper .page-link svg {
+    width: 12px;
+    height: 12px;
+}
+
+@media (max-width: 768px) {
+    html[data-style-page="admin/services/index"] .admin-security {
+        padding: 16px 0;
+    }
+    html[data-style-page="admin/services/index"] .admin-security h1 {
+        font-size: 1.5rem;
+    }
+    html[data-style-page="admin/services/index"] .stat-card {
+        padding: 12px !important;
+    }
+    html[data-style-page="admin/services/index"] .stat-card h3 {
+        font-size: 1.5rem;
+    }
+    html[data-style-page="admin/services/index"] .stat-icon {
+        width: 40px;
+        height: 40px;
+        font-size: 1rem;
+    }
+    html[data-style-page="admin/services/index"] .table tbody td {
+        padding: 8px 6px;
+        font-size: 0.8rem;
+    }
+    html[data-style-page="admin/services/index"] .avatar {
+        width: 28px !important;
+        height: 28px !important;
+        font-size: 0.6rem !important;
+    }
+    html[data-style-page="admin/services/index"] .btn-clear {
+        width: 100%;
+        justify-content: center;
+    }
+    html[data-style-page="admin/services/index"] .pagination-wrapper .pagination {
+        gap: 4px;
+    }
+    html[data-style-page="admin/services/index"] .pagination-wrapper .page-link {
+        min-width: 36px;
+        height: 36px;
+        padding: 4px 10px;
+        font-size: 0.8rem;
+        border-radius: 10px;
+    }
+    html[data-style-page="admin/services/index"] .pagination-wrapper .page-item:first-child .page-link,
+    html[data-style-page="admin/services/index"] .pagination-wrapper .page-item:last-child .page-link {
+        padding: 4px 12px;
+    }
+}
+
+html[data-style-page="admin/services/index"] [data-view-style="admin-services-index-1"] {
+    width: 36px;
+    height: 36px;
+    font-size: 0.9rem;
+}
+
+html[data-style-page="admin/sms-logs/index"] .admin-security {
+    background: #050817;
+    min-height: 100vh;
+}
+
+html[data-style-page="admin/sms-logs/index"] .bg-primary-soft {
+    background: rgba(37, 99, 235, 0.08);
+    color: #2563EB;
+}
+
+html[data-style-page="admin/sms-logs/index"] .bg-success-soft {
+    background: rgba(25, 135, 84, 0.12);
+    color: #0d6e41;
+}
+
+html[data-style-page="admin/sms-logs/index"] .bg-danger-soft {
+    background: rgba(220, 53, 69, 0.12);
+    color: #a71d2a;
+}
+
+html[data-style-page="admin/sms-logs/index"] .table {
+    --bs-table-hover-bg: rgba(37, 99, 235, 0.02);
+}
+
+html[data-style-page="admin/sms-logs/index"] .table thead th {
+    font-weight: 600;
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    letter-spacing: 0.3px;
+    color: #94A3B8;
+    border-bottom: 2px solid #1E293B;
+}
+
+html[data-style-page="admin/sms-logs/index"] .table tbody td {
+    vertical-align: middle;
+    padding: 12px 8px;
+    font-size: 0.9rem;
+    border-bottom: 1px solid #1E293B;
+}
+
+html[data-style-page="admin/sms-logs/index"] [data-view-style="admin-sms-logs-index-1"] {
+    max-width: 400px;
+}
+
+html[data-style-page="admin/subscriptions/index"] .admin-security {
+    background: #050817;
+    min-height: 100vh;
+}
+
+html[data-style-page="admin/subscriptions/index"] .badge-total {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    padding: 10px 16px;
+    font-size: 0.875rem;
+    font-weight: 600;
+    color: #F8FAFC;
+    background: #2563EB;
+    border-radius: 10px;
+    line-height: 1.2;
+    min-height: 42px;
+}
+
+html[data-style-page="admin/subscriptions/index"] .badge-total i {
+    font-size: 0.85rem;
+}
+
+html[data-style-page="admin/subscriptions/index"] .btn-clear {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    padding: 10px 16px;
+    font-size: 0.875rem;
+    font-weight: 600;
+    color: #F8FAFC;
+    background: #0F172A;
+    border: 1px solid #1E293B;
+    border-radius: 10px;
+    text-decoration: none;
+    line-height: 1.2;
+    min-height: 42px;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+html[data-style-page="admin/subscriptions/index"] .btn-clear:hover {
+    border-color: #2563EB;
+    color: #2563EB;
+    background: rgba(37, 99, 235, 0.04);
+}
+
+html[data-style-page="admin/subscriptions/index"] .btn-clear i {
+    font-size: 0.8rem;
+}
+
+html[data-style-page="admin/subscriptions/index"] .stat-card {
+    transition: all 0.3s cubic-bezier(0.34, 1.56, 0.64, 1);
+    border: 1px solid rgba(0, 0, 0, 0.04);
+    height: 100%;
+    min-height: 160px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+html[data-style-page="admin/subscriptions/index"] .stat-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.06) !important;
+}
+
+html[data-style-page="admin/subscriptions/index"] .stat-icon {
+    width: 48px;
+    height: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    margin: 0 auto;
+    font-size: 1.2rem;
+}
+
+html[data-style-page="admin/subscriptions/index"] .bg-primary-soft {
+    background: rgba(37, 99, 235, 0.08);
+    color: #2563EB;
+}
+
+html[data-style-page="admin/subscriptions/index"] .bg-warning-soft {
+    background: rgba(255, 193, 7, 0.12);
+    color: #b8860b;
+}
+
+html[data-style-page="admin/subscriptions/index"] .bg-info-soft {
+    background: rgba(13, 202, 240, 0.12);
+    color: #0b7a9e;
+}
+
+html[data-style-page="admin/subscriptions/index"] .bg-success-soft {
+    background: rgba(25, 135, 84, 0.12);
+    color: #0d6e41;
+}
+
+html[data-style-page="admin/subscriptions/index"] .bg-danger-soft {
+    background: rgba(220, 53, 69, 0.12);
+    color: #a71d2a;
+}
+
+html[data-style-page="admin/subscriptions/index"] .bg-purple-soft {
+    background: rgba(139, 92, 246, 0.08);
+    color: #8B5CF6;
+}
+
+html[data-style-page="admin/subscriptions/index"] .bg-secondary-soft {
+    background: rgba(108, 117, 125, 0.12);
+    color: #94A3B8;
+}
+
+html[data-style-page="admin/subscriptions/index"] .text-purple {
+    color: #8B5CF6;
+}
+
+html[data-style-page="admin/subscriptions/index"] .btn-action {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 36px;
+    height: 36px;
+    border: none;
+    border-radius: 8px;
+    font-size: 0.85rem;
+    transition: all 0.2s ease;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+html[data-style-page="admin/subscriptions/index"] .btn-action i {
+    width: 16px;
+    text-align: center;
+}
+
+html[data-style-page="admin/subscriptions/index"] .btn-action-view {
+    background: linear-gradient(135deg, #2563EB, #7C3AED);
+    color: #F8FAFC;
+}
+
+html[data-style-page="admin/subscriptions/index"] .btn-action-view:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 15px rgba(37, 99, 235, 0.25);
+    color: #F8FAFC;
+}
+
+html[data-style-page="admin/subscriptions/index"] .btn-action-delete {
+    background: transparent;
+    color: #dc3545;
+    border: 2px solid #dc3545;
+}
+
+html[data-style-page="admin/subscriptions/index"] .btn-action-delete:hover {
+    background: #dc3545;
+    color: #F8FAFC;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 15px rgba(220, 53, 69, 0.2);
+}
+
+html[data-style-page="admin/subscriptions/index"] .btn-action:active {
+    transform: scale(0.95);
+}
+
+html[data-style-page="admin/subscriptions/index"] .table {
+    --bs-table-hover-bg: rgba(37, 99, 235, 0.02);
+}
+
+html[data-style-page="admin/subscriptions/index"] .table thead th {
+    font-weight: 600;
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    letter-spacing: 0.3px;
+    color: #94A3B8;
+    border-bottom: 2px solid #1E293B;
+}
+
+html[data-style-page="admin/subscriptions/index"] .table tbody td {
+    vertical-align: middle;
+    padding: 12px 8px;
+    font-size: 0.9rem;
+    border-bottom: 1px solid #1E293B;
+}
+
+html[data-style-page="admin/subscriptions/index"] .table tbody tr:hover {
+    background: rgba(37, 99, 235, 0.02);
+}
+
+html[data-style-page="admin/subscriptions/index"] .avatar {
+    font-weight: 700;
+    font-size: 0.7rem;
+    flex-shrink: 0;
+}
+
+html[data-style-page="admin/subscriptions/index"] .status-badge {
+    font-weight: 500;
+    font-size: 0.75rem;
+}
+
+html[data-style-page="admin/subscriptions/index"] .pagination-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-top: 32px;
+    margin-bottom: 16px;
+}
+
+html[data-style-page="admin/subscriptions/index"] .pagination-wrapper nav {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+html[data-style-page="admin/subscriptions/index"] .pagination-wrapper .pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    flex-wrap: wrap;
+}
+
+html[data-style-page="admin/subscriptions/index"] .pagination-wrapper .page-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 44px;
+    height: 44px;
+    padding: 8px 14px;
+    border: 1px solid #1E293B;
+    border-radius: 12px;
+    background: #0F172A;
+    color: #F8FAFC;
+    font-weight: 600;
+    font-size: 0.9rem;
+    transition: all 0.3s cubic-bezier(0.34, 1.56, 0.64, 1);
+    text-decoration: none;
+    line-height: 1;
+}
+
+html[data-style-page="admin/subscriptions/index"] .pagination-wrapper .page-link:hover {
+    background: #10182B;
+    border-color: #2563EB;
+    color: #2563EB;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(37, 99, 235, 0.1);
+}
+
+html[data-style-page="admin/subscriptions/index"] .pagination-wrapper .page-item.active .page-link {
+    background: linear-gradient(135deg, #2563EB, #7C3AED);
+    border-color: transparent;
+    color: #F8FAFC;
+    box-shadow: 0 4px 15px rgba(37, 99, 235, 0.25);
+}
+
+html[data-style-page="admin/subscriptions/index"] .pagination-wrapper .page-item.disabled .page-link {
+    background: #10182B;
+    color: #94A3B8;
+    border-color: #1E293B;
+    cursor: not-allowed;
+    opacity: 0.6;
+    pointer-events: none;
+}
+
+html[data-style-page="admin/subscriptions/index"] .btn-primary {
+    background: linear-gradient(135deg, #2563EB, #7C3AED);
+    border: none;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(37, 99, 235, 0.15);
+}
+
+html[data-style-page="admin/subscriptions/index"] .btn-primary:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 30px rgba(37, 99, 235, 0.25);
+}
+
+html[data-style-page="admin/subscriptions/index"] .form-control, html[data-style-page="admin/subscriptions/index"] .form-select {
+    padding: 10px 16px;
+    border: 2px solid #1E293B;
+    border-radius: 10px;
+    font-size: 0.95rem;
+    transition: all 0.3s ease;
+}
+
+html[data-style-page="admin/subscriptions/index"] .form-control:focus, html[data-style-page="admin/subscriptions/index"] .form-select:focus {
+    border-color: #2563EB;
+    box-shadow: 0 0 0 4px rgba(37, 99, 235, 0.05);
+}
+
+@media (max-width: 768px) {
+    html[data-style-page="admin/subscriptions/index"] .admin-security {
+        padding: 16px 0;
+    }
+    html[data-style-page="admin/subscriptions/index"] .admin-security h1 {
+        font-size: 1.5rem;
+    }
+    html[data-style-page="admin/subscriptions/index"] .stat-card {
+        padding: 12px !important;
+    }
+    html[data-style-page="admin/subscriptions/index"] .stat-card h3 {
+        font-size: 1.5rem;
+    }
+    html[data-style-page="admin/subscriptions/index"] .stat-icon {
+        width: 40px;
+        height: 40px;
+        font-size: 1rem;
+    }
+    html[data-style-page="admin/subscriptions/index"] .table tbody td {
+        padding: 8px 6px;
+        font-size: 0.8rem;
+    }
+    html[data-style-page="admin/subscriptions/index"] .avatar {
+        width: 28px !important;
+        height: 28px !important;
+        font-size: 0.6rem !important;
+    }
+    html[data-style-page="admin/subscriptions/index"] .btn-clear {
+        width: 100%;
+        justify-content: center;
+    }
+    html[data-style-page="admin/subscriptions/index"] .pagination-wrapper .page-link {
+        min-width: 36px;
+        height: 36px;
+        padding: 4px 10px;
+        font-size: 0.8rem;
+    }
+}
+
+html[data-style-page="admin/subscriptions/index"] [data-view-style="admin-subscriptions-index-1"] {
+    width: 32px;
+    height: 32px;
+    font-size: 0.8rem;
+}
+
+html[data-style-page="admin/subscriptions/show"] .admin-security-show .card {
+    border-radius: 12px !important;
+    border: 1px solid rgba(0, 0, 0, 0.04);
+}
+
+html[data-style-page="admin/subscriptions/show"] .admin-security-show .card-header {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.04);
+    padding: 16px 20px;
+}
+
+html[data-style-page="admin/subscriptions/show"] .admin-security-show .card-body {
+    padding: 20px;
+    color: #F8FAFC !important;
+}
+
+html[data-style-page="admin/subscriptions/show"] .badge-total {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    padding: 10px 16px;
+    font-size: 0.875rem;
+    font-weight: 600;
+    color: #F8FAFC;
+    background: #2563EB;
+    border-radius: 10px;
+    line-height: 1.2;
+    min-height: 42px;
+}
+
+html[data-style-page="admin/subscriptions/show"] .badge-total i {
+    font-size: 0.85rem;
+}
+
+html[data-style-page="admin/subscriptions/show"] .btn-clear {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    padding: 10px 16px;
+    font-size: 0.875rem;
+    font-weight: 600;
+    color: #F8FAFC;
+    background: #0F172A;
+    border: 1px solid #1E293B;
+    border-radius: 10px;
+    text-decoration: none;
+    line-height: 1.2;
+    min-height: 42px;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+html[data-style-page="admin/subscriptions/show"] .btn-clear:hover {
+    border-color: #2563EB;
+    color: #2563EB;
+    background: rgba(37, 99, 235, 0.04);
+}
+
+html[data-style-page="admin/subscriptions/show"] .btn-clear i {
+    font-size: 0.85rem;
+}
+
+html[data-style-page="admin/subscriptions/show"] .btn-action-header {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 8px 16px;
+    font-size: 0.8rem;
+    font-weight: 600;
+    color: #F8FAFC;
+    background: #0F172A;
+    border: 1px solid #1E293B;
+    border-radius: 8px;
+    line-height: 1.2;
+    min-height: 36px;
+    transition: all 0.3s ease;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+html[data-style-page="admin/subscriptions/show"] .btn-action-header:hover {
+    border-color: #2563EB;
+    color: #2563EB;
+    background: rgba(37, 99, 235, 0.04);
+}
+
+html[data-style-page="admin/subscriptions/show"] .btn-action-header i {
+    font-size: 0.75rem;
+}
+
+html[data-style-page="admin/subscriptions/show"] .admin-security-show .alert {
+    border: none;
+    border-radius: 12px !important;
+}
+
+html[data-style-page="admin/subscriptions/show"] .admin-security-show .alert-success {
+    background: rgba(16, 185, 129, 0.08);
+    color: #10B981;
+}
+
+html[data-style-page="admin/subscriptions/show"] .admin-security-show .alert-info {
+    background: rgba(37, 99, 235, 0.08);
+    color: #2563EB;
+}
+
+html[data-style-page="admin/subscriptions/show"] .admin-security-show .alert-danger {
+    background: rgba(239, 68, 68, 0.08);
+    color: #EF4444;
+}
+
+html[data-style-page="admin/subscriptions/show"] .admin-security-show .alert-secondary {
+    background: rgba(107, 114, 128, 0.08);
+    color: #94A3B8;
+}
+
+html[data-style-page="admin/subscriptions/show"] .admin-security-show .card-body p,
+html[data-style-page="admin/subscriptions/show"] .admin-security-show .card-body strong,
+html[data-style-page="admin/subscriptions/show"] .admin-security-show .card-body span,
+html[data-style-page="admin/subscriptions/show"] .admin-security-show .card-body .fw-bold,
+html[data-style-page="admin/subscriptions/show"] .admin-security-show .card-body .fw-semibold {
+    color: #F8FAFC !important;
+}
+
+html[data-style-page="admin/subscriptions/show"] .admin-security-show .card-body .text-secondary {
+    color: #94A3B8 !important;
+}
+
+html[data-style-page="admin/subscriptions/show"] .admin-security-show .card-body .text-primary {
+    color: #2563EB !important;
+}
+
+html[data-style-page="admin/subscriptions/show"] .admin-security-show .card-body .text-success {
+    color: #10B981 !important;
+}
+
+html[data-style-page="admin/subscriptions/show"] .admin-security-show .card-body .text-danger {
+    color: #EF4444 !important;
+}
+
+html[data-style-page="admin/subscriptions/show"] .admin-security-show .card-body .text-warning {
+    color: #F59E0B !important;
+}
+
+html[data-style-page="admin/subscriptions/show"] .admin-security-show .card-body .badge {
+    color: #F8FAFC !important;
+}
+
+html[data-style-page="admin/subscriptions/show"] .admin-security-show .card-body .badge.bg-secondary {
+    color: #F8FAFC !important;
+}
+
+html[data-style-page="admin/subscriptions/show"] .admin-security-show .card-body .badge.bg-primary-soft {
+    color: #2563EB !important;
+}
+
+html[data-style-page="admin/subscriptions/show"] .feature-item {
+    transition: all 0.2s ease;
+    border: 1px solid transparent;
+}
+
+html[data-style-page="admin/subscriptions/show"] .feature-item.bg-success-soft {
+    background: rgba(16, 185, 129, 0.06);
+    border-color: rgba(16, 185, 129, 0.1);
+}
+
+html[data-style-page="admin/subscriptions/show"] .feature-item .badge {
+    font-size: 0.65rem;
+    padding: 2px 12px;
+}
+
+html[data-style-page="admin/subscriptions/show"] .bg-primary-soft {
+    background: rgba(37, 99, 235, 0.08);
+    color: #2563EB;
+}
+
+html[data-style-page="admin/subscriptions/show"] .bg-success-soft {
+    background: rgba(25, 135, 84, 0.12);
+    color: #0d6e41;
+}
+
+html[data-style-page="admin/subscriptions/show"] .bg-secondary-soft {
+    background: rgba(108, 117, 125, 0.12);
+    color: #94A3B8;
+}
+
+html[data-style-page="admin/subscriptions/show"] .form-select, html[data-style-page="admin/subscriptions/show"] .form-control {
+    padding: 10px 16px;
+    border: 2px solid #1E293B;
+    border-radius: 10px;
+    font-size: 0.95rem;
+    transition: all 0.3s ease;
+}
+
+html[data-style-page="admin/subscriptions/show"] .form-select:focus, html[data-style-page="admin/subscriptions/show"] .form-control:focus {
+    border-color: #2563EB;
+    box-shadow: 0 0 0 4px rgba(37, 99, 235, 0.05);
+}
+
+html[data-style-page="admin/subscriptions/show"] .form-check-input:checked {
+    background-color: #2563EB;
+    border-color: #2563EB;
+}
+
+html[data-style-page="admin/subscriptions/show"] .btn-primary {
+    background: linear-gradient(135deg, #2563EB, #7C3AED);
+    border: none;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(37, 99, 235, 0.15);
+    padding: 10px 24px;
+}
+
+html[data-style-page="admin/subscriptions/show"] .btn-primary:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 30px rgba(37, 99, 235, 0.25);
+}
+
+html[data-style-page="admin/subscriptions/show"] .btn-danger {
+    background: linear-gradient(135deg, #EF4444, #DC2626);
+    border: none;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    padding: 10px 24px;
+}
+
+html[data-style-page="admin/subscriptions/show"] .btn-danger:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 30px rgba(239, 68, 68, 0.25);
+}
+
+html[data-style-page="admin/subscriptions/show"] .btn-success {
+    background: linear-gradient(135deg, #10B981, #059669);
+    border: none;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    padding: 10px 24px;
+}
+
+html[data-style-page="admin/subscriptions/show"] .btn-success:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 30px rgba(16, 185, 129, 0.25);
+}
+
+html[data-style-page="admin/subscriptions/show"] .btn-outline-primary {
+    border: 2px solid #1E293B;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    color: #2563EB;
+    padding: 6px 18px;
+    background: transparent;
+}
+
+html[data-style-page="admin/subscriptions/show"] .btn-outline-primary:hover {
+    border-color: #2563EB;
+    color: #F8FAFC;
+    background: #2563EB;
+}
+
+html[data-style-page="admin/subscriptions/show"] .input-group .btn {
+    border-radius: 0 12px 12px 0 !important;
+}
+
+html[data-style-page="admin/subscriptions/show"] .input-group .form-control {
+    border-radius: 12px 0 0 12px !important;
+}
+
+@media (max-width: 768px) {
+    html[data-style-page="admin/subscriptions/show"] .admin-security-show .card-body {
+        padding: 16px;
+    }
+}
+
+html[data-style-page="admin/support/index"] .table > :not(caption) > * > * {
+    padding: 1rem 0.75rem;
+    border-bottom-color: #1E293B;
+}
+
+html[data-style-page="admin/support/index"] .table-hover > tbody > tr:hover > * {
+    background-color: #10182B;
+}
+
+html[data-style-page="admin/support/index"] .badge {
+    font-weight: 600;
+}
+
+html[data-style-page="admin/support/index"] .custom-alert {
+    background-color: #ecfdf5;
+    border: 1px solid #a7f3d0;
+    color: #065f46;
+    border-radius: 12px;
+    padding: 12px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05), 0 2px 4px -1px rgba(0, 0, 0, 0.03);
+    font-weight: 500;
+    animation: slideDown 0.4s ease-out;
+}
+
+html[data-style-page="admin/support/index"] .custom-alert .alert-content {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+html[data-style-page="admin/support/index"] .custom-alert .alert-icon {
+    font-size: 1.1rem;
+    color: #10b981;
+}
+
+html[data-style-page="admin/support/index"] .custom-alert .alert-close {
+    background: transparent;
+    border: none;
+    color: #94A3B8;
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    padding: 0;
+    margin-left: 16px;
+    flex-shrink: 0;
+}
+
+html[data-style-page="admin/support/index"] .custom-alert .alert-close:hover {
+    background-color: #d1fae5;
+    color: #065f46;
+}
+
+html[data-style-page="admin/support/index"] .custom-alert .alert-close i {
+    font-size: 0.9rem;
+}
+
+@keyframes slideDown {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+html[data-style-page="admin/support/index"] [data-view-style="admin-support-index-1"] {
+    font-size: 0.75rem;
+    letter-spacing: 0.5px;
+}
+
+html[data-style-page="admin/support/index"] [data-view-style="admin-support-index-2"] {
+    font-size: 0.75rem;
+    letter-spacing: 0.5px;
+}
+
+html[data-style-page="admin/support/index"] [data-view-style="admin-support-index-3"] {
+    font-size: 0.75rem;
+    letter-spacing: 0.5px;
+}
+
+html[data-style-page="admin/support/index"] [data-view-style="admin-support-index-4"] {
+    font-size: 0.75rem;
+    letter-spacing: 0.5px;
+}
+
+html[data-style-page="admin/support/index"] [data-view-style="admin-support-index-5"] {
+    font-size: 0.75rem;
+    letter-spacing: 0.5px;
+}
+
+html[data-style-page="admin/support/index"] [data-view-style="admin-support-index-6"] {
+    font-size: 0.75rem;
+    letter-spacing: 0.5px;
+}
+
+html[data-style-page="admin/support/index"] [data-view-style="admin-support-index-7"] {
+    font-size: 0.75rem;
+    letter-spacing: 0.5px;
+}
+
+html[data-style-page="admin/support/index"] [data-view-style="admin-support-index-8"] {
+    max-width: 300px;
+}
+
+html[data-style-page="admin/support/index"] [data-view-style="admin-support-index-9"] {
+    font-size: 0.5rem;
+}
+
+html[data-style-page="admin/users/edit"] .admin-security {
+    background: #050817;
+    min-height: 100vh;
+}
+
+html[data-style-page="admin/users/edit"] .badge-total {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    padding: 10px 16px;
+    font-size: 0.875rem;
+    font-weight: 600;
+    color: #F8FAFC;
+    background: #2563EB;
+    border-radius: 10px;
+    line-height: 1.2;
+    min-height: 42px;
+}
+
+html[data-style-page="admin/users/edit"] .badge-total i {
+    font-size: 0.85rem;
+}
+
+html[data-style-page="admin/users/edit"] .btn-clear {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    padding: 10px 16px;
+    font-size: 0.875rem;
+    font-weight: 600;
+    color: #F8FAFC;
+    background: #0F172A;
+    border: 1px solid #1E293B;
+    border-radius: 10px;
+    text-decoration: none;
+    line-height: 1.2;
+    min-height: 42px;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+html[data-style-page="admin/users/edit"] .btn-clear:hover {
+    border-color: #2563EB;
+    color: #2563EB;
+    background: rgba(37, 99, 235, 0.04);
+}
+
+html[data-style-page="admin/users/edit"] .btn-clear i {
+    font-size: 0.85rem;
+}
+
+html[data-style-page="admin/users/edit"] .bg-primary-soft {
+    background: rgba(37, 99, 235, 0.08);
+}
+
+html[data-style-page="admin/users/edit"] .bg-purple-soft {
+    background: rgba(124, 58, 237, 0.12);
+    color: #7C3AED;
+}
+
+html[data-style-page="admin/users/edit"] .text-purple {
+    color: #7C3AED;
+}
+
+html[data-style-page="admin/users/edit"] .status-badge {
+    font-weight: 500;
+    font-size: 0.75rem;
+}
+
+html[data-style-page="admin/users/edit"] .form-control,
+html[data-style-page="admin/users/edit"] .form-select {
+    padding: 10px 16px;
+    border: 2px solid #1E293B;
+    border-radius: 12px;
+    transition: all 0.3s ease;
+    font-size: 0.9rem;
+    background: #0F172A;
+}
+
+html[data-style-page="admin/users/edit"] .form-control:hover,
+html[data-style-page="admin/users/edit"] .form-select:hover {
+    border-color: #1E293B;
+}
+
+html[data-style-page="admin/users/edit"] .form-control:focus,
+html[data-style-page="admin/users/edit"] .form-select:focus {
+    border-color: #2563EB;
+    box-shadow: 0 0 0 4px rgba(37, 99, 235, 0.06);
+    background: #0F172A;
+}
+
+html[data-style-page="admin/users/edit"] .form-control::placeholder {
+    color: #94a3b8;
+}
+
+html[data-style-page="admin/users/edit"] .form-label {
+    font-size: 0.9rem;
+    color: #F8FAFC;
+    margin-bottom: 6px;
+}
+
+html[data-style-page="admin/users/edit"] .section-divider {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 8px;
+}
+
+html[data-style-page="admin/users/edit"] .section-divider::before,
+html[data-style-page="admin/users/edit"] .section-divider::after {
+    content: '';
+    flex: 1;
+    height: 1px;
+    background: linear-gradient(90deg, transparent, rgba(37, 99, 235, 0.15), transparent);
+}
+
+html[data-style-page="admin/users/edit"] .section-divider span {
+    font-weight: 600;
+    font-size: 0.8rem;
+    color: #2563EB;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    white-space: nowrap;
+    padding: 4px 12px;
+    background: rgba(37, 99, 235, 0.06);
+    border-radius: 20px;
+}
+
+html[data-style-page="admin/users/edit"] .password-wrapper {
+    position: relative;
+}
+
+html[data-style-page="admin/users/edit"] .password-wrapper .form-control {
+    padding-right: 48px;
+}
+
+html[data-style-page="admin/users/edit"] .password-toggle {
+    position: absolute;
+    right: 12px;
+    top: 50%;
+    transform: translateY(-50%);
+    background: none;
+    border: none;
+    color: #94a3b8;
+    cursor: pointer;
+    padding: 6px;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+    z-index: 5;
+}
+
+html[data-style-page="admin/users/edit"] .password-toggle:hover {
+    color: #2563EB;
+    background: rgba(37, 99, 235, 0.06);
+}
+
+html[data-style-page="admin/users/edit"] .btn-primary-modern {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 24px;
+    background: linear-gradient(135deg, #2563EB, #7C3AED);
+    color: #F8FAFC;
+    font-weight: 600;
+    font-size: 0.9rem;
+    border: none;
+    border-radius: 10px;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(37, 99, 235, 0.15);
+    min-height: 42px;
+}
+
+html[data-style-page="admin/users/edit"] .btn-primary-modern:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 30px rgba(37, 99, 235, 0.25);
+    color: #F8FAFC;
+}
+
+html[data-style-page="admin/users/edit"] .invalid-feedback {
+    font-size: 0.85rem;
+    margin-top: 4px;
+}
+
+html[data-style-page="admin/users/edit"] .is-invalid {
+    border-color: #dc3545 !important;
+}
+
+html[data-style-page="admin/users/edit"] .is-invalid:focus {
+    box-shadow: 0 0 0 4px rgba(220, 53, 69, 0.06) !important;
+}
+
+@media (max-width: 768px) {
+    html[data-style-page="admin/users/edit"] .admin-security {
+        padding: 16px 0;
+    }
+    html[data-style-page="admin/users/edit"] .admin-security h1 {
+        font-size: 1.5rem;
+    }
+    html[data-style-page="admin/users/edit"] .btn-primary-modern,
+    html[data-style-page="admin/users/edit"] .btn-clear {
+        width: 100%;
+        justify-content: center;
+    }
+}
+
+html[data-style-page="admin/users/edit"] [data-view-style="admin-users-edit-1"] {
+    object-fit: cover;
+    border: 2px solid #1E293B;
+}
+
+html[data-style-page="admin/users/edit"] [data-view-style="admin-users-edit-2"] {
+    width: 64px;
+    height: 64px;
+    font-size: 1.4rem;
+}
+
+html[data-style-page="admin/users/edit"] [data-view-style="admin-users-edit-3"] {
+    font-size: 0.7rem;
+    letter-spacing: 0.3px;
+}
+
+html[data-style-page="admin/users/index"] .admin-security {
+    background: #050817;
+    min-height: 100vh;
+}
+
+html[data-style-page="admin/users/index"] .badge-total {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    padding: 10px 16px;
+    font-size: 0.875rem;
+    font-weight: 600;
+    color: #F8FAFC;
+    background: #2563EB;
+    border-radius: 10px;
+    line-height: 1.2;
+    min-height: 42px;
+}
+
+html[data-style-page="admin/users/index"] .badge-total i {
+    font-size: 0.85rem;
+}
+
+html[data-style-page="admin/users/index"] .btn-clear {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    padding: 10px 16px;
+    font-size: 0.875rem;
+    font-weight: 600;
+    color: #F8FAFC;
+    background: #0F172A;
+    border: 1px solid #1E293B;
+    border-radius: 10px;
+    text-decoration: none;
+    line-height: 1.2;
+    min-height: 42px;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+html[data-style-page="admin/users/index"] .btn-clear:hover {
+    border-color: #2563EB;
+    color: #2563EB;
+    background: rgba(37, 99, 235, 0.04);
+}
+
+html[data-style-page="admin/users/index"] .btn-clear i {
+    font-size: 0.85rem;
+}
+
+html[data-style-page="admin/users/index"] .stat-card {
+    transition: all 0.3s cubic-bezier(0.34, 1.56, 0.64, 1);
+    border: 1px solid rgba(0, 0, 0, 0.04);
+    height: 100%;
+    min-height: 160px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+html[data-style-page="admin/users/index"] .stat-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.06) !important;
+}
+
+html[data-style-page="admin/users/index"] .stat-icon {
+    width: 48px;
+    height: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    margin: 0 auto;
+    font-size: 1.2rem;
+}
+
+html[data-style-page="admin/users/index"] .bg-primary-soft {
+    background: rgba(37, 99, 235, 0.08);
+}
+
+html[data-style-page="admin/users/index"] .bg-info-soft {
+    background: rgba(13, 202, 240, 0.08);
+}
+
+html[data-style-page="admin/users/index"] .bg-success-soft {
+    background: rgba(25, 135, 84, 0.08);
+}
+
+html[data-style-page="admin/users/index"] .bg-purple-soft {
+    background: rgba(124, 58, 237, 0.12);
+    color: #7C3AED;
+}
+
+html[data-style-page="admin/users/index"] .text-purple {
+    color: #7C3AED;
+}
+
+html[data-style-page="admin/users/index"] .btn-action {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 36px;
+    height: 36px;
+    border: none;
+    border-radius: 8px;
+    font-size: 0.85rem;
+    transition: all 0.2s ease;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+html[data-style-page="admin/users/index"] .btn-action i {
+    width: 16px;
+    text-align: center;
+}
+
+html[data-style-page="admin/users/index"] .btn-action-edit {
+    background: linear-gradient(135deg, #2563EB, #7C3AED);
+    color: #F8FAFC;
+}
+
+html[data-style-page="admin/users/index"] .btn-action-edit:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 15px rgba(37, 99, 235, 0.25);
+    color: #F8FAFC;
+}
+
+html[data-style-page="admin/users/index"] .btn-action-delete {
+    background: transparent;
+    color: #dc3545;
+    border: 2px solid #dc3545;
+}
+
+html[data-style-page="admin/users/index"] .btn-action-delete:hover {
+    background: #dc3545;
+    color: #F8FAFC;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 15px rgba(220, 53, 69, 0.2);
+}
+
+html[data-style-page="admin/users/index"] .btn-action-disabled {
+    background: rgba(0, 0, 0, 0.04);
+    color: #94A3B8;
+    cursor: not-allowed;
+}
+
+html[data-style-page="admin/users/index"] .table {
+    --bs-table-hover-bg: rgba(37, 99, 235, 0.02);
+}
+
+html[data-style-page="admin/users/index"] .table thead th {
+    font-weight: 600;
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    letter-spacing: 0.3px;
+    color: #94A3B8;
+    border-bottom: 2px solid #1E293B;
+}
+
+html[data-style-page="admin/users/index"] .table tbody td {
+    vertical-align: middle;
+    padding: 12px 8px;
+    font-size: 0.9rem;
+    border-bottom: 1px solid #1E293B;
+}
+
+html[data-style-page="admin/users/index"] .table tbody tr:hover {
+    background: rgba(37, 99, 235, 0.02);
+}
+
+html[data-style-page="admin/users/index"] .avatar {
+    flex-shrink: 0;
+}
+
+html[data-style-page="admin/users/index"] .status-badge {
+    font-weight: 500;
+    font-size: 0.75rem;
+}
+
+html[data-style-page="admin/users/index"] .form-control, html[data-style-page="admin/users/index"] .form-select {
+    padding: 10px 16px;
+    border: 2px solid #1E293B;
+    border-radius: 10px;
+    font-size: 0.95rem;
+    transition: all 0.3s ease;
+}
+
+html[data-style-page="admin/users/index"] .form-control:focus, html[data-style-page="admin/users/index"] .form-select:focus {
+    border-color: #2563EB;
+    box-shadow: 0 0 0 4px rgba(37, 99, 235, 0.05);
+}
+
+html[data-style-page="admin/users/index"] .btn-primary {
+    background: linear-gradient(135deg, #2563EB, #7C3AED);
+    border: none;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(37, 99, 235, 0.15);
+}
+
+html[data-style-page="admin/users/index"] .btn-primary:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 30px rgba(37, 99, 235, 0.25);
+}
+
+html[data-style-page="admin/users/index"] .btn-outline-secondary {
+    border: 2px solid #1E293B;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    color: #F8FAFC;
+}
+
+html[data-style-page="admin/users/index"] .btn-outline-secondary:hover {
+    border-color: #2563EB;
+    color: #2563EB;
+    background: rgba(37, 99, 235, 0.04);
+}
+
+html[data-style-page="admin/users/index"] .pagination-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-top: 32px;
+    margin-bottom: 16px;
+}
+
+html[data-style-page="admin/users/index"] .pagination-wrapper nav {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+html[data-style-page="admin/users/index"] .pagination-wrapper .pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    flex-wrap: wrap;
+}
+
+html[data-style-page="admin/users/index"] .pagination-wrapper .page-item {
+    margin: 0;
+}
+
+html[data-style-page="admin/users/index"] .pagination-wrapper .page-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 44px;
+    height: 44px;
+    padding: 8px 14px;
+    border: 1px solid #1E293B;
+    border-radius: 12px;
+    background: #0F172A;
+    color: #F8FAFC;
+    font-weight: 600;
+    font-size: 0.9rem;
+    transition: all 0.3s cubic-bezier(0.34, 1.56, 0.64, 1);
+    text-decoration: none;
+    line-height: 1;
+}
+
+html[data-style-page="admin/users/index"] .pagination-wrapper .page-link:hover {
+    background: #10182B;
+    border-color: #2563EB;
+    color: #2563EB;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(37, 99, 235, 0.1);
+}
+
+html[data-style-page="admin/users/index"] .pagination-wrapper .page-item.active .page-link {
+    background: linear-gradient(135deg, #2563EB, #7C3AED);
+    border-color: transparent;
+    color: #F8FAFC;
+    box-shadow: 0 4px 15px rgba(37, 99, 235, 0.25);
+}
+
+html[data-style-page="admin/users/index"] .pagination-wrapper .page-item.disabled .page-link {
+    background: #10182B;
+    color: #94A3B8;
+    border-color: #1E293B;
+    cursor: not-allowed;
+    opacity: 0.6;
+    pointer-events: none;
+}
+
+html[data-style-page="admin/users/index"] .pagination-wrapper .page-item:first-child .page-link,
+html[data-style-page="admin/users/index"] .pagination-wrapper .page-item:last-child .page-link {
+    padding: 8px 18px;
+    min-width: auto;
+    gap: 6px;
+}
+
+html[data-style-page="admin/users/index"] .pagination-wrapper .page-link svg {
+    width: 12px;
+    height: 12px;
+}
+
+@media (max-width: 768px) {
+    html[data-style-page="admin/users/index"] .admin-security {
+        padding: 16px 0;
+    }
+    html[data-style-page="admin/users/index"] .admin-security h1 {
+        font-size: 1.5rem;
+    }
+    html[data-style-page="admin/users/index"] .stat-card {
+        padding: 12px !important;
+    }
+    html[data-style-page="admin/users/index"] .stat-card h3 {
+        font-size: 1.5rem;
+    }
+    html[data-style-page="admin/users/index"] .stat-icon {
+        width: 40px;
+        height: 40px;
+        font-size: 1rem;
+    }
+    html[data-style-page="admin/users/index"] .table tbody td {
+        padding: 8px 6px;
+        font-size: 0.8rem;
+    }
+    html[data-style-page="admin/users/index"] .avatar {
+        width: 28px !important;
+        height: 28px !important;
+        font-size: 0.6rem !important;
+    }
+    html[data-style-page="admin/users/index"] .btn-clear {
+        width: 100%;
+        justify-content: center;
+    }
+    html[data-style-page="admin/users/index"] .pagination-wrapper .page-link {
+        min-width: 36px;
+        height: 36px;
+        padding: 4px 10px;
+        font-size: 0.8rem;
+    }
+}
+
+html[data-style-page="admin/users/index"] [data-view-style="admin-users-index-1"] {
+    object-fit: cover;
+    border: 2px solid #1E293B;
+}
+
+html[data-style-page="admin/users/index"] [data-view-style="admin-users-index-2"] {
+    width: 36px;
+    height: 36px;
+    font-size: 0.8rem;
+}
+
+html[data-style-page="admin/vulnerability/index"] .admin-security {
+    background: #050817;
+    min-height: 100vh;
+}
+
+html[data-style-page="admin/vulnerability/index"] .badge-total {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    padding: 10px 16px;
+    font-size: 0.875rem;
+    font-weight: 600;
+    color: #F8FAFC;
+    background: #2563EB;
+    border-radius: 10px;
+    line-height: 1.2;
+    min-height: 42px;
+}
+
+html[data-style-page="admin/vulnerability/index"] .badge-total i {
+    font-size: 0.85rem;
+}
+
+html[data-style-page="admin/vulnerability/index"] .btn-clear {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    padding: 10px 16px;
+    font-size: 0.875rem;
+    font-weight: 600;
+    color: #F8FAFC;
+    background: #0F172A;
+    border: 1px solid #1E293B;
+    border-radius: 10px;
+    text-decoration: none;
+    line-height: 1.2;
+    min-height: 42px;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+html[data-style-page="admin/vulnerability/index"] .btn-clear:hover {
+    border-color: #2563EB;
+    color: #2563EB;
+    background: rgba(37, 99, 235, 0.04);
+}
+
+html[data-style-page="admin/vulnerability/index"] .btn-clear i {
+    font-size: 0.8rem;
+    transition: transform 0.3s ease;
+}
+
+html[data-style-page="admin/vulnerability/index"] .stat-card {
+    transition: all 0.3s cubic-bezier(0.34, 1.56, 0.64, 1);
+    border: 1px solid rgba(0, 0, 0, 0.04);
+    height: 100%;
+    min-height: 160px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+html[data-style-page="admin/vulnerability/index"] .stat-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.06) !important;
+}
+
+html[data-style-page="admin/vulnerability/index"] .stat-icon {
+    width: 48px;
+    height: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    margin: 0 auto;
+    font-size: 1.2rem;
+}
+
+html[data-style-page="admin/vulnerability/index"] .bg-primary-soft {
+    background: rgba(37, 99, 235, 0.08);
+}
+
+html[data-style-page="admin/vulnerability/index"] .bg-success-soft {
+    background: rgba(25, 135, 84, 0.08);
+}
+
+html[data-style-page="admin/vulnerability/index"] .bg-danger-soft {
+    background: rgba(220, 53, 69, 0.08);
+}
+
+html[data-style-page="admin/vulnerability/index"] .bg-warning-soft {
+    background: rgba(245, 158, 11, 0.08);
+}
+
+html[data-style-page="admin/vulnerability/index"] .bg-purple-soft {
+    background: rgba(124, 58, 237, 0.08);
+}
+
+html[data-style-page="admin/vulnerability/index"] .bg-info-soft {
+    background: rgba(13, 202, 240, 0.08);
+}
+
+html[data-style-page="admin/vulnerability/index"] .bg-secondary-soft {
+    background: rgba(108, 117, 125, 0.08);
+}
+
+html[data-style-page="admin/vulnerability/index"] .bg-orange-soft {
+    background: rgba(249, 115, 22, 0.08);
+}
+
+html[data-style-page="admin/vulnerability/index"] .text-purple {
+    color: #7C3AED;
+}
+
+html[data-style-page="admin/vulnerability/index"] .text-orange {
+    color: #F97316;
+}
+
+html[data-style-page="admin/vulnerability/index"] .btn-action {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 36px;
+    height: 36px;
+    border: none;
+    border-radius: 8px;
+    font-size: 0.85rem;
+    transition: all 0.2s ease;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+html[data-style-page="admin/vulnerability/index"] .btn-action i {
+    width: 16px;
+    text-align: center;
+}
+
+html[data-style-page="admin/vulnerability/index"] .btn-action-view {
+    background: linear-gradient(135deg, #2563EB, #7C3AED);
+    color: #F8FAFC;
+}
+
+html[data-style-page="admin/vulnerability/index"] .btn-action-view:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 15px rgba(37, 99, 235, 0.25);
+    color: #F8FAFC;
+}
+
+html[data-style-page="admin/vulnerability/index"] .btn-action-delete {
+    background: transparent;
+    color: #dc3545;
+    border: 2px solid #dc3545;
+}
+
+html[data-style-page="admin/vulnerability/index"] .btn-action-delete:hover {
+    background: #dc3545;
+    color: #F8FAFC;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 15px rgba(220, 53, 69, 0.2);
+}
+
+html[data-style-page="admin/vulnerability/index"] .table {
+    --bs-table-hover-bg: rgba(37, 99, 235, 0.02);
+}
+
+html[data-style-page="admin/vulnerability/index"] .table thead th {
+    font-weight: 600;
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    letter-spacing: 0.3px;
+    color: #94A3B8;
+    border-bottom: 2px solid #1E293B;
+}
+
+html[data-style-page="admin/vulnerability/index"] .table tbody td {
+    vertical-align: middle;
+    padding: 12px 8px;
+    font-size: 0.9rem;
+    border-bottom: 1px solid #1E293B;
+}
+
+html[data-style-page="admin/vulnerability/index"] .table tbody tr:hover {
+    background: rgba(37, 99, 235, 0.02);
+}
+
+html[data-style-page="admin/vulnerability/index"] .status-badge {
+    font-weight: 500;
+    font-size: 0.75rem;
+}
+
+@media (max-width: 768px) {
+    html[data-style-page="admin/vulnerability/index"] .admin-security {
+        padding: 16px 0;
+    }
+    html[data-style-page="admin/vulnerability/index"] .admin-security h1 {
+        font-size: 1.5rem;
+    }
+    html[data-style-page="admin/vulnerability/index"] .stat-card {
+        padding: 12px !important;
+    }
+    html[data-style-page="admin/vulnerability/index"] .stat-card h3 {
+        font-size: 1.5rem;
+    }
+    html[data-style-page="admin/vulnerability/index"] .stat-icon {
+        width: 40px;
+        height: 40px;
+        font-size: 1rem;
+    }
+    html[data-style-page="admin/vulnerability/index"] .table tbody td {
+        padding: 8px 6px;
+        font-size: 0.8rem;
+    }
+    html[data-style-page="admin/vulnerability/index"] .btn-clear {
+        width: 100%;
+        justify-content: center;
+    }
+}
+
+html[data-style-page="admin/vulnerability/index"] [data-view-style="admin-vulnerability-index-1"] {
+    font-size: 1.2rem;
+    white-space: nowrap;
+}
+
+html[data-style-page="admin/vulnerability/index"] [data-view-style="admin-vulnerability-index-2"] {
+    font-size: 1.1rem;
+}
+
+html[data-style-page="admin/vulnerability/index"] [data-view-style="admin-vulnerability-index-3"] {
+    font-size: 0.5rem;
+}
+
+html[data-style-page="admin/vulnerability/show"] .admin-security {
+    background: #050817;
+    min-height: 100vh;
+}
+
+html[data-style-page="admin/vulnerability/show"] .badge-total {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    padding: 10px 16px;
+    font-size: 0.875rem;
+    font-weight: 600;
+    color: #F8FAFC;
+    background: #2563EB;
+    border-radius: 10px;
+    line-height: 1.2;
+    min-height: 42px;
+}
+
+html[data-style-page="admin/vulnerability/show"] .badge-total i {
+    font-size: 0.85rem;
+}
+
+html[data-style-page="admin/vulnerability/show"] .btn-clear {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    padding: 10px 16px;
+    font-size: 0.875rem;
+    font-weight: 600;
+    color: #F8FAFC;
+    background: #0F172A;
+    border: 1px solid #1E293B;
+    border-radius: 10px;
+    text-decoration: none;
+    line-height: 1.2;
+    min-height: 42px;
+    transition: all 0.3s ease;
+}
+
+html[data-style-page="admin/vulnerability/show"] .btn-clear:hover {
+    border-color: #2563EB;
+    color: #2563EB;
+    background: rgba(37, 99, 235, 0.04);
+}
+
+html[data-style-page="admin/vulnerability/show"] .btn-clear i {
+    font-size: 0.8rem;
+}
+
+html[data-style-page="admin/vulnerability/show"] .score-circle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    font-weight: 800;
+    flex-shrink: 0;
+}
+
+html[data-style-page="admin/vulnerability/show"] .bg-primary-soft {
+    background: rgba(37, 99, 235, 0.08);
+}
+
+html[data-style-page="admin/vulnerability/show"] .bg-success-soft {
+    background: rgba(25, 135, 84, 0.08);
+}
+
+html[data-style-page="admin/vulnerability/show"] .bg-danger-soft {
+    background: rgba(220, 53, 69, 0.08);
+}
+
+html[data-style-page="admin/vulnerability/show"] .bg-warning-soft {
+    background: rgba(245, 158, 11, 0.08);
+}
+
+html[data-style-page="admin/vulnerability/show"] .bg-secondary-soft {
+    background: rgba(108, 117, 125, 0.08);
+}
+
+html[data-style-page="admin/vulnerability/show"] .bg-info-soft {
+    background: rgba(13, 202, 240, 0.08);
+}
+
+html[data-style-page="admin/vulnerability/show"] .bg-orange-soft {
+    background: rgba(249, 115, 22, 0.08);
+}
+
+html[data-style-page="admin/vulnerability/show"] .text-orange {
+    color: #F97316;
+}
+
+html[data-style-page="admin/vulnerability/show"] .result-item {
+    padding: 16px 24px;
+    border-bottom: 1px solid #1E293B;
+}
+
+html[data-style-page="admin/vulnerability/show"] .result-item:last-child {
+    border-bottom: none;
+}
+
+html[data-style-page="admin/vulnerability/show"] .result-icon {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    font-size: 1rem;
+}
+
+html[data-style-page="admin/vulnerability/show"] .recommendation {
+    padding: 10px 14px;
+    background: rgba(37, 99, 235, 0.04);
+    border-left: 3px solid #2563EB;
+    border-radius: 8px;
+    font-size: 0.85rem;
+    color: #1E40AF;
+}
+
+@media (max-width: 768px) {
+    html[data-style-page="admin/vulnerability/show"] .admin-security {
+        padding: 16px 0;
+    }
+    html[data-style-page="admin/vulnerability/show"] .admin-security h1 {
+        font-size: 1.5rem;
+    }
+    html[data-style-page="admin/vulnerability/show"] .result-item {
+        padding: 12px 16px;
+    }
+    html[data-style-page="admin/vulnerability/show"] .score-circle {
+        width: 70px !important;
+        height: 70px !important;
+        font-size: 1.4rem !important;
+    }
+}
+
+html[data-style-page="admin/vulnerability/show"] [data-view-style="admin-vulnerability-show-1"] {
+    width: 88px;
+    height: 88px;
+    font-size: 1.8rem;
+}
+
+html[data-admin] {
+    color-scheme: dark;
+    --bs-body-bg: #050817;
+    --bs-body-color: #F8FAFC;
+    --bs-secondary-color: #94A3B8;
+    --bs-border-color: #1E293B;
+    --bs-tertiary-bg: #10182B;
+    --bs-link-color: #7db7ff;
+    --bs-link-hover-color: #b3d6ff;
+}
+
+.admin-shell {
+    margin: 0;
+    background: #050817;
+    color: #F8FAFC;
+    font-family: 'Inter', sans-serif;
+}
+
+.admin-workspace {
+    min-height: 100vh;
+}
+
+.admin-sidebar {
+    position: fixed;
+    inset: 0 auto 0 0;
+    z-index: 1030;
+    display: flex;
+    flex-direction: column;
+    width: 244px;
+    padding: 26px 16px 16px;
+    background: #0B1121;
+    border-right: 1px solid #1E293B;
+    overflow-y: auto;
+}
+
+.admin-brand {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 0 12px 26px;
+    color: #F8FAFC;
+    font-size: 1.2rem;
+    font-weight: 800;
+    text-decoration: none;
+}
+
+.admin-brand:hover {
+    color: #F8FAFC;
+}
+
+.admin-brand-icon {
+    display: grid;
+    place-items: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 12px;
+    background: #2563eb;
+    color: #F8FAFC;
+}
+
+.admin-brand-caption {
+    display: block;
+    margin-top: 2px;
+    color: #94A3B8;
+    font-size: 0.6rem;
+    letter-spacing: 0.16em;
+    font-weight: 600;
+}
+
+.admin-sidebar-content {
+    flex: 1;
+    flex-direction: column;
+}
+
+.admin-navigation {
+    display: grid;
+    gap: 4px;
+}
+
+.admin-nav-link {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    width: 100%;
+    min-height: 42px;
+    padding: 10px 12px;
+    border: 1px solid transparent;
+    border-radius: 9px;
+    background: transparent;
+    color: #94A3B8;
+    font-size: 0.84rem;
+    font-weight: 500;
+    line-height: 1.3;
+    text-align: left;
+    text-decoration: none;
+    transition: background 0.15s, color 0.15s;
+}
+
+.admin-nav-link i {
+    width: 18px;
+    text-align: center;
+}
+
+.admin-nav-link:hover {
+    background: #10182B;
+    color: #F8FAFC;
+}
+
+.admin-nav-link.is-active {
+    background: #173561;
+    border-color: #254e82;
+    color: #91c4ff;
+}
+
+.admin-account {
+    margin-top: auto;
+    padding-top: 24px;
+}
+
+.admin-account-name {
+    display: block;
+    padding: 12px;
+    border-top: 1px solid #1E293B;
+    color: #F8FAFC;
+    font-size: 0.8rem;
+    overflow-wrap: anywhere;
+}
+
+.admin-content {
+    min-width: 0;
+    margin-left: 244px;
+    padding: 16px 20px 40px;
+}
+
+#admin-app .admin-content > div {
+    background: transparent;
+}
+
+#admin-app .container {
+    max-width: 1520px;
+}
+
+#admin-app h1 {
+    color: #F8FAFC;
+    font-size: clamp(1.5rem, 2.4vw, 2rem);
+    letter-spacing: -0.035em;
+}
+
+#admin-app .text-secondary, #admin-app .text-muted {
+    color: #94A3B8 !important;
+}
+
+#admin-app .text-dark, #admin-app .text-body {
+    color: #F8FAFC !important;
+}
+
+#admin-app .text-primary {
+    color: #7db7ff !important;
+}
+
+#admin-app .bg-white {
+    background-color: #0F172A !important;
+}
+
+#admin-app .bg-light {
+    background-color: #10182B !important;
+}
+
+#admin-app :is(.card, .admin-card, .stat-card, .modal-content) {
+    background-color: #0F172A;
+    color: #F8FAFC;
+    border-color: #1E293B;
+}
+
+#admin-app :is(.admin-header, .page-header, .card-header-custom) {
+    flex-wrap: wrap;
+    gap: 16px;
+}
+
+#admin-app .stat-card {
+    border-radius: 16px;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.12);
+}
+
+#admin-app .stat-number {
+    color: #F8FAFC;
+}
+
+#admin-app .quick-actions {
+    display: grid !important;
+    grid-template-columns: repeat(auto-fit, minmax(190px, 1fr));
+    gap: 10px !important;
+}
+
+#admin-app .quick-actions > .btn {
+    width: 100%;
+    justify-content: flex-start;
+    border-radius: 10px !important;
+    padding-inline: 14px !important;
+}
+
+#admin-app .quick-actions .badge {
+    margin-left: auto;
+}
+
+#admin-app :is(.btn, .btn-clear, .btn-export, .btn-filter, .btn-action, .btn-action-header, .btn-refresh, .btn-download) {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 6px;
+    min-height: 40px;
+    padding: 9px 14px;
+    border-radius: 9px;
+    line-height: 1.25;
+    font-size: 0.85rem;
+    font-weight: 600;
+    white-space: nowrap;
+    vertical-align: middle;
+    box-sizing: border-box;
+}
+
+#admin-app :is(.btn-sm, .btn-action) {
+    min-height: 34px;
+    padding: 7px 10px;
+    font-size: 0.78rem;
+}
+
+#admin-app .btn-close {
+    display: block;
+    min-height: auto;
+    padding: 8px;
+}
+
+#admin-app .btn-primary {
+    background: #2869df;
+    border-color: #397af0;
+    color: #F8FAFC;
+}
+
+#admin-app .btn-primary:hover {
+    background: #3478ef;
+    border-color: #6099ff;
+}
+
+#admin-app .btn-outline-primary {
+    border-color: #345987;
+    color: #96c7ff;
+}
+
+#admin-app .btn-outline-primary:hover {
+    background: #1c3c66;
+    color: #F8FAFC;
+}
+
+#admin-app .btn-outline-secondary, #admin-app .btn-clear {
+    border-color: #1E293B;
+    background: transparent;
+    color: #94A3B8;
+}
+
+#admin-app .btn-outline-secondary:hover, #admin-app .btn-clear:hover {
+    background: #10182B;
+    color: #F8FAFC;
+}
+
+#admin-app .form-control, #admin-app .form-select {
+    min-height: 40px;
+    border-color: #1E293B;
+    background-color: #0B1121;
+    color: #F8FAFC;
+}
+
+#admin-app .form-control::placeholder {
+    color: #94A3B8;
+}
+
+#admin-app .form-control:focus, #admin-app .form-select:focus {
+    border-color: #60a5fa;
+    box-shadow: 0 0 0 3px rgba(96, 165, 250, 0.15);
+}
+
+#admin-app .table {
+    --bs-table-bg: transparent;
+    --bs-table-color: #F8FAFC;
+    --bs-table-border-color: #1E293B;
+    --bs-table-hover-bg: #10182B;
+    --bs-table-hover-color: #F8FAFC;
+}
+
+#admin-app :is(.table thead, .table-light) {
+    --bs-table-bg: #10182B;
+    --bs-table-color: #94A3B8;
+    background: #10182B;
+    color: #94A3B8;
+}
+
+#admin-app .table td {
+    vertical-align: middle;
+}
+
+#admin-app .table td form {
+    display: inline-flex;
+    margin: 0;
+    vertical-align: middle;
+}
+
+#admin-app .table td .d-flex {
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+#admin-app .modal-content {
+    background: #0F172A;
+    border: 1px solid #1E293B;
+}
+
+#admin-app .modal-header, #admin-app .modal-footer {
+    border-color: #1E293B;
+}
+
+#admin-app .pagination {
+    --bs-pagination-bg: #0F172A;
+    --bs-pagination-color: #a9cfff;
+    --bs-pagination-border-color: #1E293B;
+    --bs-pagination-hover-bg: #1c3457;
+    --bs-pagination-hover-color: #fff;
+    --bs-pagination-disabled-bg: #0B1121;
+    --bs-pagination-disabled-border-color: #1E293B;
+}
+
+#admin-app .admin-chart {
+    position: relative;
+    height: 300px;
+}
+
+#admin-app a:focus-visible, #admin-app button:focus-visible {
+    outline: 2px solid #7db7ff;
+    outline-offset: 3px;
+}
+
+@media (max-width: 991.98px) {
+    .admin-sidebar {
+        position: static;
+        width: 100%;
+        padding: 16px;
+        border-right: 0;
+        border-bottom: 1px solid #1E293B;
+    }
+    .admin-brand {
+        padding: 0 0 16px;
+    }
+    .admin-navigation {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+    .admin-content {
+        margin-left: 0;
+        padding: 12px 4px 24px;
+    }
+    #admin-app .quick-actions {
+        grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    #admin-app *, #admin-app *::before, #admin-app *::after {
+        animation: none !important;
+        transition: none !important;
+    }
+}
+
+#admin-app .admin-card {
+    border: 1px solid #1E293B;
+    border-radius: 16px;
+    overflow: hidden;
+}
+
+#admin-app .card-header-custom {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    border-bottom: 1px solid #1E293B;
+    background: #0F172A;
+}
+
+#admin-app .card-body-custom {
+    padding: 20px;
+}
+
+#admin-app .table .btn-action {
+    min-width: 34px;
+    height: 34px;
+}
+
+#admin-app .feature-message {
+    margin-top: 12px;
+    padding: 14px;
+    border-radius: 10px;
+    background: #10182B;
+    border: 1px solid #1E293B;
+}
+
+#admin-app .feature-message small {
+    color: #94A3B8;
+}
+
+#admin-app .feature-message p {
+    margin: 8px 0 0;
+    white-space: pre-wrap;
+    overflow-wrap: anywhere;
+}
+
+#admin-app :is(.row > *, .stat-info, .card, .admin-card, .card-body, .admin-nav-link span) {
+    min-width: 0;
+}
+
+#admin-app :is(h1, h2, h3, .stat-number, .stat-label, .admin-nav-link span) {
+    overflow-wrap: anywhere;
+}
+
+#admin-app .stat-card {
+    height: 100%;
+}
+
+#admin-app .table-responsive {
+    max-width: 100%;
+    overscroll-behavior-x: contain;
+}
+
+#admin-app :is(.form-control, .form-select) {
+    min-width: 0;
+    max-width: 100%;
+}
+
+#admin-app .pagination {
+    flex-wrap: wrap;
+    gap: 4px;
+}
+
+#admin-app .admin-nav-link i {
+    flex: 0 0 18px;
+}
+
+@media (max-width: 767.98px) {
+    #admin-app .admin-content {
+        padding: 16px 0 32px;
+    }
+    #admin-app .admin-content .container {
+        --bs-gutter-x: 2rem;
+    }
+    #admin-app .container > .d-flex:has(h1) {
+        flex-direction: column;
+        align-items: stretch !important;
+        gap: 16px;
+    }
+    #admin-app .container > .d-flex:has(h1) > .d-flex {
+        display: grid !important;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 10px !important;
+    }
+    #admin-app .container > .d-flex:has(h1) > .d-flex > :only-child {
+        grid-column: 1 / -1;
+    }
+    #admin-app .container > .d-flex:has(h1) :is(.btn, .btn-clear, .badge-total) {
+        justify-content: center;
+        min-width: 0;
+        white-space: normal;
+    }
+    #admin-app .card-header-custom {
+        padding: 16px;
+    }
+    #admin-app .card-body-custom {
+        padding: 16px;
+    }
+    #admin-app .quick-actions {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+    #admin-app .quick-actions > .btn {
+        white-space: normal;
+        height: 100%;
+        min-height: 48px;
+    }
+    #admin-app :is(.form-control, .form-select) {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 575.98px) {
+    #admin-app .admin-navigation {
+        gap: 6px;
+    }
+    #admin-app .admin-nav-link {
+        min-height: 48px;
+        gap: 8px;
+        padding-inline: 10px;
+        font-size: 0.78rem;
+    }
+    #admin-app .admin-sidebar > .btn {
+        width: 100%;
+        min-height: 44px;
+    }
+    #admin-app .admin-chart {
+        height: 240px;
+    }
+}
+
+#admin-app .feature-message.from-support {
+    border-left: 3px solid #60a5fa;
+}
