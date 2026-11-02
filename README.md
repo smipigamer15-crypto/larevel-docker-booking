@@ -1,5 +1,7 @@
 # 📅 Booking System
 
+GitHub Actions CI/CD without SSH: [Linux production setup](docker/production/README.md).
+
 ## 📸 Screenshots
 
 Here is a quick look at the application:
