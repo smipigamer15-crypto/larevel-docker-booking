@@ -30,7 +30,7 @@ services:
   queue:
     <<: *app
     user: www-data
-    command: [php, artisan, queue:work, --sleep=3, --tries=3, --timeout=90]
+    command: [php, artisan, queue:work, --sleep=3, --tries=3, --timeout=60]
     stop_grace_period: 120s
 
   scheduler:
