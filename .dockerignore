@@ -6,6 +6,8 @@
 .aws
 **/node_modules
 **/vendor
+!src/resources/views/vendor
+!src/resources/views/vendor/**
 **/.env
 **/.env.*
 !**/.env.example

@@ -13,6 +13,8 @@ id_ed25519*
 
 node_modules/
 vendor/
+!/src/resources/views/vendor/
+!/src/resources/views/vendor/**
 .npm/
 .yarn/
 .pnpm-store/
